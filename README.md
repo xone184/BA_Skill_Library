@@ -92,3 +92,18 @@ Thư viện được quản lý tự động bằng Python script. Để cập n
 1. Copy template từ file `expand_01_crm.py`.
 2. Định nghĩa cấu trúc Dictionary (JSON) chứa thông tin chi tiết kỹ năng.
 3. Chạy lệnh: `python ten_file_cua_ban.py`. Hệ thống sẽ tự động parse dữ liệu và sinh ra bộ 3 file `.md`, `.json`, `.prompt` chuẩn mực vào thư mục tương ứng.
+
+---
+
+## 5. Tuân thủ Quy tắc Chuẩn hóa Doanh nghiệp (Enterprise Standards v1.0)
+
+Toàn bộ 87 kỹ năng trong thư mục `Claude-Skills` đã được tiêm (inject) tự động **Bộ quy tắc chuẩn hóa Tài liệu & Diagram Nghiệp vụ (Version 1.0)**. Khi AI thực thi bất kỳ kỹ năng nào, nó sẽ tự động tuân thủ các nguyên tắc sau:
+
+- **Quality Gates**: Mọi tài liệu phải đảm bảo tiêu chí CLEAR, COMPLETE, CONSISTENT, TESTABLE, TRACEABLE.
+- **ID Convention**: Tự động đánh mã cho Functional Requirement (FR), Use Case (UC), User Story (US), và Business Rule (BR).
+- **Chuẩn hóa Diagram**:
+  - *Activity Diagram*: Bắt buộc dùng Swimlane (User | System), định dạng trắng đen (Monochrome), không quá 20 bước, không giao cắt đường.
+  - *BPMN*: Phân định màu sắc rõ ràng (User Task xanh, System Task trắng viền màu), kiểm soát chuẩn Gateway.
+  - *ERD*: Đặt tên chuẩn (snake_case/UPPER_CASE), thể hiện đầy đủ cardinality (Crow's foot) và tối thiểu đạt 3NF.
+  - *Wireframe*: Định dạng Grayscale, bắt buộc có Screen ID và thể hiện đủ 5 trạng thái (Default, Empty, Loading, Error, Success).
+- **Ưu tiên Domain (MES & CRM)**: Hệ thống tự động nhận diện và áp dụng các quy tắc đặc thù như: Yêu cầu Đơn vị đo lường (UoM) cho dữ liệu MES, hoặc bắt buộc thiết kế Wireframe cho các quy trình CRM.
