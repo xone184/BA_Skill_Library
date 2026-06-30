@@ -1,0 +1,66 @@
+{
+    "name": "Phân tích Loyalty Program",
+    "category": "01-Business-Domain/CRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích hệ thống điểm thưởng và khách hàng thân thiết (Loyalty Program), bao gồm cơ chế tích điểm, cấu trúc hạng thành viên (Tier), quy đổi điểm, xử lý gian lận và tích hợp với POS/E-commerce.",
+    "tags": [
+        "CRM",
+        "Loyalty",
+        "Points",
+        "Membership"
+    ],
+    "domain": "CRM",
+    "sub_skills": [
+        "Thiết kế Point Earning Rules",
+        "Thiết kế Tier Structure",
+        "Thiết kế Redemption Flow",
+        "Anti-fraud Logic"
+    ],
+    "related_skills": [
+        "Phân tích Lead Management",
+        "Phân tích Bán hàng tại quầy (POS)"
+    ],
+    "inputs": [
+        {
+            "name": "Chính sách tích điểm",
+            "description": "Quy tắc quy đổi chi tiêu thành điểm thưởng.",
+            "required": true,
+            "example": "Chi 10.000 VNĐ = 1 điểm. Mua ngày sinh nhật = x2 điểm."
+        },
+        {
+            "name": "Cấu trúc hạng thành viên (Tier)",
+            "description": "Các mức thành viên và điều kiện thăng/giáng hạng.",
+            "required": true,
+            "example": "Bạc (0-499 điểm), Vàng (500-1499), Kim Cương (1500+)"
+        },
+        {
+            "name": "Danh mục quà đổi (Reward Catalog)",
+            "description": "Những gì khách hàng có thể dùng điểm để đổi.",
+            "required": true,
+            "example": "Voucher giảm 50k = 100 điểm, Sản phẩm miễn phí = 500 điểm"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Bảng cấu trúc Tier",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Luật Tích/Trừ điểm",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-LOY-01: Điểm chỉ được cộng sau khi giao dịch hoàn tất (không tính đơn hủy).",
+        "BR-LOY-02: Hoàn hàng bắt buộc phải trừ lại điểm đã cộng cho giao dịch đó.",
+        "BR-LOY-03: Điểm thưởng hết hạn sau 12 tháng nếu không sử dụng.",
+        "BR-LOY-04: Tài khoản bị nghi ngờ gian lận sẽ bị đóng băng điểm.",
+        "BR-LOY-05: Điểm không được chuyển nhượng giữa các tài khoản (trừ gói Gia đình)."
+    ],
+    "quality_criteria": [
+        "Phải có Tier Structure",
+        "Phải xử lý Return refund points",
+        "Phải có anti-fraud"
+    ],
+    "estimated_effort": "3-4 ngày"
+}

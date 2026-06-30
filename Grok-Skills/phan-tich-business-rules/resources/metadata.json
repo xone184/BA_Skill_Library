@@ -1,0 +1,14 @@
+{
+    "name": "Phân tích Business Rules",
+    "category": "02-Requirement/Functional",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Trích xuất và chuẩn hóa các quy tắc nghiệp vụ rải rác.",
+    "inputs": [
+        "Quy trình nghiệp vụ",
+        "Chính sách công ty"
+    ],
+    "outputs": [
+        "Bảng Business Rules Catalog",
+        "Decision Table (Bảng quyết định)"
+    ]
+}

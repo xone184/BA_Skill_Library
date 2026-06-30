@@ -1,0 +1,14 @@
+{
+    "name": "Risk Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích và quản lý rủi ro dự án / hệ thống.",
+    "inputs": [
+        "Kiến trúc hệ thống",
+        "Kế hoạch triển khai"
+    ],
+    "outputs": [
+        "Risk Register (Ma trận rủi ro)",
+        "Kế hoạch ứng phó (Mitigation Plan)"
+    ]
+}

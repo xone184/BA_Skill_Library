@@ -1,0 +1,56 @@
+{
+    "name": "Phân tích Use Case",
+    "category": "02-Requirement/Use Case",
+    "level": "Level 2 - Business Skill",
+    "description": "Đặc tả siêu chi tiết sự tương tác giữa Người dùng (Actor) và Hệ thống (System) thông qua Use Case Specification. Kỹ năng này cung cấp sức mạnh để phân rã luồng chính (Basic Flow), luồng rẽ nhánh hợp lệ (Alternate Flow), luồng lỗi (Exception Flow). Đặc biệt hỗ trợ Micro-tasking (bóc tách 1 luồng nhỏ).",
+    "tags": [
+        "Requirement",
+        "Use Case",
+        "UML",
+        "Flow",
+        "Alternate Flow",
+        "Exception",
+        "Micro-tasking"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "Include/Extend Definition",
+        "Micro-tasking Flow Extract",
+        "Exception Handling Design"
+    ],
+    "related_skills": [
+        "Viết Test Case (Ultra)",
+        "Write SRS (Ultra)"
+    ],
+    "inputs": [
+        {
+            "name": "Mô tả tính năng",
+            "description": "Mô tả ngắn gọn về tính năng cần phân tích.",
+            "required": true,
+            "example": "Tính năng Đăng nhập bằng Số điện thoại."
+        },
+        {
+            "name": "Lệnh Micro-tasking (Tùy chọn)",
+            "description": "Lệnh yêu cầu AI chỉ thực thi 1 phần của Use Case.",
+            "required": false,
+            "example": "Chỉ viết Exception Flows cho luồng gửi OTP."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Use Case Specification",
+            "format": "Markdown Table & Lists"
+        }
+    ],
+    "business_rules": [
+        "BR-UC-01: Mọi bước trong Basic Flow phải rõ ràng Chủ ngữ (User làm gì / System phản hồi gì).",
+        "BR-UC-02: Alternate/Exception Flow PHẢI trỏ rõ ràng nó tách ra từ bước nào của Basic Flow (VD: 3a, 2e).",
+        "BR-UC-03: Exception Flow phải ghi rõ là Kết thúc Use Case hay Quay lại bước nào."
+    ],
+    "quality_criteria": [
+        "Rõ ràng Actor-System",
+        "Có Exception Flows",
+        "Đánh số thứ tự chuẩn (1a1, 2e1)"
+    ],
+    "estimated_effort": "0.5 ngày / Use Case"
+}

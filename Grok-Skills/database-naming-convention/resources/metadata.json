@@ -1,0 +1,12 @@
+{
+    "name": "Database Naming Convention",
+    "category": "05-Database/Naming",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Định nghĩa quy chuẩn đặt tên cho Database.",
+    "inputs": [
+        "Các thực thể nghiệp vụ"
+    ],
+    "outputs": [
+        "Quy ước đặt tên Bảng, Cột, Khóa"
+    ]
+}

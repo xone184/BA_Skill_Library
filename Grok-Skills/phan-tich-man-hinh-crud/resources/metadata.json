@@ -1,0 +1,62 @@
+{
+    "name": "Phân tích màn hình CRUD",
+    "category": "04-UIUX/CRUD",
+    "level": "Level 2 - Business Skill",
+    "description": "Đặc tả chi tiết bộ màn hình CRUD (Create-Read-Update-Delete) cho một entity, bao gồm: màn hình List (Search/Filter/Pagination/Bulk Actions), màn hình Create/Edit (Form Validation), màn hình Detail View, và tất cả Confirmation/Error Dialogs.",
+    "tags": [
+        "UIUX",
+        "CRUD",
+        "Form",
+        "List",
+        "Screen"
+    ],
+    "domain": "UIUX",
+    "sub_skills": [
+        "Thiết kế List Screen",
+        "Thiết kế Form Screen",
+        "Thiết kế Validation Rules",
+        "Thiết kế Empty State & Loading State"
+    ],
+    "related_skills": [
+        "Thiết kế Dashboard",
+        "Thiết kế Form",
+        "Thiết kế module"
+    ],
+    "inputs": [
+        {
+            "name": "Entity & Trường dữ liệu",
+            "description": "Entity nào và có những trường nào.",
+            "required": true,
+            "example": "Entity: Product. Trường: product_code, name, category, unit_price, stock_qty, status, created_at."
+        },
+        {
+            "name": "Permission Matrix",
+            "description": "Ai được CRUD trên entity này.",
+            "required": true,
+            "example": "Admin: CRUD. Manager: CRU. Staff: R (chỉ xem). Guest: Không thấy."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "CRUD Screen Specification",
+            "format": "Markdown Document"
+        },
+        {
+            "name": "Validation Rules Table",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-UI-CRUD-01: Mọi màn hình List phải có Search + Filter + Pagination + Sort.",
+        "BR-UI-CRUD-02: Delete bắt buộc có Confirm Dialog.",
+        "BR-UI-CRUD-03: Form Validation phải chạy realtime (onBlur) cho trường Required.",
+        "BR-UI-CRUD-04: Nút Submit phải disable khi đang loading.",
+        "BR-UI-CRUD-05: Mọi entity phải có Audit Log (created_by, updated_by, created_at, updated_at)."
+    ],
+    "quality_criteria": [
+        "List phải đủ 7 thành phần",
+        "Form phải có Validation Table",
+        "Delete phải có Confirm"
+    ],
+    "estimated_effort": "1-2 ngày / entity"
+}

@@ -16,18 +16,20 @@ Mỗi kỹ năng trong thư viện được thiết kế chặt chẽ và lưu t
 
 ---
 
-## 2. Hướng dẫn Import vào Claude (Native Skills)
+## 2. Hướng dẫn Import vào AI (Claude / Grok Native Skills)
 
-Gần đây, Claude đã cập nhật tính năng **Custom Skills** (`claude.ai/customize/skills`). Đây là nơi bạn có thể import trực tiếp các kỹ năng của thư viện này để Claude tự động sử dụng khi cần, giống hệt một Agent thực thụ.
+Gần đây, cả Claude và Grok đều đã cập nhật tính năng **Custom Skills** (hoặc Custom Plugins). Đây là nơi bạn có thể import trực tiếp các kỹ năng của thư viện này để AI tự động sử dụng khi cần, giống hệt một Agent thực thụ.
 
-Chúng tôi đã cung cấp sẵn thư mục **`Claude-Skills-Zip`** chứa toàn bộ các kỹ năng đã được nén thành file `.zip` theo đúng chuẩn định dạng của Claude.
+Chúng tôi đã cung cấp sẵn 2 thư mục nén chứa toàn bộ các kỹ năng đã được định dạng chuẩn:
+- **`Claude-Skills-Zip`**: Dành riêng cho nền tảng Claude (giữ nguyên tên hiển thị chuẩn).
+- **`Grok-Skills-Zip`**: Dành riêng cho nền tảng Grok (tên kỹ năng được chuẩn hóa thành lowercase-slug theo đúng quy tắc nghiêm ngặt của Grok, ví dụ: `activity-diagram`).
 
 ### Cách import và sử dụng:
 
-* **Bước 1:** Trong máy tính của bạn, mở thư mục `BA Skill Library/Claude-Skills-Zip`. Ở đây bạn sẽ thấy hàng chục file nén như `write-user-story.zip`, `write-srs-ultra.zip`...
-* **Bước 2:** Truy cập vào `claude.ai/customize/skills` (hoặc click vào nút **Browse plugins** trên giao diện của Claude).
-* **Bước 3:** Tạo một skill mới hoặc click **Upload**, sau đó chọn file `.zip` của kỹ năng bạn muốn (Ví dụ: `write-srs-ultra.zip`) để tải lên. *(Lưu ý: Claude chỉ chấp nhận định dạng .zip hoặc .plugin).*
-* **Bước 4:** Claude sẽ tự động giải nén, đọc file `SKILL.md` bên trong để lấy tên, mô tả và cấu hình toàn bộ Prompt, Tài liệu tham khảo (References) cho Agent.
+* **Bước 1:** Trong máy tính của bạn, mở thư mục `BA Skill Library/Claude-Skills-Zip` (hoặc `Grok-Skills-Zip` nếu dùng Grok). Ở đây bạn sẽ thấy hàng chục file nén như `write-user-story.zip`, `write-srs-ultra.zip`...
+* **Bước 2:** Truy cập vào `claude.ai/customize/skills` (đối với Claude) hoặc mục Plugins/Skills (đối với Grok).
+* **Bước 3:** Tạo một skill mới hoặc click **Upload**, sau đó chọn file `.zip` của kỹ năng bạn muốn (Ví dụ: `write-srs-ultra.zip`) để tải lên. *(Lưu ý: Các nền tảng chỉ chấp nhận định dạng file nén).*
+* **Bước 4:** AI sẽ tự động giải nén, đọc file `SKILL.md` bên trong để lấy tên, mô tả và cấu hình toàn bộ Prompt, Tài liệu tham khảo (References) cho Agent.
 * **Bước 5:** Bật (Enable) skill đó lên cho Project hoặc Workspace của bạn.
 * **Kết quả:** Từ bây giờ, bạn không cần phải dán prompt dài dòng nữa. Bạn chỉ cần chat tự nhiên: *"Claude, hãy dùng kỹ năng Write User Story để viết US cho tính năng Đăng nhập"*. Claude sẽ tự động load file `SKILL.md` tương ứng và thực thi một cách hoàn hảo!
 

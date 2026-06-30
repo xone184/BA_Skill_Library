@@ -1,0 +1,13 @@
+{
+    "name": "Tạo Template Meeting Minutes",
+    "category": "08-Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Sinh ra biểu mẫu Biên bản họp (MOM) chuyên nghiệp.",
+    "inputs": [
+        "Tên cuộc họp",
+        "Thành phần tham dự"
+    ],
+    "outputs": [
+        "Biểu mẫu MoM"
+    ]
+}

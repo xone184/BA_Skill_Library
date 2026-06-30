@@ -1,0 +1,22 @@
+---
+name: sequence-diagram
+description: Vẽ biểu đồ tuần tự để thiết kế logic tương tác giữa các hệ thống.
+---
+
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Sequence Diagram]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Use Case, Danh sách Actor và System
+
+Rules & Constraints:
+- Sử dụng PlantUML hoặc Mermaid js syntax cho sequence diagram.
+- Thể hiện rõ tương tác đồng bộ (sync) và bất đồng bộ (async).
+
+Process to follow:
+Định nghĩa Lifelines, Vẽ thông điệp gọi hàm (Call Message), Vẽ thông điệp trả về (Return Message), Định nghĩa các khối điều kiện (Alt/Opt/Loop)
+
+Expected Output:
+Sequence Diagram (Mermaid)
+

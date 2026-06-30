@@ -1,0 +1,54 @@
+{
+    "name": "Create Data Dictionary",
+    "category": "05-Database/Data Dictionary",
+    "level": "Level 2 - Business Skill",
+    "description": "Tạo Data Dictionary toàn diện cho hệ thống, mô tả chi tiết mỗi bảng, mỗi cột, kiểu dữ liệu, ràng buộc, mối quan hệ và mô tả nghiệp vụ. Đây là tài liệu tham chiếu chính cho Dev, DBA, BA và QC.",
+    "tags": [
+        "Database",
+        "Data Dictionary",
+        "Documentation"
+    ],
+    "domain": "Database",
+    "sub_skills": [
+        "Xác định Data Type",
+        "Viết Constraint",
+        "Ước lượng Data Volume"
+    ],
+    "related_skills": [
+        "Thiết kế ERD",
+        "Write SRS",
+        "Thiết kế module"
+    ],
+    "inputs": [
+        {
+            "name": "ERD Diagram",
+            "description": "Sơ đồ Entity-Relationship đã thiết kế.",
+            "required": true,
+            "example": "ERD Module WMS với 12 bảng."
+        },
+        {
+            "name": "Business Rules",
+            "description": "Các quy tắc nghiệp vụ ảnh hưởng đến dữ liệu.",
+            "required": true,
+            "example": "Giá bán phải > 0. Email phải unique. Status chỉ có thể là: active, inactive, archived."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Data Dictionary",
+            "format": "Markdown Document (1 section per table)"
+        }
+    ],
+    "business_rules": [
+        "BR-DD-01: Mỗi cột PHẢI có mô tả nghiệp vụ bằng tiếng Việt.",
+        "BR-DD-02: Mỗi bảng PHẢI có Sample Data.",
+        "BR-DD-03: ENUM values phải được liệt kê đầy đủ với mô tả.",
+        "BR-DD-04: Foreign Key phải ghi rõ bảng tham chiếu (FK → table.column)."
+    ],
+    "quality_criteria": [
+        "Mỗi cột phải có Description",
+        "ENUM phải có values",
+        "FK phải ghi rõ target"
+    ],
+    "estimated_effort": "2-3 ngày"
+}

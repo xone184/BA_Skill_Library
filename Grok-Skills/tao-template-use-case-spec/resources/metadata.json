@@ -1,0 +1,13 @@
+{
+    "name": "Tạo Template Use Case Spec",
+    "category": "08-Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Tự động sinh ra biểu mẫu chuẩn cho Use Case Specification.",
+    "inputs": [
+        "Tên Use Case",
+        "Tác nhân"
+    ],
+    "outputs": [
+        "Cấu trúc file Markdown chuẩn"
+    ]
+}

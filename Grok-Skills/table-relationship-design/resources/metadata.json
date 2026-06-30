@@ -1,0 +1,12 @@
+{
+    "name": "Table Relationship Design",
+    "category": "05-Database/Relationship",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế và tối ưu các mối quan hệ giữa các bảng.",
+    "inputs": [
+        "ERD nháp"
+    ],
+    "outputs": [
+        "Cấu trúc quan hệ chuẩn"
+    ]
+}

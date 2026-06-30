@@ -1,0 +1,357 @@
+--- Activity_Diagram_Generation_Rules_Enterprise.docx ---
+Activity Diagram Generation Rules (Enterprise Standard)
+1. Layout
+Luôn sử dụng Swimlane (Người dùng | Hệ thống); tối đa 2 swimlane nếu không cần hệ thống ngoài; flow từ trên xuống.
+2. Màu sắc
+Chỉ dùng trắng/đen: nền trắng, viền đen, chữ đen, mũi tên đen; không gradient, shadow, màu nhấn.
+3. Pool/Swimlane
+Header nền trắng, chỉ in đậm tên swimlane.
+4. Shape
+Start=◎, End=●, Activity= hình vuông, Decision= hình thoi.
+5. Activity
+Tên theo mẫu 'Động từ + Đối tượng', ngắn gọn.
+6. Actor
+Người dùng chỉ thao tác; Hệ thống chỉ xử lý nghiệp vụ.
+7. Decision
+Chỉ chứa câu hỏi ngắn.
+8. Decision Branch
+Chỉ dùng Có/Không hoặc Yes/No.
+9. Arrow
+Ưu tiên mũi tên dọc, tránh đường chéo và đường quá dài.
+10. Crossing
+Không để các đường giao nhau.
+11. Spacing
+Khoảng cách đều giữa các activity.
+12. Alignment
+Canh giữa trong từng swimlane.
+13. Font
+Arial/Calibri/Segoe UI 10–12pt.
+14. Size
+Các activity cùng kích thước.
+15. Business Logic
+Không đưa logic dài vào activity; dùng 'Kiểm tra điều kiện' + Decision.
+16. Complexity
+10–20 activity/diagram; nhiều hơn thì tách sơ đồ.
+17. Naming
+User: Chọn/Nhập/Xem/Tạo... System: Lưu/Kiểm tra/Sinh/Cập nhật...
+18. Output Standard
+Luôn sinh UML Activity Diagram dạng monochrome, có swimlane, đúng ký hiệu UML, không màu, không ghi chú thừa.
+
+--- BoQuyTac_TaiLieu_BA_v1.0.docx ---
+BỘ QUY TẮC CHUẨN HÓA
+TÀI LIỆU & DIAGRAM NGHIỆP VỤ (BA DOCUMENTATION STANDARD)
+Phiên bản 1.0 | Tài liệu nội bộ
+Phạm vi áp dụng: PE Ecosystem · IBM Maximo (AMS) · MES · CRM
+Thông Tin Tài Liệu
+Trường
+Nội dung
+Tên tài liệu
+Bộ Quy Tắc Chuẩn Hóa Tài Liệu & Diagram Nghiệp Vụ
+Phiên bản
+1.0
+Đối tượng sử dụng
+Business Analyst, System Analyst, Reviewer, Dev/QA tham chiếu
+Phạm vi tài liệu
+Activity Diagram, Use Case, BPMN, Sequence Diagram, ERD/Data Model, Wireframe, User Story & AC, Requirement List
+Dự án áp dụng
+PE Ecosystem, IBM Maximo Asset Management System (AMS), MES, CRM
+Phân loại
+Tài liệu nội bộ — Không phân phối ra ngoài
+Mục đích
+Tài liệu này hợp nhất và mở rộng các quy tắc xây dựng tài liệu/diagram nghiệp vụ đã có (Activity Diagram Generation Rules, AMS AI Prompt Playbook) thành một bộ chuẩn dùng chung cho toàn bộ team BA/SA, đảm bảo tính nhất quán, dễ bảo trì và sẵn sàng tích hợp với các công cụ AI-assisted documentation.
+Cách sử dụng tài liệu
+Mục 1–2: Nguyên tắc tổng quát áp dụng cho mọi loại tài liệu.
+Mục 3: Quy tắc chi tiết theo từng loại diagram/tài liệu — mỗi mục gồm Rules, Template, Ví dụ, và Lưu ý chuyên gia.
+Mục 4–5: Quy ước đặt tên chung và checklist nghiệm thu trước khi bàn giao.
+Mục 6: Hướng dẫn áp dụng riêng cho từng dự án (PE Ecosystem / Maximo AMS / MES / CRM).
+1. Giới Thiệu & Phạm Vi Áp Dụng
+Bộ quy tắc này quy định cách xây dựng, trình bày và nghiệm thu các loại tài liệu/diagram nghiệp vụ phổ biến trong vòng đời phân tích hệ thống (SDLC), từ giai đoạn khảo sát đến đặc tả chi tiết. Bộ quy tắc kế thừa và mở rộng từ:
+Activity Diagram Generation Rules (Enterprise Standard) — 18 quy tắc gốc về Activity Diagram.
+AMS AI Prompt Playbook v1.0 — chuẩn JSON Requirement, nguyên tắc CLEAR, Quality Gates (CLEAR/COMPLETE/CONSISTENT/TESTABLE/TRACEABLE) áp dụng cho IBM Maximo AMS.
+Kinh nghiệm triển khai thực tế trên PE Ecosystem (kiến trúc microservices đa phân hệ: Platform Hub, Web App, CRM System, AI Analytics, AI Shopping, AI Lead Service).
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Một bộ quy tắc chỉ có giá trị khi được gắn với checklist nghiệm thu (xem Mục 5) — nếu không, quy tắc sẽ bị bỏ qua dưới áp lực deadline.
+Với dự án có nhiều BA cùng tham gia (như AMS với 7 module Maximo), nên chỉ định 1 người giữ vai trò 'Documentation Owner' để đảm bảo tính nhất quán xuyên suốt.
+2. Nguyên Tắc Chung (Universal Principles)
+2.1. Nguyên tắc trình bày
+Mỗi tài liệu/diagram phải có Document Control Table: Tên tài liệu, Phiên bản, Hệ thống, Đối tượng, Phân loại, Ngày tạo, Cập nhật lần cuối.
+Versioning theo chuẩn Semantic-like: v[Major].[Minor] (vd: v1.0 → v1.1 khi thêm phân hệ/port mới, v2.0 khi thay đổi kiến trúc lớn).
+Mọi thay đổi giữa các phiên bản phải có mục Change Log (Phiên bản | Ngày | Nội dung thay đổi | Người thực hiện).
+Ngôn ngữ: tiếng Việt chuyên ngành CNTT, giữ nguyên thuật ngữ tiếng Anh phổ biến (Use Case, Actor, Gateway, Endpoint…).
+2.2. Nguyên tắc đặt mã định danh (ID Convention)
+Loại đối tượng
+Mẫu mã
+Ví dụ
+Functional Requirement
+FR-[MODULE]-[SỐ]
+FR-AST-001 (Asset), FR-WO-012 (Work Order)
+Use Case
+UC-[MODULE]-[SỐ]
+UC-CRM-003
+User Story
+US-[MODULE]-[SỐ]
+US-PM-007
+Business Rule
+BR-[MODULE]-[SỐ]
+BR-AST-002
+Activity Diagram
+AD-[MODULE]-[SỐ]
+AD-WO-001
+Test Case
+TC-[FR ID]-[SỐ]
+TC-FR-AST-001-01
+2.3. Nguyên tắc nội dung (Quality Gates — kế thừa AMS Playbook)
+CLEAR — Không mơ hồ, chỉ một cách hiểu duy nhất.
+COMPLETE — Không thiếu thông tin gây block development.
+CONSISTENT — Không mâu thuẫn với các requirement/diagram khác.
+TESTABLE — Có thể kiểm chứng bằng test case cụ thể.
+TRACEABLE — Liên kết được tới mục tiêu nghiệp vụ / FR gốc.
+Mọi giả định phải gắn nhãn [ASSUMPTION]; mọi câu hỏi mở phải gắn nhãn [OPEN QUESTION] và theo dõi đến khi đóng.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Khi mã hóa requirement, tránh đánh số tuần tự thuần túy (FR-001, FR-002…) cho toàn hệ thống — sẽ vỡ cấu trúc khi merge nhiều module. Luôn gắn tiền tố module.
+[ASSUMPTION] không được đóng trước khi chuyển giai đoạn Design — đây là nguồn rework phổ biến nhất trong dự án Maximo/PE Ecosystem.
+3. Quy Tắc Theo Từng Loại Tài Liệu / Diagram
+3.1. Activity Diagram (UML)
+Kế thừa nguyên trạng 18 quy tắc từ Activity Diagram Generation Rules (Enterprise Standard), tổ chức lại theo nhóm.
+3.1.1. Layout & Bố cục
+Luôn dùng Swimlane (User | System); tối đa 2 swimlane trừ khi cần thể hiện External System.
+Luồng top-down (từ trên xuống dưới).
+Ưu tiên mũi tên thẳng đứng, tránh đường chéo hoặc quá dài.
+Không cho phép đường giao cắt (crossing lines).
+Khoảng cách đều nhau giữa các activity; căn giữa (center-aligned) trong từng swimlane.
+3.1.2. Màu sắc & Ký hiệu
+Chỉ dùng đen/trắng: nền trắng, viền đen, chữ đen, mũi tên đen — không gradient, không shadow, không màu nhấn.
+Pool/Swimlane header: nền trắng, chỉ in đậm tên swimlane.
+Start = ◎ | End = ● | Activity = hình chữ nhật | Decision = hình thoi.
+Font: Arial/Calibri/Segoe UI, cỡ 10–12pt; tất cả activity cùng kích thước.
+3.1.3. Quy tắc nội dung
+Tên Activity theo mẫu 'Động từ + Tân ngữ', ngắn gọn.
+User swimlane: chỉ chứa hành động thao tác (Chọn/Nhập/Xem/Tạo…).
+System swimlane: chỉ chứa xử lý nghiệp vụ (Lưu/Kiểm tra/Sinh/Cập nhật…).
+Decision node: chỉ chứa câu hỏi ngắn; nhánh rẽ chỉ dùng Có/Không hoặc Yes/No.
+Không nhồi logic dài trong activity — tách thành 'Kiểm tra điều kiện' + Decision node riêng.
+Giới hạn 10–20 activity/diagram; vượt quá phải tách thành sub-diagram.
+3.1.4. Chuẩn đầu ra
+Luôn là UML Activity Diagram đơn sắc, có swimlane, ký hiệu UML chuẩn, không màu, không ghi chú thừa.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Khi Activity Diagram vượt 20 activity, đừng cố nén — hãy tách theo sub-process và dùng một Activity cha dạng 'Call Activity' tham chiếu sang diagram con; điều này giúp diagram dễ bảo trì khi nghiệp vụ thay đổi.
+Activity Diagram không thay thế được Sequence Diagram khi cần thể hiện tương tác giữa nhiều hệ thống/service (như giữa CRM System và AI Lead Service trong PE Ecosystem) — khi đó nên chuyển sang Sequence Diagram.
+3.2. Use Case Diagram & Đặc Tả Use Case
+3.2.1. Quy tắc vẽ Use Case Diagram
+Actor đặt ngoài boundary hệ thống; Use Case (hình oval) đặt trong boundary.
+Tên Use Case theo mẫu 'Động từ + Tân ngữ' (vd: Tạo Work Order, Duyệt Đơn Hàng).
+Quan hệ <<include>> dùng cho hành vi bắt buộc dùng chung; <<extend>> dùng cho hành vi tùy chọn/mở rộng có điều kiện.
+Generalization (mũi tên rỗng) dùng khi Actor/Use Case có quan hệ kế thừa vai trò.
+Không vẽ quá 15 Use Case trên một diagram tổng quát — tách theo module (vd: UC tổng quát → UC chi tiết theo từng phân hệ).
+3.2.2. Cấu trúc đặc tả Use Case (Use Case Specification)
+Trường
+Mô tả bắt buộc
+Use Case ID / Name
+Theo chuẩn mã hóa Mục 2.2
+Actor(s)
+Primary Actor và Secondary Actor (nếu có)
+Mô tả ngắn
+1–2 câu nêu mục tiêu use case
+Điều kiện tiên quyết (Precondition)
+Trạng thái hệ thống/dữ liệu trước khi use case bắt đầu
+Luồng chính (Main Flow)
+Các bước đánh số tuần tự, dạng Actor → System
+Luồng phụ (Alternative Flow)
+Các nhánh rẽ hợp lệ khác (vd: A1, A2…)
+Luồng ngoại lệ (Exception Flow)
+Các trường hợp lỗi/exception (vd: E1, E2…)
+Điều kiện kết thúc (Postcondition)
+Trạng thái hệ thống sau khi use case hoàn tất thành công
+Business Rules liên quan
+Liệt kê mã BR-xxx áp dụng
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Luôn viết Exception Flow trước khi viết Acceptance Criteria — kinh nghiệm cho thấy 70% bug phát sinh từ exception flow bị bỏ sót, không phải từ main flow.
+Với các Use Case liên quan tích hợp ngoài (vd: thanh toán, MxLoader import trong Maximo), bắt buộc có mục riêng 'Integration Points' ghi rõ endpoint, timeout, retry policy.
+3.3. BPMN 2.0 (Business Process Model and Notation)
+3.3.1. Quy tắc Pool/Lane
+Mỗi Pool đại diện một tổ chức/hệ thống độc lập (vd: Khách hàng | Hệ thống CRM | Hệ thống Maximo).
+Mỗi Lane trong Pool đại diện một vai trò/actor (vd: Sales Rep, System Admin).
+3.3.2. Quy tắc màu sắc (kế thừa chuẩn nội bộ)
+Loại Task
+Màu/Quy ước
+User Task (hành động người dùng)
+Nền màu #6094DB, chữ trắng
+System Task (xử lý tự động)
+Nền trắng, viền màu (theo loại hệ thống), chữ đen
+Gateway (Exclusive/Parallel)
+Hình thoi, không tô màu, chỉ viền đen đậm
+Start/End Event
+Hình tròn: viền mỏng = Start, viền đậm = End
+Intermediate Event (Timer/Message)
+Hình tròn viền đôi, icon chuẩn BPMN bên trong
+3.3.3. Quy tắc Gateway & luồng
+Exclusive Gateway (X): chỉ một nhánh được thực thi — luôn gắn nhãn điều kiện rẽ nhánh trên Sequence Flow.
+Parallel Gateway (+): tất cả nhánh thực thi song song — phải có Gateway đóng tương ứng để đồng bộ.
+Không to gateway lồng nhau quá 2 cấp trong cùng một luồng — tách process con (Sub-Process) nếu phức tạp hơn.
+Message Flow (đường đứt nét) chỉ dùng giữa các Pool khác nhau, không dùng trong cùng một Pool.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+BPMN phù hợp hơn Activity Diagram khi mô tả quy trình xuyên nhiều hệ thống/phòng ban (vd: luồng đơn hàng đi từ Web App → CRM System → kho hàng) — Activity Diagram chỉ nên dùng cho luồng nghiệp vụ nội bộ một hệ thống.
+Khi convert BPMN sang yêu cầu kỹ thuật, mỗi System Task nên ánh xạ trực tiếp tới một API endpoint cụ thể trong tài liệu đặc tả — tránh tình trạng diagram và FR bị lệch nhau theo thời gian.
+3.4. Sequence Diagram
+Đối tượng (object/actor) đặt theo thứ tự trái → phải theo trình tự xuất hiện trong luồng.
+Activation bar chỉ xuất hiện khi đối tượng đang xử lý logic — không để activation bar chạy xuyên suốt toàn bộ lifeline.
+Synchronous call: mũi tên liền nét, đầu đặc. Asynchronous call: mũi tên liền nét, đầu hở. Return message: mũi tên đứt nét.
+Mỗi message phải có nhãn rõ ràng dạng functionName(param) hoặc tên nghiệp vụ tương đương.
+Dùng combined fragment (alt/opt/loop) cho luồng rẽ nhánh hoặc lặp, không vẽ nhiều sequence diagram trùng lặp 90% nội dung.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Trong kiến trúc microservices như PE Ecosystem (9 service độc lập), Sequence Diagram là công cụ bắt buộc khi đặc tả bất kỳ luồng nào đi qua từ 2 service trở lên — giúp Dev xác định đúng thứ tự gọi API và timeout cần thiết.
+3.5. ERD / Data Model
+3.5.1. Quy ước đặt tên
+Tên bảng: số nhiều, snake_case hoặc UPPER_CASE theo chuẩn hệ thống đích (vd: Maximo dùng UPPER_CASE: ASSET, LOCATIONS).
+Khóa chính (PK): luôn đặt tên [tên_bảng_số_ít]_id (vd: asset_id) trừ khi theo chuẩn hệ thống có sẵn (Maximo dùng ASSETNUM).
+Khóa ngoại (FK): đặt tên trùng với PK tham chiếu để dễ truy vết quan hệ.
+3.5.2. Quy tắc thể hiện quan hệ
+Dùng ký hiệu Crow's Foot cho cardinality (1-1, 1-n, n-n); luôn ghi rõ optionality (0 hoặc 1 ở đầu quan hệ).
+Quan hệ n-n bắt buộc thể hiện qua bảng trung gian (association table) trong giai đoạn thiết kế vật lý.
+Mỗi entity phải có ghi chú nghiệp vụ ngắn (business definition), không chỉ liệt kê field kỹ thuật.
+3.5.3. Chuẩn hóa dữ liệu
+Thiết kế logic tối thiểu đạt chuẩn 3NF, trừ khi có lý do denormalize rõ ràng (ghi chú lý do trong tài liệu).
+Trường ngày giờ luôn lưu UTC ở tầng dữ liệu, format hiển thị theo locale (vd: Việt Nam: dd/mm/yyyy) chỉ áp dụng ở tầng UI.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Khi tích hợp với hệ thống có data model có sẵn (như Maximo: ASSET, LOCATIONS, ASSETSPEC, ASSETMETER), không tự đặt tên trường mới — luôn map theo đúng field gốc (ASSETNUM, SITEID…) để tránh xung đột khi đồng bộ qua MxLoader/REST API.
+ERD nên tách thành 2 phiên bản: Conceptual (cho stakeholder phi kỹ thuật) và Physical (cho Dev) — gộp chung một diagram thường gây quá tải thông tin cho người đọc không chuyên.
+3.6. Wireframe / UI Mockup
+Wireframe ở mức Low-fidelity: chỉ dùng grayscale, không dùng màu thương hiệu/hình ảnh thật — tránh gây hiểu nhầm là thiết kế cuối cùng.
+Mỗi màn hình phải có Screen ID (vd: SCR-CRM-001) và tên màn hình rõ ràng ở góc trên.
+Annotation (chú thích) đánh số tương ứng với bảng mô tả hành vi bên cạnh hoặc bên dưới wireframe — không viết chú thích tự do không có số thứ tự.
+Phải thể hiện đủ các trạng thái quan trọng của màn hình: Default, Empty State, Loading, Error/Validation, Success.
+Luồng chuyển màn hình (navigation flow) thể hiện bằng mũi tên có nhãn hành động kích hoạt (vd: Click 'Lưu' → SCR-CRM-002).
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Wireframe không thay thế Use Case — wireframe trả lời câu hỏi 'trông như thế nào', Use Case trả lời 'làm gì và khi nào'; hai tài liệu phải tham chiếu chéo lẫn nhau qua Use Case ID.
+Luôn yêu cầu thiết kế Error/Validation State ngay từ wireframe đầu tiên — đây là phần dễ bị bỏ qua nhất và gây phát sinh nhiều vòng review nhất với Dev/UI.
+3.7. User Story & Acceptance Criteria (Gherkin)
+3.7.1. Định dạng User Story
+Mẫu chuẩn: 'Là [vai trò], tôi muốn [mục tiêu] để [lợi ích/giá trị nghiệp vụ]'.
+Mỗi User Story gắn với đúng 1 mã US-xxx và liên kết tới FR/Use Case gốc.
+Áp dụng MoSCoW (Must/Should/Could/Won't) để xác định độ ưu tiên.
+3.7.2. Acceptance Criteria — định dạng Gherkin bắt buộc
+Ví dụ minh họa — User Story: 'Là Asset Manager, tôi muốn cập nhật trạng thái tài sản để phản ánh đúng tình trạng vận hành thực tế.'
+Kịch bản chính — Cập nhật trạng thái thành công
+Given tài sản đang ở trạng thái ACTIVE và người dùng có quyền Asset Manager
+When người dùng chọn trạng thái mới là 'IN REPAIR' và nhấn Lưu
+Then hệ thống cập nhật trạng thái tài sản, ghi log lịch sử thay đổi và hiển thị thông báo thành công
+Kịch bản ngoại lệ — Không có quyền chỉnh sửa
+Given người dùng đăng nhập với vai trò Field Technician (không có quyền đổi trạng thái)
+When người dùng cố gắng đổi trạng thái tài sản
+Then hệ thống từ chối thao tác và hiển thị thông báo 'Bạn không có quyền thực hiện hành động này'
+Kịch bản ngoại lệ — Trạng thái chuyển đổi không hợp lệ
+Given tài sản đang ở trạng thái DISPOSED
+When người dùng cố gắng chuyển trạng thái về ACTIVE
+Then hệ thống chặn thao tác vì vi phạm Business Rule về vòng đời tài sản (Asset Lifecycle) và hiển thị lỗi tương ứng
+3.7.3. Yêu cầu bắt buộc khi viết Acceptance Criteria
+Tối thiểu 1 kịch bản chính (happy path) + đầy đủ các Edge Case/Exception Flow liên quan đã liệt kê ở Use Case tương ứng.
+Mỗi AC phải TESTABLE — ánh xạ trực tiếp được sang ít nhất 1 Test Case.
+Không gộp nhiều điều kiện không liên quan vào một kịch bản Gherkin duy nhất — mỗi kịch bản chỉ kiểm chứng một hành vi.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Trong dự án Maximo AMS, Acceptance Criteria nên trích dẫn trực tiếp Maximo Status Values (vd: ACTIVE, INACTIVE, DECOMMISSIONED) thay vì diễn giải tự do, để Dev đối chiếu chính xác với object model gốc.
+Nếu một User Story cần hơn 5 kịch bản Gherkin mới mô tả đủ hành vi, đó là dấu hiệu Story đang quá lớn (chưa đạt chuẩn INVEST) — nên tách nhỏ trước khi đưa vào sprint.
+3.8. Requirement List / Functional Requirement Document
+Mỗi Functional Requirement nên được lưu trữ theo cấu trúc JSON/bảng chuẩn hóa sau (kế thừa AMS AI Prompt Playbook):
+Trường
+Mô tả
+req_id
+Mã FR theo chuẩn Mục 2.2
+module
+Tên phân hệ (vd: Asset Management, Work Order)
+feature
+Tên tính năng cụ thể
+title
+Tiêu đề ngắn gọn
+description_vn / description_en
+Mô tả song ngữ
+user_story
+User Story liên kết (mã US-xxx)
+priority
+MoSCoW: Must / Should / Could / Won't
+complexity
+Low / Medium / High
+business_rule_refs
+Danh sách mã BR-xxx liên quan
+acceptance_criteria
+Danh sách kịch bản Gherkin (Given-When-Then)
+status
+Draft / In Review / Approved / Implemented
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Luôn duy trì một Traceability Matrix riêng (FR ↔ Use Case ↔ User Story ↔ Test Case) — đây là tài liệu sống còn khi audit hoặc khi có thay đổi phạm vi (scope change) giữa các phiên bản.
+4. Quy Ước Đặt Tên & Ký Hiệu Chung
+Hạng mục
+Quy ước
+Tên file tài liệu
+[Hệ thống]_[Loại tài liệu]_[Mô tả ngắn]_v[Version].[ext], vd: PE_Ecosystem_Tài liệu hướng dẫn triển khai_v1.1.docx
+Tên phiên bản
+Major.Minor (vd: v1.0, v1.1, v2.0) — Major tăng khi thay đổi kiến trúc/breaking change
+Tên Actor
+Danh từ vai trò, viết hoa chữ cái đầu (vd: Asset Manager, Field Technician)
+Tên trạng thái (Status)
+UPPER_CASE không dấu nếu theo chuẩn hệ thống đích (vd: ACTIVE, IN_PROGRESS)
+Màu sắc nhấn dùng chung
+#6094DB (hành động người dùng), trắng + viền đen (hệ thống), tuyệt đối không dùng màu tùy ý ngoài bảng quy định
+5. Checklist Nghiệm Thu Tài Liệu (Document QA Checklist)
+Áp dụng trước khi chuyển tài liệu sang trạng thái 'Approved' hoặc bàn giao cho Dev/QA.
+5.1. Checklist chung (mọi loại tài liệu)
+☐ Có Document Control Table và Version đầy đủ.
+☐ Mọi ID (FR/UC/US/BR) tuân thủ chuẩn đặt mã Mục 2.2, không trùng lặp.
+☐ Không còn [ASSUMPTION] hoặc [OPEN QUESTION] chưa được xử lý.
+☐ Đã rà soát chính tả và thuật ngữ nghiệp vụ nhất quán xuyên suốt tài liệu.
+5.2. Checklist riêng theo loại tài liệu
+Loại tài liệu
+Điểm kiểm tra bắt buộc
+Activity Diagram
+Đúng màu đen/trắng; ≤20 activity; không có đường giao cắt; swimlane đúng vai trò
+Use Case
+Đủ Main/Alternative/Exception Flow; có Pre/Postcondition; liên kết Business Rule
+BPMN
+Pool/Lane đúng tổ chức; Gateway có nhãn điều kiện; Message Flow chỉ giữa các Pool
+Sequence Diagram
+Activation bar đúng phạm vi xử lý; có combined fragment cho rẽ nhánh/lặp
+ERD/Data Model
+Đạt 3NF (hoặc có lý do denormalize); cardinality + optionality đầy đủ
+Wireframe
+Có đủ 5 trạng thái màn hình; annotation đánh số khớp bảng mô tả
+User Story & AC
+Đạt chuẩn INVEST; AC viết Gherkin; có cả happy path và exception
+6. Áp Dụng Theo Dự Án Cụ Thể
+6.1. PE Ecosystem
+Kiến trúc microservices đa phân hệ (Platform Hub, Web App, CRM System, AI Analytics Dashboard, AI Shopping Platform, AI Lead Service) — bắt buộc dùng Sequence Diagram cho mọi luồng liên service.
+Tài liệu triển khai (deployment guide) tuân theo cấu trúc đã có: Tổng quan hệ thống → Bản đồ Port Dịch vụ → Prerequisites → Installation → Vận hành → Chi phí.
+Khi thêm phân hệ mới (như CRM System ở v1.1), bắt buộc cập nhật đồng thời: Bản đồ Port, cấu trúc thư mục gốc, và bước cài đặt tương ứng.
+6.2. IBM Maximo (Asset Management System)
+Áp dụng nguyên trạng cấu trúc AMS AI Prompt Playbook: System Prompt Master, Quy trình 3 Tầng (Scaffold → Review → Enrich).
+Mọi Requirement bắt buộc tham chiếu đúng Maximo Object/Field gốc (ASSET, WORKORDER, ASSETNUM, SITEID…), không tự sáng tạo tên trường.
+Acceptance Criteria phải đối chiếu đúng Maximo Status Values theo từng object (vd: WO: WAPPR, INPRG, COMP).
+6.3. MES (Manufacturing Execution System)
+Ưu tiên BPMN cho quy trình sản xuất xuyên phòng ban/trạm máy; Activity Diagram chỉ dùng cho thao tác nội bộ một trạm.
+Data Model cần đặc tả rõ tần suất ghi nhận dữ liệu (real-time/batch) và đơn vị đo lường — sai sót đơn vị đo là rủi ro phổ biến nhất trong tài liệu MES.
+6.4. CRM System
+Use Case và User Story là tài liệu trung tâm; Wireframe bắt buộc cho mọi màn hình quản lý khách hàng/đơn hàng/báo giá.
+Business Rule về bảo mật API và phân quyền dữ liệu khách hàng phải được đặc tả riêng, không gộp chung vào FR chức năng.
+🎯 Lưu ý chuyên gia (Senior BA Note)
+Khi một dự án dùng nhiều loại tài liệu cùng lúc (vd: AMS dùng cả BPMN + ERD + User Story), luôn xây dựng Traceability Matrix liên-loại-tài-liệu ngay từ đầu, tránh tình trạng tài liệu rời rạc không thể audit về sau.
+Định kỳ (theo sprint hoặc theo release) rà soát lại toàn bộ tài liệu so với checklist Mục 5 — quy tắc chỉ phát huy hiệu quả nếu được enforce định kỳ, không phải chỉ áp dụng một lần khi khởi tạo.
+7. Phụ Lục
+7.1. Bảng tổng hợp 'Tài liệu nào dùng khi nào'
+Mục đích
+Tài liệu/Diagram khuyến nghị
+Mô tả thao tác chi tiết trong 1 hệ thống
+Activity Diagram
+Mô tả hành vi người dùng & hệ thống ở mức chức năng
+Use Case + Đặc tả
+Mô tả quy trình xuyên hệ thống/phòng ban
+BPMN 2.0
+Mô tả tương tác kỹ thuật giữa các service/API
+Sequence Diagram
+Mô tả cấu trúc dữ liệu & quan hệ
+ERD / Data Model
+Mô tả giao diện & trải nghiệm người dùng
+Wireframe
+Đặc tả chi tiết để Dev triển khai & QA kiểm thử
+User Story + Acceptance Criteria (Gherkin)
+7.2. Tài liệu tham chiếu nguồn
+Activity_Diagram_Generation_Rules_Enterprise.docx
+AMS_AI_Prompt_Playbook_v1.0.docx
+PE_Ecosystem_Tài liệu hướng dẫn triển khai, cấu hình lắp đặt và chi phí vận hành_v1.1.docx

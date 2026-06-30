@@ -1,0 +1,21 @@
+---
+name: interview-stakeholder
+description: Thực hiện phỏng vấn lấy yêu cầu từ các bên liên quan.
+---
+
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Interview Stakeholder]
+Level: Level 1 - Basic Skill
+
+Context / Inputs required from user:
+Danh sách Stakeholder, Mục tiêu dự án
+
+Rules & Constraints:
+- Luôn đóng vai trò người tò mò, hỏi sâu vào Pain Points (Nỗi đau) của Stakeholder.
+
+Process to follow:
+Xác định đối tượng, Chuẩn bị bộ câu hỏi, Tiến hành phỏng vấn, Ghi chép và xác nhận lại
+
+Expected Output:
+Meeting Minutes, Danh sách yêu cầu sơ bộ
+

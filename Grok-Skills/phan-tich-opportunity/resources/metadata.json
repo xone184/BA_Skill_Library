@@ -1,0 +1,68 @@
+{
+    "name": "Phân tích Opportunity",
+    "category": "01-Business-Domain/CRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện luồng cơ hội bán hàng (Opportunity/Deal) từ khi Lead chuyển đổi đến khi ký hợp đồng hoặc mất cơ hội, bao gồm các giai đoạn (Stages), tỷ lệ thắng (Win Probability), dự báo doanh thu (Revenue Forecasting) và quy trình phê duyệt báo giá.",
+    "tags": [
+        "CRM",
+        "Sales",
+        "Pipeline",
+        "Forecasting"
+    ],
+    "domain": "CRM",
+    "sub_skills": [
+        "Thiết kế Sales Pipeline",
+        "Thiết kế Quotation Approval",
+        "Thiết kế Revenue Forecasting",
+        "Phân tích Lost Reason"
+    ],
+    "related_skills": [
+        "Phân tích Lead Management",
+        "Thiết kế API Contract",
+        "Write BRD"
+    ],
+    "inputs": [
+        {
+            "name": "Giai đoạn bán hàng (Sales Stages)",
+            "description": "Các bước trong quy trình bán hàng từ lúc có cơ hội đến khi chốt.",
+            "required": true,
+            "example": "Qualification → Needs Analysis → Proposal → Negotiation → Closed Won/Lost"
+        },
+        {
+            "name": "Sản phẩm/Dịch vụ",
+            "description": "Danh mục sản phẩm bán kèm giá.",
+            "required": true,
+            "example": "Phần mềm ERP = 500tr, Module WMS = 200tr, Tùy chỉnh = 100tr/ngày"
+        },
+        {
+            "name": "Ma trận phê duyệt chiết khấu",
+            "description": "Ai được duyệt chiết khấu bao nhiêu %.",
+            "required": false,
+            "example": "Sales: ≤5%, Manager: ≤15%, Director: ≤30%"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Sales Pipeline Design",
+            "format": "Markdown Table + BPMN"
+        },
+        {
+            "name": "Cấu trúc dữ liệu Opportunity",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-CRM-OPP-01: Opportunity bắt buộc phải liên kết với Account.",
+        "BR-CRM-OPP-02: Khi chuyển sang Closed Lost, phải nhập Lost Reason.",
+        "BR-CRM-OPP-03: Chiết khấu > 5% phải qua Manager duyệt, > 15% phải qua Director.",
+        "BR-CRM-OPP-04: Close Date không được là ngày trong quá khứ.",
+        "BR-CRM-OPP-05: Probability % tự động theo Stage nhưng Sales có thể override."
+    ],
+    "quality_criteria": [
+        "Sales Pipeline phải có 5-8 Stages",
+        "Mỗi Stage phải có Entry Criteria",
+        "Phải có Lost Reason bắt buộc",
+        "Phải có Forecasting logic"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

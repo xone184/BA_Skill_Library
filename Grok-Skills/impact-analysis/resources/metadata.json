@@ -1,0 +1,13 @@
+{
+    "name": "Impact Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích tác động khi có thay đổi yêu cầu (Change Request).",
+    "inputs": [
+        "Yêu cầu thay đổi (CR)",
+        "Hệ thống hiện tại"
+    ],
+    "outputs": [
+        "Báo cáo đánh giá tác động"
+    ]
+}

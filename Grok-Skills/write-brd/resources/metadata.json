@@ -1,0 +1,55 @@
+{
+    "name": "Write BRD",
+    "category": "02-Requirement/BRD",
+    "level": "Level 1 - Basic Skill",
+    "description": "Soạn thảo Business Requirement Document (BRD) chuẩn mực, tập trung mô tả 'CÁI GÌ' (What) doanh nghiệp cần và 'TẠI SAO' (Why), KHÔNG đi vào chi tiết kỹ thuật 'NHƯ THẾ NÀO' (How).",
+    "tags": [
+        "Requirement",
+        "BRD",
+        "Document",
+        "Scope"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "Phỏng vấn Stakeholder",
+        "Xác định Scope",
+        "Priority Assignment (MoSCoW)"
+    ],
+    "related_skills": [
+        "Write SRS",
+        "Write User Story",
+        "Interview Stakeholder"
+    ],
+    "inputs": [
+        {
+            "name": "Yêu cầu nghiệp vụ tổng thể",
+            "description": "Mô tả vấn đề kinh doanh cần giải quyết.",
+            "required": true,
+            "example": "Công ty muốn quản lý kho bằng phần mềm thay vì Excel."
+        },
+        {
+            "name": "Phạm vi dự án (Scope)",
+            "description": "Danh sách module/chức năng thuộc phạm vi.",
+            "required": true,
+            "example": "In-scope: Nhập kho, Xuất kho, Kiểm kê. Out-of-scope: Vận chuyển, CRM."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Tài liệu BRD",
+            "format": "Markdown Document"
+        }
+    ],
+    "business_rules": [
+        "BR-DOC-01: BRD chỉ mô tả WHAT và WHY, KHÔNG mô tả HOW.",
+        "BR-DOC-02: Mỗi Business Requirement phải có ID duy nhất để truy vết.",
+        "BR-DOC-03: Out-of-scope phải liệt kê rõ ràng để tránh Scope Creep.",
+        "BR-DOC-04: BRD phải có ít nhất 1 lần Review trước khi Approve."
+    ],
+    "quality_criteria": [
+        "Phải có Scope rõ ràng",
+        "Phải có Requirement IDs",
+        "Không chứa Technical Solution"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

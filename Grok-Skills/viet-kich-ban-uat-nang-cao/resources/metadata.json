@@ -1,0 +1,14 @@
+{
+    "name": "Viết kịch bản UAT nâng cao",
+    "category": "06-Testing/Acceptance",
+    "level": "Level 2 - Business Skill",
+    "description": "Xây dựng tài liệu hướng dẫn khách hàng ký nghiệm thu (Sign-off).",
+    "inputs": [
+        "UAT Script đã review",
+        "Tiêu chí nghiệm thu"
+    ],
+    "outputs": [
+        "Tài liệu UAT Sign-off form",
+        "Hướng dẫn ghi nhận lỗi (Bug tracking)"
+    ]
+}

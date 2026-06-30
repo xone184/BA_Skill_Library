@@ -1,0 +1,51 @@
+{
+    "name": "Phân tích Replenishment",
+    "category": "01-Business-Domain/WMS",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích quy trình bổ sung hàng tự động từ khu vực dự trữ (Reserve) sang khu vực nhặt hàng (Picking), và từ NCC vào kho khi tồn kho chạm mức tối thiểu.",
+    "tags": [
+        "WMS",
+        "Replenishment",
+        "Min-Max",
+        "Safety Stock"
+    ],
+    "domain": "WMS",
+    "sub_skills": [
+        "Thiết kế Min-Max Rules",
+        "Thiết kế Safety Stock Calculation"
+    ],
+    "related_skills": [
+        "Phân tích Inventory Management",
+        "Phân tích Outbound Flow"
+    ],
+    "inputs": [
+        {
+            "name": "Reorder Point / Min Level",
+            "description": "Ngưỡng tồn kho tại vị trí Picking để trigger bổ sung.",
+            "required": true,
+            "example": "SKU-A01 tại Zone A: Min = 20 thùng. Khi tồn Picking < 20 → Trigger Replenishment."
+        },
+        {
+            "name": "Safety Stock",
+            "description": "Lượng tồn kho an toàn để phòng biến động.",
+            "required": true,
+            "example": "Safety Stock = 50 thùng (Dựa trên Lead time NCC là 3 ngày và nhu cầu trung bình 15 thùng/ngày)"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Replenishment Rules",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-WMS-REP-01: Replenishment phải hoàn thành trước khi hết hàng tại Picking (Prevent stockout).",
+        "BR-WMS-REP-02: Ưu tiên Replenish SKU đang có SO chờ trước.",
+        "BR-WMS-REP-03: Không Replenish quá Max Level."
+    ],
+    "quality_criteria": [
+        "Phải có Min/Max logic",
+        "Phải có Safety Stock formula"
+    ],
+    "estimated_effort": "2-3 ngày"
+}

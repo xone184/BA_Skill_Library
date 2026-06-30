@@ -1,0 +1,47 @@
+{
+    "name": "Phân tích Mobile App",
+    "category": "04-UIUX/Platform",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích và đặc tả các yêu cầu riêng biệt khi xây dựng ứng dụng di động (Mobile App) hoặc ứng dụng trên Máy tính bảng Công nghiệp (Rugged Tablet) dùng trực tiếp tại hiện trường (Shopfloor, Warehouse).",
+    "tags": [
+        "UIUX",
+        "Mobile",
+        "Tablet",
+        "Shopfloor",
+        "MES",
+        "Hardware"
+    ],
+    "domain": "UIUX",
+    "sub_skills": [
+        "Offline Capability Design",
+        "Hardware Interaction Design",
+        "Shopfloor UX"
+    ],
+    "related_skills": [
+        "Thiết kế Role-based UI",
+        "Activity Diagram"
+    ],
+    "inputs": [
+        {
+            "name": "Mục đích App",
+            "description": "App này dùng để làm gì?",
+            "required": true,
+            "example": "App cài trên Tablet tại máy CNC để công nhân nhận lệnh sản xuất."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Mobile/Tablet App Specification",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-MOB-01: Số lần chạm (Tap) để hoàn thành một tác vụ lặp lại hàng ngày không được vượt quá 3 lần.",
+        "BR-MOB-02: Dữ liệu thao tác tại hiện trường không bao giờ được phép mất (Bắt buộc thiết kế Offline Queue)."
+    ],
+    "quality_criteria": [
+        "Tối ưu thao tác vật lý",
+        "Có phương án Offline/Mất mạng"
+    ],
+    "estimated_effort": "1-2 ngày"
+}

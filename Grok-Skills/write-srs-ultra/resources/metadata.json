@@ -1,0 +1,54 @@
+{
+    "name": "Write SRS (Ultra)",
+    "category": "02-Requirement/SRS",
+    "level": "Level 1 - Basic Skill",
+    "description": "Soạn thảo SRS phiên bản siêu chi tiết. Cung cấp bộ công cụ mạnh mẽ để AI có thể làm Micro-tasking (Ví dụ: Chỉ sinh ra bộ Non-Functional Requirements theo chuẩn FURPS+, hoặc chỉ thiết kế Traceability Matrix) thay vì sinh ra 1 tài liệu quá dài.",
+    "tags": [
+        "Requirement",
+        "SRS",
+        "FURPS+",
+        "Micro-tasking",
+        "Functional",
+        "Non-Functional"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "FURPS+ NFR Design",
+        "Traceability Mapping",
+        "Micro-tasking Document Section"
+    ],
+    "related_skills": [
+        "Phân tích Use Case",
+        "Thiết kế API Contract"
+    ],
+    "inputs": [
+        {
+            "name": "Tính năng / Module",
+            "description": "Phạm vi cần viết SRS.",
+            "required": true,
+            "example": "Module Quản lý Tồn kho."
+        },
+        {
+            "name": "Lệnh Micro-tasking (Tùy chọn)",
+            "description": "Lệnh yêu cầu AI chỉ viết 1 phần của SRS.",
+            "required": false,
+            "example": "Chỉ liệt kê NFR theo mô hình FURPS+ cho module này."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "FURPS+ NFR Report (Dành cho Micro-tasking)",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-SRS-U1: NFR PHẢI có phương pháp đo lường (Measurable). Không dùng từ 'Nhanh', 'Bảo mật cao'.",
+        "BR-SRS-U2: Nếu có lệnh Micro-tasking, AI PHẢI loại bỏ các phần không liên quan để tránh loãng thông tin."
+    ],
+    "quality_criteria": [
+        "FURPS+ Coverage",
+        "Định lượng Measurable",
+        "Đáp ứng chính xác Micro-task"
+    ],
+    "estimated_effort": "0.5-2 ngày"
+}

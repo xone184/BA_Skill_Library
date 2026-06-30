@@ -1,0 +1,59 @@
+{
+    "name": "Thiết kế Notification",
+    "category": "04-UIUX/Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Thiết kế nội dung, điều kiện kích hoạt (Trigger), đối tượng nhận và cấu trúc cho các mẫu thông báo đa kênh (Email, SMS, Push Notification, In-app).",
+    "tags": [
+        "UIUX",
+        "Notification",
+        "Email",
+        "SMS",
+        "Push"
+    ],
+    "domain": "UIUX",
+    "sub_skills": [
+        "UX Copywriting",
+        "Variable Mapping",
+        "Channel Selection"
+    ],
+    "related_skills": [
+        "Phân tích CRUD",
+        "Write SRS"
+    ],
+    "inputs": [
+        {
+            "name": "Sự kiện (Event)",
+            "description": "Hành động kích hoạt thông báo.",
+            "required": true,
+            "example": "Sự kiện: Khách hàng đặt hàng thành công."
+        },
+        {
+            "name": "Loại thông báo",
+            "description": "Kênh gửi.",
+            "required": true,
+            "example": "Email (gửi khách hàng), In-app (gửi Admin)."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Notification Matrix",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Email Template Detail",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-NTF-01: Mọi Email thông báo phải có link Unsubscribe (nếu là Marketing).",
+        "BR-NTF-02: Thông báo OTP phải có thời gian hết hạn rõ ràng.",
+        "BR-NTF-03: Nội dung In-app / Push không dài quá 100 ký tự.",
+        "BR-NTF-04: Phải cá nhân hóa lời chào (Chèn Tên)."
+    ],
+    "quality_criteria": [
+        "Đủ 5 phần của Template",
+        "Có Variable",
+        "Có Trigger rõ ràng"
+    ],
+    "estimated_effort": "0.5 ngày"
+}

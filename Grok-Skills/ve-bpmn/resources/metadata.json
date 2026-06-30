@@ -1,0 +1,53 @@
+{
+    "name": "Vẽ BPMN",
+    "category": "03-Modeling/BPMN",
+    "level": "Level 2 - Business Skill",
+    "description": "Mô hình hóa quy trình nghiệp vụ bằng chuẩn BPMN (Business Process Model and Notation) 2.0. Sử dụng Swimlanes để phân định rõ trách nhiệm của từng vai trò (Role/Department) và các Gateways để xử lý logic rẽ nhánh.",
+    "tags": [
+        "Modeling",
+        "BPMN",
+        "Process",
+        "Flowchart",
+        "Workflow"
+    ],
+    "domain": "Modeling",
+    "sub_skills": [
+        "Gateway Logic",
+        "Swimlane Design",
+        "Sub-process Identification"
+    ],
+    "related_skills": [
+        "Phân tích Use Case",
+        "Gap Analysis"
+    ],
+    "inputs": [
+        {
+            "name": "Mô tả quy trình",
+            "description": "Text mô tả các bước thực hiện công việc.",
+            "required": true,
+            "example": "Nhân viên kho nhận hàng. Kế toán kiểm tra hóa đơn. Nếu khớp thì thủ kho cất hàng, nếu không khớp thì trả lại NCC."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "BPMN Code (Mermaid)",
+            "format": "Mermaid stateDiagram hoặc flowchart"
+        },
+        {
+            "name": "Mô tả Text của Quy trình",
+            "format": "Markdown List"
+        }
+    ],
+    "business_rules": [
+        "BR-BPMN-01: Mọi quy trình đều phải có Start Event và End Event.",
+        "BR-BPMN-02: Tên Task phải bắt đầu bằng động từ.",
+        "BR-BPMN-03: Không để đường cụt (Dead-end) trong quy trình, mọi nhánh rẽ phải dẫn đến kết quả cuối.",
+        "BR-BPMN-04: Gateway dùng để kiểm tra điều kiện, không phải để thực hiện công việc (VD: Nút kim cương chứa 'Tổng > 100?' thay vì 'Kiểm tra tổng')."
+    ],
+    "quality_criteria": [
+        "Không có đường cụt",
+        "Tên task là Action",
+        "Phân định rõ Role (Swimlane)"
+    ],
+    "estimated_effort": "0.5-1 ngày"
+}

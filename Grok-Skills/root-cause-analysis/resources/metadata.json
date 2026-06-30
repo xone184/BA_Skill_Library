@@ -1,0 +1,56 @@
+{
+    "name": "Root Cause Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích nguyên nhân gốc rễ của một vấn đề kinh doanh hoặc lỗi hệ thống bằng các kỹ thuật chuyên nghiệp (5 Whys, Fishbone Diagram) để đề xuất giải pháp triệt để thay vì chỉ xử lý triệu chứng.",
+    "tags": [
+        "Thinking",
+        "RCA",
+        "5 Whys",
+        "Fishbone",
+        "Problem Solving"
+    ],
+    "domain": "Thinking",
+    "sub_skills": [
+        "5 Whys Technique",
+        "Fishbone Diagram",
+        "Corrective/Preventive Action"
+    ],
+    "related_skills": [
+        "Gap Analysis",
+        "Impact Analysis",
+        "Risk Analysis",
+        "Phân tích OEE"
+    ],
+    "inputs": [
+        {
+            "name": "Problem Statement",
+            "description": "Mô tả vấn đề cụ thể, đo lường được.",
+            "required": true,
+            "example": "Tỷ lệ hàng giao sai cho khách hàng tăng từ 1% lên 5% trong 3 tháng gần đây."
+        },
+        {
+            "name": "Dữ liệu liên quan",
+            "description": "Số liệu, log, báo cáo để phân tích.",
+            "required": false,
+            "example": "Log đơn hàng bị trả lại, Danh sách ca làm việc, Tỷ lệ lỗi theo sản phẩm"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "RCA Report",
+            "format": "Markdown Document"
+        }
+    ],
+    "business_rules": [
+        "BR-RCA-01: Phải hỏi ít nhất 5 lần TẠI SAO.",
+        "BR-RCA-02: Root Cause phải là nguyên nhân có thể hành động được (Actionable).",
+        "BR-RCA-03: Giải pháp phải bao gồm cả Corrective (Sửa ngay) và Preventive (Ngăn tái diễn)."
+    ],
+    "quality_criteria": [
+        "Phải có 5 Whys",
+        "Phải có Fishbone 6M",
+        "Phải có Action Plan với Owner"
+    ],
+    "estimated_effort": "1-3 ngày"
+}

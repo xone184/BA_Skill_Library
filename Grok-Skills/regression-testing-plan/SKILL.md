@@ -1,0 +1,21 @@
+---
+name: regression-testing-plan
+description: Lập kế hoạch kiểm thử hồi quy khi có tính năng mới.
+---
+
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Regression Testing Plan]
+Level: Level 2 - Business Skill
+
+Context / Inputs required from user:
+Danh sách tính năng mới, Impact Analysis Report
+
+Rules & Constraints:
+- Kiểm thử hồi quy phải bao phủ 100% các tính năng P1 (Critical) của hệ thống.
+
+Process to follow:
+Xác định vùng ảnh hưởng, Chọn lọc Test Case cũ cần chạy lại, Bổ sung Test Case mới, Thực thi và báo cáo
+
+Expected Output:
+Bộ Regression Test Suite, Quy trình Automation Test
+

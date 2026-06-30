@@ -1,0 +1,14 @@
+{
+    "name": "Regression Testing Plan",
+    "category": "06-Testing/Regression",
+    "level": "Level 2 - Business Skill",
+    "description": "Lập kế hoạch kiểm thử hồi quy khi có tính năng mới.",
+    "inputs": [
+        "Danh sách tính năng mới",
+        "Impact Analysis Report"
+    ],
+    "outputs": [
+        "Bộ Regression Test Suite",
+        "Quy trình Automation Test"
+    ]
+}

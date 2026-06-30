@@ -1,0 +1,55 @@
+{
+    "name": "Gap Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích khoảng cách giữa trạng thái hiện tại (As-Is) và trạng thái mong muốn (To-Be), sau đó đề xuất kế hoạch hành động (Action Plan) để thu hẹp khoảng cách, phân theo 3 nhóm: Business Process, Technology/System, và People/Organization.",
+    "tags": [
+        "Thinking",
+        "Analysis",
+        "Gap",
+        "As-Is",
+        "To-Be"
+    ],
+    "domain": "Thinking",
+    "sub_skills": [
+        "As-Is Process Mapping",
+        "To-Be Vision Design",
+        "Action Plan Creation"
+    ],
+    "related_skills": [
+        "Root Cause Analysis",
+        "Impact Analysis",
+        "Risk Analysis"
+    ],
+    "inputs": [
+        {
+            "name": "Mô tả trạng thái hiện tại (As-Is)",
+            "description": "Quy trình, hệ thống, con người hiện tại đang hoạt động ra sao.",
+            "required": true,
+            "example": "Hiện tại: Kho quản lý bằng Excel, kiểm kê thủ công, không có barcode, mỗi lần kiểm kê mất 2 ngày."
+        },
+        {
+            "name": "Mục tiêu mong muốn (To-Be)",
+            "description": "Trạng thái lý tưởng sau khi cải thiện.",
+            "required": true,
+            "example": "Mong muốn: Hệ thống WMS quét barcode, kiểm kê Cycle Count hàng ngày, sai lệch tồn kho < 1%."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Gap Analysis Report",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-GAP-01: Gap phải được chia thành 3 nhóm: Process, System, People.",
+        "BR-GAP-02: Mỗi Gap phải có Action Item cụ thể.",
+        "BR-GAP-03: Action Plan phải có Owner và Timeline."
+    ],
+    "quality_criteria": [
+        "Phải chia Gap thành 3 nhóm",
+        "Phải có Action Plan",
+        "Action Plan phải có Owner"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

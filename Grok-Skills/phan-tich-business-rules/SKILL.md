@@ -1,0 +1,21 @@
+---
+name: phan-tich-business-rules
+description: Trích xuất và chuẩn hóa các quy tắc nghiệp vụ rải rác.
+---
+
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Phân tích Business Rules]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Quy trình nghiệp vụ, Chính sách công ty
+
+Rules & Constraints:
+- Tuyệt đối không nhúng Business Rule vào trong UI, phải quản lý tập trung ở Backend hoặc Rule Engine.
+
+Process to follow:
+Đọc tài liệu nghiệp vụ, Trích xuất các câu điều kiện (If-Then), Tổ chức thành Decision Table hoặc Decision Tree, Gán ID cho từng rule để trace
+
+Expected Output:
+Bảng Business Rules Catalog, Decision Table (Bảng quyết định)
+

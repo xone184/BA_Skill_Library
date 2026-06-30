@@ -1,0 +1,58 @@
+{
+    "name": "Phân tích Return Management",
+    "category": "01-Business-Domain/WMS",
+    "level": "Level 2 - Business Skill",
+    "description": "Quản lý toàn diện luồng hàng hoàn trả (RMA) từ khách hàng, bao gồm tiếp nhận yêu cầu, nhận hàng trả về, kiểm tra chất lượng (QC), phân loại xử lý (Tái nhập kho, Sửa chữa, Tiêu hủy) và hoàn tiền/đổi hàng.",
+    "tags": [
+        "WMS",
+        "Return",
+        "RMA",
+        "Reverse Logistics"
+    ],
+    "domain": "WMS",
+    "sub_skills": [
+        "Thiết kế RMA Workflow",
+        "Thiết kế QC Return Grading",
+        "Thiết kế Supplier Claim"
+    ],
+    "related_skills": [
+        "Phân tích Inbound Flow",
+        "Phân tích Quality Control"
+    ],
+    "inputs": [
+        {
+            "name": "Đơn yêu cầu hoàn trả (RMA Request)",
+            "description": "Thông tin đơn hàng gốc, lý do trả, số lượng trả.",
+            "required": true,
+            "example": "RMA-001: Trả 5 thùng Sữa TH từ SO-500, lý do: Hàng bị hư hỏng trong vận chuyển."
+        },
+        {
+            "name": "Chính sách đổi trả (Return Policy)",
+            "description": "Điều kiện được trả, thời hạn, ai chịu phí ship.",
+            "required": true,
+            "example": "Được trả trong 7 ngày, hàng còn nguyên seal. Hàng khuyến mãi không được trả."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình Return (BPMN)",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Ma trận phân loại hàng trả",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-WMS-RET-01: Chỉ nhận hàng trả có RMA Number hợp lệ.",
+        "BR-WMS-RET-02: Hàng trả về phải qua QC trước khi tái nhập kho.",
+        "BR-WMS-RET-03: Hàng Grade C phải có biên bản tiêu hủy có chữ ký Quản lý.",
+        "BR-WMS-RET-04: Hoàn tiền chỉ được xử lý sau khi QC hoàn tất."
+    ],
+    "quality_criteria": [
+        "Phải có RMA workflow",
+        "Phải có QC Grading",
+        "Phải xử lý hoàn tiền"
+    ],
+    "estimated_effort": "3-4 ngày"
+}

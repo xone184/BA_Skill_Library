@@ -1,0 +1,74 @@
+{
+    "name": "Phân tích Inbound Flow",
+    "category": "01-Business-Domain/WMS",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình nhập kho hàng hóa, từ lúc nhận thông báo giao hàng (ASN) đến khi hàng được cất lên kệ (Putaway), bao gồm kiểm tra chất lượng đầu vào, xử lý chênh lệch so với PO, in mã vạch/QR code và chiến lược Putaway tự động.",
+    "tags": [
+        "WMS",
+        "Inbound",
+        "Receiving",
+        "Putaway",
+        "GRN"
+    ],
+    "domain": "WMS",
+    "sub_skills": [
+        "Thiết kế Dock Scheduling",
+        "Thiết kế QC Inbound",
+        "Thiết kế Putaway Strategy",
+        "Thiết kế Barcode/Label"
+    ],
+    "related_skills": [
+        "Phân tích Outbound Flow",
+        "Phân tích Inventory Management",
+        "Phân tích Procurement"
+    ],
+    "inputs": [
+        {
+            "name": "Purchase Order (PO)",
+            "description": "Đơn đặt hàng từ module Mua hàng, chứa thông tin hàng cần nhận.",
+            "required": true,
+            "example": "PO-2024-001: 100 thùng Sữa TH True Milk, 50 thùng Nước ngọt Pepsi"
+        },
+        {
+            "name": "Advance Shipping Notice (ASN)",
+            "description": "Thông báo giao hàng trước từ nhà cung cấp.",
+            "required": false,
+            "example": "NCC ABC sẽ giao 100 thùng vào ngày 15/7, xe biển số 51C-12345"
+        },
+        {
+            "name": "Sơ đồ kho (Warehouse Layout)",
+            "description": "Bản đồ kho với các Zone, Aisle, Rack, Bin.",
+            "required": true,
+            "example": "Zone A: Hàng khô. Zone B: Hàng lạnh. Zone C: Hàng nguy hiểm."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình Nhập kho (BPMN)",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Cấu trúc dữ liệu GRN",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Ma trận Putaway Strategy",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-WMS-IN-01: Không được nhập hàng nếu không có PO hoặc ASN.",
+        "BR-WMS-IN-02: Hàng có HSD dưới 30% thời gian sử dụng → Từ chối nhận.",
+        "BR-WMS-IN-03: Chênh lệch số lượng > 5% phải có phê duyệt của Quản lý kho.",
+        "BR-WMS-IN-04: Mỗi Pallet/Thùng nhập kho phải có mã vạch trước khi Putaway.",
+        "BR-WMS-IN-05: Hàng nguy hiểm (Dangerous Goods) chỉ được cất ở Zone riêng.",
+        "BR-WMS-IN-06: Putaway phải hoàn thành trong vòng 4 giờ kể từ khi tạo GRN."
+    ],
+    "quality_criteria": [
+        "Phải có ít nhất 5 bước quy trình chi tiết",
+        "Phải có Putaway Strategy",
+        "Phải xử lý chênh lệch",
+        "Phải có QC Inbound"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

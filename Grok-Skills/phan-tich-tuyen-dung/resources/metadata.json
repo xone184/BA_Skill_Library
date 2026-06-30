@@ -1,0 +1,65 @@
+{
+    "name": "Phân tích Tuyển dụng",
+    "category": "01-Business-Domain/HRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình Applicant Tracking System (ATS), từ tạo yêu cầu tuyển dụng (Job Requisition) đến Onboarding nhân viên mới, bao gồm quản lý Pipeline ứng viên, đánh giá phỏng vấn, và Talent Pool.",
+    "tags": [
+        "HRM",
+        "Recruitment",
+        "ATS",
+        "Hiring"
+    ],
+    "domain": "HRM",
+    "sub_skills": [
+        "Thiết kế JD Template",
+        "Thiết kế Interview Scorecard",
+        "Thiết kế Talent Pool",
+        "Thiết kế Onboarding Checklist"
+    ],
+    "related_skills": [
+        "Phân tích KPI và Đánh giá",
+        "Phân tích Chấm công"
+    ],
+    "inputs": [
+        {
+            "name": "Yêu cầu tuyển dụng (Job Requisition)",
+            "description": "Phiếu đề xuất tuyển dụng từ trưởng phòng.",
+            "required": true,
+            "example": "Phòng IT đề xuất tuyển 2 Backend Developer, mức lương 20-30tr, kinh nghiệm 3 năm Java."
+        },
+        {
+            "name": "Kênh tuyển dụng",
+            "description": "Các kênh đăng tin tuyển dụng.",
+            "required": true,
+            "example": "VietnamWorks, LinkedIn, TopDev, Facebook Groups, Website công ty, Headhunter"
+        },
+        {
+            "name": "Quy trình phỏng vấn",
+            "description": "Các vòng phỏng vấn và tiêu chí.",
+            "required": true,
+            "example": "Vòng 1: HR screening (Phone). Vòng 2: Technical Test. Vòng 3: Interview with Manager. Vòng 4: Culture Fit with CEO."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Hiring Pipeline",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Interview Scorecard",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-HRM-REC-01: Mọi tuyển dụng phải có Job Requisition được duyệt.",
+        "BR-HRM-REC-02: Ứng viên bị Reject phải được giữ trong Talent Pool ít nhất 12 tháng.",
+        "BR-HRM-REC-03: Offer Letter phải được HR Director duyệt trước khi gửi.",
+        "BR-HRM-REC-04: Mỗi vòng phỏng vấn phải có Scorecard với tiêu chí rõ ràng."
+    ],
+    "quality_criteria": [
+        "Phải có Job Requisition workflow",
+        "Phải có Interview Scorecard",
+        "Phải có Talent Pool"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

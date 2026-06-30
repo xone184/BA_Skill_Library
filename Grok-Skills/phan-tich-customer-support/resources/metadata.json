@@ -1,0 +1,71 @@
+{
+    "name": "Phân tích Customer Support",
+    "category": "01-Business-Domain/CRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình tiếp nhận và xử lý yêu cầu hỗ trợ khách hàng (Ticket Management), bao gồm phân loại ticket, escalation tự động, theo dõi SLA, đo lường CSAT/NPS và thiết kế Knowledge Base.",
+    "tags": [
+        "CRM",
+        "Support",
+        "Ticket",
+        "SLA",
+        "Helpdesk"
+    ],
+    "domain": "CRM",
+    "sub_skills": [
+        "Thiết kế SLA Matrix",
+        "Thiết kế Escalation Rules",
+        "Thiết kế Knowledge Base",
+        "Thiết kế CSAT Survey"
+    ],
+    "related_skills": [
+        "Phân tích Lead Management",
+        "Phân tích Loyalty Program"
+    ],
+    "inputs": [
+        {
+            "name": "Kênh tiếp nhận (Support Channels)",
+            "description": "Tất cả các kênh mà khách hàng có thể gửi yêu cầu hỗ trợ.",
+            "required": true,
+            "example": "Email, Hotline, Live Chat, Facebook Messenger, Zalo, Cổng tự phục vụ (Portal)"
+        },
+        {
+            "name": "Hợp đồng SLA (Service Level Agreement)",
+            "description": "Cam kết thời gian phản hồi và xử lý cho từng loại yêu cầu.",
+            "required": true,
+            "example": "Critical: Phản hồi 1h / Giải quyết 4h. High: 4h / 8h. Medium: 8h / 24h. Low: 24h / 72h."
+        },
+        {
+            "name": "Cấu trúc đội hỗ trợ (Support Tiers)",
+            "description": "Phân cấp đội ngũ xử lý theo mức độ chuyên môn.",
+            "required": true,
+            "example": "Tier 1: Agent tổng đài (FAQ). Tier 2: Chuyên viên kỹ thuật. Tier 3: Dev/Vendor."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình quản lý Ticket (BPMN)",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Ma trận SLA",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Ma trận phân quyền (Tier Matrix)",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-SUP-01: Mọi yêu cầu từ khách hàng phải tạo Ticket, không xử lý ngoài hệ thống.",
+        "BR-SUP-02: Ticket Critical phải được phản hồi trong vòng 1 giờ làm việc.",
+        "BR-SUP-03: Ticket quá SLA phải tự động escalate và gửi cảnh báo.",
+        "BR-SUP-04: Không được phép đóng Ticket nếu chưa có phản hồi từ khách hàng.",
+        "BR-SUP-05: Mỗi Ticket đóng phải gửi khảo sát CSAT."
+    ],
+    "quality_criteria": [
+        "Phải có SLA Matrix rõ ràng",
+        "Phải có Escalation rules",
+        "Phải có CSAT measurement"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

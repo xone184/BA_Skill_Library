@@ -1,0 +1,54 @@
+{
+    "name": "Phân tích Cross Docking",
+    "category": "01-Business-Domain/WMS",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích quy trình hàng đến kho nhưng không lưu trữ mà chuyển thẳng ra cửa xuất (Cross-docking), nhằm giảm thời gian lưu kho và tăng tốc giao hàng.",
+    "tags": [
+        "WMS",
+        "Cross-docking",
+        "Transit"
+    ],
+    "domain": "WMS",
+    "sub_skills": [
+        "Thiết kế Cross-dock Detection Rules",
+        "Thiết kế Staging Layout"
+    ],
+    "related_skills": [
+        "Phân tích Inbound Flow",
+        "Phân tích Outbound Flow"
+    ],
+    "inputs": [
+        {
+            "name": "ASN + SO đã match",
+            "description": "Hàng đến từ NCC đã có sẵn đơn hàng xuất đang chờ.",
+            "required": true,
+            "example": "ASN từ NCC A giao 200 thùng → SO-101 cần 120 thùng, SO-102 cần 80 thùng"
+        },
+        {
+            "name": "Loại Cross-dock",
+            "description": "Pre-distributed (đã biết phân bổ trước) hay Post-distributed (phân bổ tại kho).",
+            "required": true,
+            "example": "Pre-distributed: NCC đã đóng gói sẵn theo từng đơn hàng. Post-distributed: Kho phải phân loại lại."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình Cross-dock",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Ma trận loại Cross-dock",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-WMS-XD-01: Hàng Cross-dock không được ở Staging quá 24 giờ.",
+        "BR-WMS-XD-02: Chỉ cho phép Cross-dock khi có SO đang chờ match với hàng đến.",
+        "BR-WMS-XD-03: Hàng Cross-dock vẫn phải được ghi nhận qua GRN (để Kế toán có chứng từ)."
+    ],
+    "quality_criteria": [
+        "Phải có Detection Rules",
+        "Phải phân biệt Pre/Post-distributed"
+    ],
+    "estimated_effort": "2-3 ngày"
+}

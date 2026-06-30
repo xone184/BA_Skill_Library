@@ -1,0 +1,13 @@
+{
+    "name": "Phân tích Security Testing",
+    "category": "06-Testing/Security",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Xác định các lỗ hổng bảo mật và viết kịch bản test an toàn thông tin.",
+    "inputs": [
+        "Kiến trúc hệ thống",
+        "Tài liệu API"
+    ],
+    "outputs": [
+        "Security Test Cases (OWASP Top 10)"
+    ]
+}

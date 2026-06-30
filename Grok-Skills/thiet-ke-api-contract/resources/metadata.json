@@ -1,0 +1,50 @@
+{
+    "name": "Thiết kế API Contract",
+    "category": "08-Integration/API",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế đặc tả giao tiếp giữa Front-end và Back-end (hoặc giữa 2 hệ thống) qua RESTful API. Cung cấp rõ ràng Endpoints, Method, Request Payload (Body/Params), Response Payload và Error Codes để 2 bên có thể làm việc độc lập.",
+    "tags": [
+        "API",
+        "Integration",
+        "REST",
+        "JSON",
+        "Contract"
+    ],
+    "domain": "Integration",
+    "sub_skills": [
+        "RESTful Design",
+        "JSON Modeling",
+        "Error Code Mapping"
+    ],
+    "related_skills": [
+        "Thiết kế ERD",
+        "Thiết kế module",
+        "Phân tích màn hình CRUD"
+    ],
+    "inputs": [
+        {
+            "name": "Nghiệp vụ chức năng",
+            "description": "Chức năng API cần phục vụ.",
+            "required": true,
+            "example": "Chức năng: Lấy danh sách sản phẩm (có phân trang, filter) và Tạo mới sản phẩm."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "API Document (Swagger/OpenAPI style)",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-API-01: Endpoints phải dùng danh từ số nhiều (VD: /users, /orders).",
+        "BR-API-02: Không dùng verb trong URL (VD SAI: /get-users. ĐÚNG: GET /users).",
+        "BR-API-03: Mọi Response phải có cấu trúc chuẩn thống nhất (success, data, message, error).",
+        "BR-API-04: API List bắt buộc phải có Pagination."
+    ],
+    "quality_criteria": [
+        "Chuẩn RESTful",
+        "JSON hợp lệ",
+        "Đủ Error Codes"
+    ],
+    "estimated_effort": "1-2 ngày / module"
+}

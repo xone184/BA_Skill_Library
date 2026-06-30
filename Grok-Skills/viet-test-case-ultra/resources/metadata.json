@@ -1,0 +1,58 @@
+{
+    "name": "Viết Test Case (Ultra)",
+    "category": "06-Testing/Test Case",
+    "level": "Level 2 - Business Skill",
+    "description": "Viết Test Case ứng dụng các kỹ thuật kiểm thử phần mềm nâng cao: Phân tích giá trị biên (BVA), Phân vùng tương đương (EP), và Bảng quyết định (Decision Table). Hỗ trợ Micro-tasking cực mạnh để AI đóng vai trò như một Senior QA Engineer chuyên 'bắt bug'.",
+    "tags": [
+        "Testing",
+        "QA",
+        "Boundary Value",
+        "Equivalence Partitioning",
+        "Micro-tasking",
+        "Decision Table"
+    ],
+    "domain": "Testing",
+    "sub_skills": [
+        "Boundary Value Analysis",
+        "Equivalence Partitioning",
+        "Decision Table Testing"
+    ],
+    "related_skills": [
+        "Phân tích Use Case (Ultra)",
+        "Write SRS (Ultra)"
+    ],
+    "inputs": [
+        {
+            "name": "Rule nghiệp vụ / Feature",
+            "description": "Tính năng cần test.",
+            "required": true,
+            "example": "Ô nhập Tuổi yêu cầu >= 18 và <= 60."
+        },
+        {
+            "name": "Lệnh Micro-tasking",
+            "description": "Yêu cầu kỹ thuật test cụ thể.",
+            "required": false,
+            "example": "Chỉ sinh Test Case phân tích giá trị biên (Boundary Value) cho trường Tuổi."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Boundary Value Test Cases (Micro-tasking)",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Decision Table (Micro-tasking)",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-QA-U1: Nếu có khoảng giá trị (Range), PHẢI sinh ra tối thiểu 6 Test Cases cho phần Boundary (Min-1, Min, Min+1, Max-1, Max, Max+1).",
+        "BR-QA-U2: Nếu có logic kết hợp nhiều điều kiện AND/OR, PHẢI sinh ra Decision Table."
+    ],
+    "quality_criteria": [
+        "Cover 100% Boundary",
+        "Cover đủ tổ hợp logic",
+        "Trình bày trực quan dạng bảng"
+    ],
+    "estimated_effort": "0.5 ngày / Feature"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Phân tích Quản lý Tài sản",
+    "category": "01-Business-Domain/EAM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích vòng đời của tài sản doanh nghiệp (Enterprise Asset Management).",
+    "inputs": [
+        "Danh mục tài sản",
+        "Chính sách khấu hao"
+    ],
+    "outputs": [
+        "Luồng Quản lý tài sản",
+        "Cấu trúc dữ liệu Asset"
+    ]
+}

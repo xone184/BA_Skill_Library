@@ -1,0 +1,14 @@
+{
+    "name": "Interview Stakeholder",
+    "category": "02-Requirement/Elicitation",
+    "level": "Level 1 - Basic Skill",
+    "description": "Thực hiện phỏng vấn lấy yêu cầu từ các bên liên quan.",
+    "inputs": [
+        "Danh sách Stakeholder",
+        "Mục tiêu dự án"
+    ],
+    "outputs": [
+        "Meeting Minutes",
+        "Danh sách yêu cầu sơ bộ"
+    ]
+}
