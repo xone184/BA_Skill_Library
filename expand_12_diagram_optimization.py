@@ -19,7 +19,9 @@ def build_optimized_diagram_skills():
 - Thiết lập Swimlanes (Nếu dùng Mermaid: subgraph, Nếu dùng PlantUML: |Actor|).
 
 ### Bước 2: Thiết lập Luật Trình bày (Cực kỳ quan trọng)
-- **HƯỚNG BẮT BUỘC:** Phải dàn theo chiều ngang (Sử dụng `flowchart LR` cho Mermaid hoặc `left to right direction` cho PlantUML) để khớp với làn ngang.
+- **HƯỚNG LAYOUT TÙY BIẾN:** Hỏi hoặc xác định nhu cầu của người dùng để chọn engine phù hợp:
+  + Nếu vẽ dạng Làn ngang (Horizontal): Bắt buộc dùng **Mermaid** (`flowchart LR`) để gom `subgraph` theo chiều ngang.
+  + Nếu vẽ dạng Làn dọc (Vertical - Chuẩn Visio): Bắt buộc dùng **PlantUML** với cú pháp phân làn dọc (VD: `|Người dùng|` và `|Hệ thống|`), luồng Top-Down.
 - **TỐI ƯU LINE:** Hạn chế nhảy qua lại giữa 2 làn liên tục. Phải gom nhóm các hành động liên tiếp của 1 Actor rồi mới chuyển.
 - **HỘI TỤ (SINGLE END):** Chỉ có 1 Start Node. Mọi nhánh rẽ (Lỗi, Hủy, Thành công) BẮT BUỘC phải hội tụ về 1 (hoặc tối đa 2) End Node thông qua cổng gom. Nghiêm cấm đặt End Node rải rác.
 
