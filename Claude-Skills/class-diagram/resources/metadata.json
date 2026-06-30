@@ -1,0 +1,13 @@
+{
+    "name": "Class Diagram",
+    "category": "03-Modeling/UML",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Vẽ biểu đồ lớp để thiết kế hướng đối tượng.",
+    "inputs": [
+        "Danh từ trong tài liệu Yêu cầu",
+        "Quy tắc nghiệp vụ"
+    ],
+    "outputs": [
+        "Class Diagram (Mermaid)"
+    ]
+}

@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Thiết kế API Contract]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Yêu cầu tích hợp, Dữ liệu cần truyền
+
+Rules & Constraints:
+- Thiết kế RESTful API chuẩn: GET lấy dữ liệu, POST tạo mới, PUT/PATCH cập nhật, DELETE xóa.
+
+Process to follow:
+Xác định Endpoint & Method, Định nghĩa Request Header/Body, Định nghĩa Response (Success/Error), Xác định mã lỗi HTTP
+
+Expected Output:
+Tài liệu API Contract (RESTful)

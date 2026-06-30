@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Tạo Template API Doc]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+API Contract
+
+Rules & Constraints:
+- Tài liệu API phải cực kỳ rõ ràng, luôn đi kèm JSON format example. Sử dụng code block `json`.
+
+Process to follow:
+Mô tả Endpoint & Method, Đặc tả Request Headers (Auth Token), Đặc tả Request Body (JSON Schema), Đặc tả Response 200/400/500
+
+Expected Output:
+Markdown API Documentation

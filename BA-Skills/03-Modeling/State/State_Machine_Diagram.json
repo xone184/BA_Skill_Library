@@ -1,0 +1,12 @@
+{
+    "name": "State Machine Diagram",
+    "category": "03-Modeling/State",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế vòng đời (Lifecycle) của một đối tượng dữ liệu.",
+    "inputs": [
+        "Thực thể dữ liệu (vd: Hóa đơn, Đơn hàng)"
+    ],
+    "outputs": [
+        "State Diagram (Mermaid)"
+    ]
+}

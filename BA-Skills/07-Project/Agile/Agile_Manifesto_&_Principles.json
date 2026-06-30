@@ -1,0 +1,51 @@
+{
+    "name": "Agile Manifesto & Principles",
+    "category": "07-Project/Agile",
+    "level": "Level 1 - Basic Skill",
+    "description": "Áp dụng tư duy Agile (4 giá trị cốt lõi và 12 nguyên tắc) vào quản lý dự án phần mềm. Giúp đội ngũ (Team) chuyển đổi từ mô hình Thác nước (Waterfall) truyền thống sang mô hình linh hoạt (Agile), nhấn mạnh vào việc chuyển giao giá trị sớm và phản hồi nhanh với thay đổi.",
+    "tags": [
+        "Agile",
+        "Scrum",
+        "Mindset",
+        "Principles",
+        "Transformation"
+    ],
+    "domain": "Project",
+    "sub_skills": [
+        "Mindset Transformation",
+        "Agile Gap Analysis"
+    ],
+    "related_skills": [
+        "Sprint Planning",
+        "Backlog Grooming"
+    ],
+    "inputs": [
+        {
+            "name": "Quy trình dự án hiện tại",
+            "description": "Cách team đang vận hành.",
+            "required": true,
+            "example": "Dự án đang dùng Waterfall, tài liệu quá nhiều, release sau 6 tháng."
+        },
+        {
+            "name": "Vấn đề (Pain points)",
+            "description": "Khó khăn team đang gặp phải.",
+            "required": true,
+            "example": "Khách hàng đổi ý, code xong phải đập đi làm lại."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Báo cáo chuyển đổi Agile (Agile Transformation Plan)",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-AGILE-01: Agile không có nghĩa là KHÔNG CÓ tài liệu, mà là tài liệu VỪA ĐỦ.",
+        "BR-AGILE-02: Không được từ chối thay đổi requirement nếu nó mang lại lợi thế cạnh tranh cho khách."
+    ],
+    "quality_criteria": [
+        "Rõ ràng Action Items",
+        "Đúng tinh thần 12 Principles"
+    ],
+    "estimated_effort": "1-3 ngày"
+}

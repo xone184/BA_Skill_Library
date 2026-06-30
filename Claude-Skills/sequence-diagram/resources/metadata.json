@@ -1,0 +1,13 @@
+{
+    "name": "Sequence Diagram",
+    "category": "03-Modeling/UML",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Vẽ biểu đồ tuần tự để thiết kế logic tương tác giữa các hệ thống.",
+    "inputs": [
+        "Use Case",
+        "Danh sách Actor và System"
+    ],
+    "outputs": [
+        "Sequence Diagram (Mermaid)"
+    ]
+}

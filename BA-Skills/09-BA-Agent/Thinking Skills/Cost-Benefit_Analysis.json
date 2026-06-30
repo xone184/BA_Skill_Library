@@ -1,0 +1,14 @@
+{
+    "name": "Cost-Benefit Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích chi phí và lợi ích để ra quyết định đầu tư tính năng.",
+    "inputs": [
+        "Chi phí ước tính (Dev, Vận hành)",
+        "Lợi ích kỳ vọng (Tăng doanh thu, Giảm nhân sự)"
+    ],
+    "outputs": [
+        "Báo cáo ROI (Return on Investment)",
+        "Thời gian hoàn vốn (Payback Period)"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "name": "Write User Story",
+    "category": "02-Requirement/User Story",
+    "level": "Level 1 - Basic Skill",
+    "description": "Viết User Story chuẩn Agile đúng format, kèm Acceptance Criteria chi tiết, tuân thủ nguyên tắc INVEST để đảm bảo Story có thể estimate và deliver trong 1 Sprint.",
+    "tags": [
+        "Requirement",
+        "Agile",
+        "User Story",
+        "INVEST"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "Viết Acceptance Criteria (Given-When-Then)",
+        "Story Splitting (Chia nhỏ Story)",
+        "Story Mapping"
+    ],
+    "related_skills": [
+        "Write BRD",
+        "Write SRS",
+        "Phân tích Use Case",
+        "Viết Test Case"
+    ],
+    "inputs": [
+        {
+            "name": "Requirement / Nghiệp vụ",
+            "description": "Mô tả yêu cầu cần làm.",
+            "required": true,
+            "example": "Nhân viên kho cần có khả năng kiểm kê tồn kho bằng cách quét mã vạch."
+        },
+        {
+            "name": "Actor / Persona",
+            "description": "Ai là người sử dụng tính năng.",
+            "required": true,
+            "example": "Nhân viên kho, Quản lý kho, Kế toán kho"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "User Story",
+            "format": "Markdown Template"
+        },
+        {
+            "name": "Danh sách User Stories",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-US-01: Mỗi User Story chỉ có 1 Actor duy nhất.",
+        "BR-US-02: Mỗi User Story phải có ít nhất 3 Acceptance Criteria.",
+        "BR-US-03: Story Point không vượt quá 8 (nếu vượt phải chia nhỏ).",
+        "BR-US-04: User Story KHÔNG được chứa giải pháp kỹ thuật (Technical Solution)."
+    ],
+    "quality_criteria": [
+        "Story phải đúng format As a / I want to / So that",
+        "Actor phải cụ thể",
+        "AC phải dùng Given-When-Then",
+        "Phải có ít nhất 1 Error Case trong AC",
+        "Story phải tuân thủ INVEST"
+    ],
+    "estimated_effort": "0.5-1 ngày / Story"
+}

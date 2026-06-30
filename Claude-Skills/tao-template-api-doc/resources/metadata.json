@@ -1,0 +1,12 @@
+{
+    "name": "Tạo Template API Doc",
+    "category": "08-Templates",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Tự động sinh ra cấu trúc tài liệu Swagger/OpenAPI.",
+    "inputs": [
+        "API Contract"
+    ],
+    "outputs": [
+        "Markdown API Documentation"
+    ]
+}

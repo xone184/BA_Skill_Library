@@ -1,0 +1,56 @@
+{
+    "name": "State Machine Diagram",
+    "category": "03-Modeling/UML",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Đặc tả vòng đời (Lifecycle) của một thực thể nghiệp vụ cốt lõi (Ví dụ: Lệnh sản xuất, Lô hàng, Máy móc) từ lúc sinh ra đến lúc kết thúc. Cung cấp chi tiết các Trạng thái (States), Sự kiện kích hoạt (Triggers), và Điều kiện chặn (Guard Conditions).",
+    "tags": [
+        "Modeling",
+        "UML",
+        "State",
+        "Lifecycle",
+        "MES",
+        "Production"
+    ],
+    "domain": "Modeling",
+    "sub_skills": [
+        "Guard Condition Analysis",
+        "Lifecycle Design"
+    ],
+    "related_skills": [
+        "Phân tích Production Order",
+        "Phân tích Business Rules"
+    ],
+    "inputs": [
+        {
+            "name": "Tên Thực thể (Entity)",
+            "description": "Đối tượng cần phân tích.",
+            "required": true,
+            "example": "Lệnh sản xuất (Production Order)"
+        },
+        {
+            "name": "Luồng nghiệp vụ (Business Flow)",
+            "description": "Cách thực thể này hoạt động thực tế.",
+            "required": true,
+            "example": "Lệnh tạo ra -> Chờ cấp vật tư -> Đang chạy -> Đóng lệnh."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "State Machine Diagram (Mermaid)",
+            "format": "Mermaid stateDiagram"
+        },
+        {
+            "name": "State Transition Table",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-STATE-01: Một thực thể tại một thời điểm chỉ có duy nhất 1 trạng thái.",
+        "BR-STATE-02: Mọi State đều phải có đường đi đến Final State (Không tạo Trạng thái chết / Dead-end)."
+    ],
+    "quality_criteria": [
+        "Không có Dead-end",
+        "Guard conditions logic rõ ràng"
+    ],
+    "estimated_effort": "0.5 ngày"
+}

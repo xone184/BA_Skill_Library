@@ -1,0 +1,50 @@
+{
+    "name": "Vẽ Sequence Diagram",
+    "category": "03-Modeling/Sequence",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Mô hình hóa luồng giao tiếp (Tương tác) giữa các đối tượng (Người dùng, Frontend, Backend, Database, 3rd Party API) theo trình tự thời gian. Giúp team Dev hiểu rõ thứ tự gọi API và luồng dữ liệu.",
+    "tags": [
+        "Modeling",
+        "UML",
+        "Sequence",
+        "API",
+        "System",
+        "Integration"
+    ],
+    "domain": "Modeling",
+    "sub_skills": [
+        "System Identification",
+        "API Flow Design",
+        "Fragment Logic (Alt/Opt/Loop)"
+    ],
+    "related_skills": [
+        "Thiết kế API Contract",
+        "Vẽ BPMN"
+    ],
+    "inputs": [
+        {
+            "name": "Luồng nghiệp vụ phức tạp",
+            "description": "Mô tả tương tác giữa các hệ thống.",
+            "required": true,
+            "example": "User thanh toán VNPay: User click thanh toán → Web gọi Backend → Backend gọi VNPay tạo URL → Trả về Web → Web redirect sang VNPay → User quẹt thẻ → VNPay gọi Webhook về Backend."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Sequence Diagram",
+            "format": "Mermaid sequenceDiagram"
+        }
+    ],
+    "business_rules": [
+        "BR-SEQ-01: Trình tự thời gian phải chảy từ trên xuống dưới.",
+        "BR-SEQ-02: API calls phải dùng mũi tên liền (Synchronous) và có Return message (mũi tên đứt).",
+        "BR-SEQ-03: Bắt buộc dùng block 'Alt' nếu có nhánh Thành công / Thất bại.",
+        "BR-SEQ-04: Actor (Người dùng) luôn nằm ngoài cùng bên trái."
+    ],
+    "quality_criteria": [
+        "Đủ thành phần hệ thống",
+        "Có xử lý lỗi (Alt block)",
+        "Ghi rõ API method/payload"
+    ],
+    "estimated_effort": "0.5 ngày / luồng"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Stakeholder Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích và quản trị các bên liên quan trong dự án.",
+    "inputs": [
+        "Danh sách các cá nhân/tổ chức liên quan dự án"
+    ],
+    "outputs": [
+        "Ma trận Quyền lực - Mức độ quan tâm (Power/Interest Grid)",
+        "Chiến lược giao tiếp"
+    ]
+}

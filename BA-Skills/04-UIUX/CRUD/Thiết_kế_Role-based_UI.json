@@ -1,0 +1,13 @@
+{
+    "name": "Thiết kế Role-based UI",
+    "category": "04-UIUX/CRUD",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Phân tích giao diện thay đổi linh hoạt theo quyền của người dùng (RBAC).",
+    "inputs": [
+        "Ma trận phân quyền (Permission Matrix)"
+    ],
+    "outputs": [
+        "Luồng hiển thị/ẩn các nút thao tác",
+        "Điều hướng tùy chỉnh"
+    ]
+}

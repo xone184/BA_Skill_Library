@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [State Machine Diagram]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Thực thể dữ liệu (vd: Hóa đơn, Đơn hàng)
+
+Rules & Constraints:
+- Tuyệt đối không để đối tượng bị kẹt ở một trạng thái vĩnh viễn (Deadlock).
+
+Process to follow:
+Xác định các trạng thái (States), Xác định sự kiện kích hoạt (Triggers/Events), Định nghĩa trạng thái Initial và Final, Vẽ mũi tên chuyển đổi (Transitions)
+
+Expected Output:
+State Diagram (Mermaid)

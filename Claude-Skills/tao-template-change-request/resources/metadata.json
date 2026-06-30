@@ -1,0 +1,12 @@
+{
+    "name": "Tạo Template Change Request",
+    "category": "08-Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Tạo biểu mẫu yêu cầu thay đổi (CR) chuẩn dự án.",
+    "inputs": [
+        "Quy trình thay đổi dự án"
+    ],
+    "outputs": [
+        "Biểu mẫu CR"
+    ]
+}

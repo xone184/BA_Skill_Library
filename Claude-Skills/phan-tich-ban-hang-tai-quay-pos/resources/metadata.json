@@ -1,0 +1,14 @@
+{
+    "name": "Phân tích Bán hàng tại quầy (POS)",
+    "category": "01-Business-Domain/POS",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích luồng thao tác của thu ngân tại cửa hàng.",
+    "inputs": [
+        "Danh mục hàng hóa",
+        "Chương trình khuyến mãi (Promotion)"
+    ],
+    "outputs": [
+        "Luồng thao tác máy POS",
+        "Xử lý thanh toán đa phương thức"
+    ]
+}

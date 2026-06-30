@@ -1,0 +1,14 @@
+{
+    "name": "Phân tích KPI và Đánh giá",
+    "category": "01-Business-Domain/HRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Thiết kế hệ thống đánh giá hiệu suất nhân sự (Performance Review).",
+    "inputs": [
+        "Tiêu chí đánh giá",
+        "Mục tiêu công ty/phòng ban"
+    ],
+    "outputs": [
+        "Quy trình Review 360 độ",
+        "Biểu mẫu đánh giá"
+    ]
+}

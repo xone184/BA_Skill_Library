@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Database Naming Convention]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Các thực thể nghiệp vụ
+
+Rules & Constraints:
+- Khuyến nghị: Tên bảng dùng snake_case, số nhiều. Tên khóa chính luôn là id. Khóa ngoại là {table_name}_id.
+
+Process to follow:
+Chuẩn hóa tên Bảng (số ít/số nhiều), Quy định tiền tố/hậu tố, Quy định tên Khóa chính/Khóa ngoại, Quy định Index naming
+
+Expected Output:
+Quy ước đặt tên Bảng, Cột, Khóa

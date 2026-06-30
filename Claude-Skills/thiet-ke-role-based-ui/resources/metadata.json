@@ -1,0 +1,51 @@
+{
+    "name": "Thiết kế Role-based UI",
+    "category": "04-UIUX/Design",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế đặc tả giao diện tùy biến theo vai trò người dùng (Role-based). Đảm bảo mỗi Role chỉ nhìn thấy dữ liệu, nút bấm và chức năng mà họ được cấp quyền, giảm thiểu sai sót và tối ưu hóa trải nghiệm làm việc thực tế.",
+    "tags": [
+        "UIUX",
+        "Role",
+        "Permission",
+        "MES",
+        "Interface"
+    ],
+    "domain": "UIUX",
+    "sub_skills": [
+        "Permission Matrix Design",
+        "Contextual UI/UX"
+    ],
+    "related_skills": [
+        "Phân tích màn hình CRUD",
+        "Phân tích Mobile App"
+    ],
+    "inputs": [
+        {
+            "name": "Danh sách Roles",
+            "description": "Ai sẽ dùng hệ thống?",
+            "required": true,
+            "example": "Operator (Công nhân), Supervisor (Quản đốc), QC (KCS)."
+        },
+        {
+            "name": "Tính năng",
+            "description": "Tính năng cần phân quyền UI.",
+            "required": true,
+            "example": "Màn hình Chi tiết Lệnh Sản Xuất."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Role-based UI Specification",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-RBUI-01: Nguyên tắc quyền tối thiểu (Least Privilege): Chỉ hiển thị/cấp quyền đúng những gì Role đó cần để làm việc.",
+        "BR-RBUI-02: User dưới xưởng phải được thiết kế UI 'Fail-safe' (Chống bấm nhầm)."
+    ],
+    "quality_criteria": [
+        "Khác biệt rõ ràng giữa các Role",
+        "Tuân thủ Least Privilege"
+    ],
+    "estimated_effort": "1 ngày / Màn hình lõi"
+}

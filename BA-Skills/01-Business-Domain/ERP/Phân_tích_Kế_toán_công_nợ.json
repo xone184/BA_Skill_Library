@@ -1,0 +1,73 @@
+{
+    "name": "Phân tích Kế toán công nợ",
+    "category": "01-Business-Domain/ERP",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện luồng quản lý công nợ phải thu (Accounts Receivable - AR) và công nợ phải trả (Accounts Payable - AP), bao gồm hạn mức tín dụng (Credit Limit), tuổi nợ (Aging), đối chiếu công nợ và xử lý xóa nợ (Write-off).",
+    "tags": [
+        "ERP",
+        "AR",
+        "AP",
+        "Receivable",
+        "Payable",
+        "Accounting"
+    ],
+    "domain": "ERP",
+    "sub_skills": [
+        "Thiết kế Credit Limit Policy",
+        "Thiết kế Aging Report",
+        "Thiết kế Dunning Automation",
+        "Thiết kế Payment Matching"
+    ],
+    "related_skills": [
+        "Phân tích Procurement",
+        "Phân tích Opportunity"
+    ],
+    "inputs": [
+        {
+            "name": "Chính sách tín dụng (Credit Policy)",
+            "description": "Quy định về hạn mức nợ và thời hạn thanh toán cho khách hàng.",
+            "required": true,
+            "example": "Khách hàng hạng A: Credit Limit = 500tr, Payment Term = Net 30. Khách hàng hạng B: Credit Limit = 200tr, Payment Term = Net 15."
+        },
+        {
+            "name": "Hóa đơn (Invoice)",
+            "description": "Danh sách hóa đơn phát sinh từ Bán hàng hoặc Mua hàng.",
+            "required": true,
+            "example": "INV-001: Khách ABC, Giá trị 100tr, Ngày xuất 01/06, Hạn thanh toán 30/06."
+        },
+        {
+            "name": "Quy tắc nhắc nợ (Dunning Rules)",
+            "description": "Kịch bản nhắc nợ theo thời gian quá hạn.",
+            "required": false,
+            "example": "Quá hạn 7 ngày → Email nhắc. 15 ngày → Gọi điện. 30 ngày → Thư cảnh cáo. 60 ngày → Chặn bán hàng."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Báo cáo Aging (Tuổi nợ)",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Dunning Schedule",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Cấu trúc dữ liệu AR/AP",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-FIN-AR-01: Tổng nợ hiện tại + Đơn hàng mới > Credit Limit → Block Sales Order.",
+        "BR-FIN-AR-02: Khách hàng quá hạn > 60 ngày tự động bị chặn bán hàng.",
+        "BR-FIN-AR-03: Write-off nợ > 50 triệu phải có phê duyệt của CFO.",
+        "BR-FIN-AR-04: Nợ quá hạn > 6 tháng phải trích lập dự phòng 50%, > 12 tháng = 100%.",
+        "BR-FIN-AP-05: Không thanh toán cho NCC nếu Invoice chưa qua 3-Way Matching."
+    ],
+    "quality_criteria": [
+        "Phải có Aging Analysis 5 Buckets",
+        "Phải có Dunning tự động",
+        "Phải có Credit Limit check",
+        "Phải có Write-off workflow"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

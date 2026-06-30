@@ -1,0 +1,55 @@
+{
+    "name": "Sprint Planning",
+    "category": "07-Project/Sprint",
+    "level": "Level 2 - Business Skill",
+    "description": "Hỗ trợ Product Owner (PO) và Scrum Team lập kế hoạch cho một Sprint, bao gồm: xác định Sprint Goal, chọn User Stories từ Backlog, estimate effort (Story Points) và lập Sprint Backlog.",
+    "tags": [
+        "Agile",
+        "Scrum",
+        "Sprint",
+        "Planning",
+        "Estimation"
+    ],
+    "domain": "Project",
+    "sub_skills": [
+        "Story Splitting",
+        "Planning Poker",
+        "Capacity Calculation"
+    ],
+    "related_skills": [
+        "Write User Story",
+        "Review Requirement"
+    ],
+    "inputs": [
+        {
+            "name": "Product Backlog",
+            "description": "Danh sách User Stories đã sẵn sàng (Ready).",
+            "required": true,
+            "example": "Top 10 User Stories đã có Acceptance Criteria."
+        },
+        {
+            "name": "Team Capacity",
+            "description": "Tổng số Story Points hoặc Giờ team có thể làm trong Sprint này.",
+            "required": true,
+            "example": "Team có 5 Dev, làm 2 tuần. Capacity = 40 Story Points. Trừ đi ngày lễ, nghỉ phép."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Sprint Plan Document",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-SPRINT-01: KHÔNG đưa item chưa thỏa mãn Definition of Ready vào Sprint.",
+        "BR-SPRINT-02: Item > 8 points phải được chia nhỏ.",
+        "BR-SPRINT-03: Không thay đổi Sprint Goal sau khi Sprint đã bắt đầu.",
+        "BR-SPRINT-04: Team không nhận khối lượng công việc vượt quá Capacity đã thống nhất."
+    ],
+    "quality_criteria": [
+        "Phải có Sprint Goal",
+        "Không nhận vượt Capacity",
+        "Mọi item phải được Estimate"
+    ],
+    "estimated_effort": "2-4 giờ (Meeting)"
+}

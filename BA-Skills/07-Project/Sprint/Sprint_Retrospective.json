@@ -1,0 +1,54 @@
+{
+    "name": "Sprint Retrospective",
+    "category": "07-Project/Sprint",
+    "level": "Level 2 - Business Skill",
+    "description": "Hỗ trợ Scrum Master / Đội ngũ đánh giá lại quá trình làm việc trong Sprint vừa qua, nhận diện những điểm tốt, điểm chưa tốt và đề xuất Action Items cụ thể để cải tiến cho Sprint tiếp theo (Continuous Improvement).",
+    "tags": [
+        "Agile",
+        "Scrum",
+        "Sprint",
+        "Retrospective",
+        "Improvement"
+    ],
+    "domain": "Project",
+    "sub_skills": [
+        "Root Cause Analysis",
+        "Meeting Facilitation",
+        "SMART Goal Setting"
+    ],
+    "related_skills": [
+        "Sprint Planning",
+        "Root Cause Analysis"
+    ],
+    "inputs": [
+        {
+            "name": "Kết quả Sprint (Sprint Metrics)",
+            "description": "Dữ liệu thực tế của Sprint.",
+            "required": true,
+            "example": "Kế hoạch 40 Points, Thực tế hoàn thành 32 Points. Có 5 Bug phát sinh."
+        },
+        {
+            "name": "Ý kiến của Team",
+            "description": "Feedback từ Dev, QA, PO.",
+            "required": false,
+            "example": "Mọi người cảm thấy requirements thay đổi giữa chừng."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Retrospective Minutes",
+            "format": "Markdown Document"
+        }
+    ],
+    "business_rules": [
+        "BR-RETRO-01: Không đổ lỗi cho cá nhân, mọi vấn đề là do hệ thống/quy trình.",
+        "BR-RETRO-02: Action Item phải có Chủ sở hữu (Owner) cụ thể.",
+        "BR-RETRO-03: Mỗi Sprint chỉ nên tập trung cải thiện 1-3 vấn đề lớn nhất."
+    ],
+    "quality_criteria": [
+        "Phải có Action Items",
+        "Phải có Owner",
+        "Không có ngôn từ đổ lỗi"
+    ],
+    "estimated_effort": "1-2 giờ (Meeting)"
+}

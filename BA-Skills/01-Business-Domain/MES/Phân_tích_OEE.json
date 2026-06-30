@@ -1,0 +1,66 @@
+{
+    "name": "Phân tích OEE",
+    "category": "01-Business-Domain/MES",
+    "level": "Level 2 - Business Skill",
+    "description": "Đo lường và phân tích hiệu quả thiết bị tổng thể (Overall Equipment Effectiveness), xác định 6 tổn thất lớn (Six Big Losses) và đề xuất giải pháp cải thiện.",
+    "tags": [
+        "MES",
+        "OEE",
+        "KPI",
+        "Downtime",
+        "Performance"
+    ],
+    "domain": "MES",
+    "sub_skills": [
+        "Thiết kế Downtime Tracking",
+        "Thiết kế OEE Dashboard",
+        "Six Big Losses Analysis"
+    ],
+    "related_skills": [
+        "Phân tích Production Order",
+        "Phân tích Quality Control",
+        "Root Cause Analysis"
+    ],
+    "inputs": [
+        {
+            "name": "Dữ liệu máy móc (Machine Data)",
+            "description": "Thời gian chạy, thời gian dừng, lý do dừng.",
+            "required": true,
+            "example": "Máy CNC-01: Tổng thời gian ca = 480p, Planned Downtime (nghỉ trưa) = 30p, Unplanned Downtime (hỏng máy) = 45p"
+        },
+        {
+            "name": "Dữ liệu sản xuất",
+            "description": "Số lượng sản phẩm sản xuất và Cycle Time.",
+            "required": true,
+            "example": "Sản lượng = 350 sản phẩm, Cycle Time lý thuyết = 1p/sp, Cycle Time thực tế = 1.2p/sp"
+        },
+        {
+            "name": "Dữ liệu chất lượng",
+            "description": "Số lượng hàng tốt và hàng lỗi.",
+            "required": true,
+            "example": "Hàng tốt = 340, Hàng lỗi = 10"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Bảng tính OEE",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Dashboard OEE",
+            "format": "Mô tả chi tiết"
+        }
+    ],
+    "business_rules": [
+        "BR-MES-OEE-01: Chỉ sử dụng công thức chuẩn OEE = Availability × Performance × Quality.",
+        "BR-MES-OEE-02: Planned Downtime (nghỉ trưa, bảo trì kế hoạch) KHÔNG tính vào mất Availability.",
+        "BR-MES-OEE-03: Setup/Changeover time phải được ghi nhận riêng, không gộp vào Breakdown.",
+        "BR-MES-OEE-04: OEE phải được tính cho từng máy, từng ca, từng sản phẩm."
+    ],
+    "quality_criteria": [
+        "Phải đúng công thức OEE",
+        "Phải có Six Big Losses",
+        "Phải có Dashboard design"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

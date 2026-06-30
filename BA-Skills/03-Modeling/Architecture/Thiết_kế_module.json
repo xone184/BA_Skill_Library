@@ -1,0 +1,59 @@
+{
+    "name": "Thiết kế module",
+    "category": "03-Modeling/Architecture",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế kiến trúc module cho hệ thống doanh nghiệp, bao gồm phân rã module, thiết kế menu, phân quyền (RBAC), workflow, database schema, API endpoints, danh sách màn hình và đảm bảo không thiếu bất kỳ thành phần nào nhờ checklist toàn diện.",
+    "tags": [
+        "Architecture",
+        "Module",
+        "Design",
+        "System"
+    ],
+    "domain": "Architecture",
+    "sub_skills": [
+        "Module Decomposition",
+        "Permission Matrix Design",
+        "Workflow Design",
+        "Screen Listing"
+    ],
+    "related_skills": [
+        "Thiết kế ERD",
+        "Thiết kế API Contract",
+        "Thiết kế Dashboard"
+    ],
+    "inputs": [
+        {
+            "name": "Business Requirements",
+            "description": "Danh sách yêu cầu nghiệp vụ đã duyệt.",
+            "required": true,
+            "example": "Module WMS: 35 Functional Requirements, 8 Non-Functional Requirements."
+        },
+        {
+            "name": "Domain Knowledge",
+            "description": "Kiến thức chuyên ngành liên quan.",
+            "required": true,
+            "example": "Kho vận: Inbound, Outbound, Inventory, Cycle Count, Lot/Batch management."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Module Blueprint",
+            "format": "Markdown Document bao gồm tất cả phần trên"
+        },
+        {
+            "name": "Permission Matrix",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-MOD-01: Mỗi module phải có Dashboard riêng.",
+        "BR-MOD-02: Mỗi danh sách (List) phải có Search, Filter, Pagination.",
+        "BR-MOD-03: Mọi thao tác quan trọng phải có Audit Log."
+    ],
+    "quality_criteria": [
+        "Phải đáp ứng đủ 15 items trong Checklist",
+        "Phải có Permission Matrix",
+        "Phải có danh sách Screens"
+    ],
+    "estimated_effort": "5-10 ngày"
+}

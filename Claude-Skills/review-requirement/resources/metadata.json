@@ -1,0 +1,50 @@
+{
+    "name": "Review Requirement",
+    "category": "02-Requirement",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Rà soát và kiểm tra tính đầy đủ, chính xác, nhất quán của yêu cầu nghiệp vụ. Đây là kỹ năng kiểm duyệt cuối cùng trước khi chốt scope, đảm bảo không bỏ sót bất kỳ Business Rule, Exception, Validation, Permission, UI, API, Database, Workflow, Report hay Notification nào.",
+    "tags": [
+        "Requirement",
+        "Review",
+        "Quality",
+        "Gap"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "Completeness Check",
+        "Consistency Check",
+        "Feasibility Assessment",
+        "Question Formulation"
+    ],
+    "related_skills": [
+        "Write BRD",
+        "Write SRS",
+        "Gap Analysis",
+        "Impact Analysis"
+    ],
+    "inputs": [
+        {
+            "name": "Tài liệu yêu cầu (BRD/SRS/Requirement List)",
+            "description": "Bộ tài liệu cần review.",
+            "required": true,
+            "example": "File SRS v1.0 với 45 Functional Requirements và 10 Non-Functional Requirements."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Review Report",
+            "format": "Markdown Document"
+        }
+    ],
+    "business_rules": [
+        "BR-REV-01: Mỗi Requirement phải được review ít nhất 1 lần trước khi chốt.",
+        "BR-REV-02: Issue severity High phải được giải quyết trước khi bàn giao cho Dev.",
+        "BR-REV-03: Mọi câu hỏi Blocker phải được trả lời trước khi bắt đầu Sprint."
+    ],
+    "quality_criteria": [
+        "Phải kiểm tra đủ 10 khía cạnh trong Completeness Check",
+        "Phải có danh sách câu hỏi cụ thể",
+        "Issues phải có Severity"
+    ],
+    "estimated_effort": "1-2 ngày / tài liệu"
+}

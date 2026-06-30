@@ -1,0 +1,68 @@
+{
+    "name": "Phân tích Payroll",
+    "category": "01-Business-Domain/HRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện luồng tính lương nhân viên, từ thu thập dữ liệu công đến ra bảng lương cuối cùng, bao gồm tính lương cơ bản, phụ cấp, thưởng, khấu trừ thuế TNCN, BHXH/BHYT/BHTN, và quy trình duyệt + phát lương.",
+    "tags": [
+        "HRM",
+        "Payroll",
+        "Salary",
+        "Tax",
+        "BHXH"
+    ],
+    "domain": "HRM",
+    "sub_skills": [
+        "Tính OT theo Luật LĐ",
+        "Tính Thuế TNCN lũy tiến",
+        "Tính BHXH/BHYT/BHTN",
+        "Thiết kế Payslip"
+    ],
+    "related_skills": [
+        "Phân tích Chấm công",
+        "Phân tích KPI và Đánh giá"
+    ],
+    "inputs": [
+        {
+            "name": "Bảng công đã duyệt",
+            "description": "Dữ liệu chấm công tổng hợp cuối tháng.",
+            "required": true,
+            "example": "NV Nguyễn Văn A: 22 ngày đi làm, 8 giờ OT ngày thường, 4 giờ OT ngày nghỉ."
+        },
+        {
+            "name": "Cấu trúc lương",
+            "description": "Các thành phần cấu thành thu nhập.",
+            "required": true,
+            "example": "Lương cơ bản: 15tr. Phụ cấp ăn: 730k. Phụ cấp xăng: 500k. Phụ cấp điện thoại: 300k."
+        },
+        {
+            "name": "Bảng thuế TNCN & BHXH",
+            "description": "Biểu thuế lũy tiến và tỷ lệ đóng BHXH.",
+            "required": true,
+            "example": "Thuế TNCN: 0-5tr = 5%, 5-10tr = 10%, 10-18tr = 15%... BHXH: NV đóng 10.5%, DN đóng 21.5%."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Bảng lương chi tiết",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Payslip Template",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-HRM-PAY-01: Lương OT ngày thường = 150%, ngày nghỉ = 200%, ngày lễ = 300%.",
+        "BR-HRM-PAY-02: Thuế TNCN tính theo biểu lũy tiến từng phần 7 bậc.",
+        "BR-HRM-PAY-03: Mức lương đóng BHXH không vượt quá 20 × lương cơ sở (hiện tại 1,800,000 × 20 = 36,000,000).",
+        "BR-HRM-PAY-04: Giảm trừ bản thân = 11,000,000 VNĐ/tháng. Giảm trừ người phụ thuộc = 4,400,000/người/tháng.",
+        "BR-HRM-PAY-05: Bảng lương phải được duyệt bởi ít nhất 2 cấp trước khi phát lương."
+    ],
+    "quality_criteria": [
+        "Phải đúng công thức OT",
+        "Phải đúng biểu thuế TNCN VN",
+        "Phải đúng tỷ lệ BHXH",
+        "Phải có Payslip"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

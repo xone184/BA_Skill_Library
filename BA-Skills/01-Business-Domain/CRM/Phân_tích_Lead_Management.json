@@ -1,0 +1,79 @@
+{
+    "name": "Phân tích Lead Management",
+    "category": "01-Business-Domain/CRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình quản lý khách hàng tiềm năng (Lead), từ lúc tiếp nhận thông tin đến khi chuyển đổi thành cơ hội bán hàng (Opportunity), bao gồm quy tắc chấm điểm (Scoring), phân bổ (Routing) và chống trùng lặp (Deduplication).",
+    "tags": [
+        "CRM",
+        "Lead",
+        "Sales",
+        "Marketing"
+    ],
+    "domain": "CRM",
+    "sub_skills": [
+        "Thiết kế Lead Scoring Model",
+        "Thiết kế Deduplication Rules",
+        "Thiết kế Lead Routing Rules",
+        "Thiết kế Nurturing Campaign"
+    ],
+    "related_skills": [
+        "Phân tích Opportunity",
+        "Phân tích Customer Support",
+        "Phân tích Loyalty Program"
+    ],
+    "inputs": [
+        {
+            "name": "Nguồn Lead (Lead Sources)",
+            "description": "Danh sách tất cả các kênh mà doanh nghiệp thu thập khách hàng tiềm năng.",
+            "required": true,
+            "example": "Website form, Facebook Ads, Zalo OA, Giới thiệu, Sự kiện, Cold Call"
+        },
+        {
+            "name": "Trạng thái Lead (Lead Status)",
+            "description": "Các giai đoạn mà một Lead sẽ trải qua trong vòng đời.",
+            "required": true,
+            "example": "New → Contacted → Qualified → Converted / Disqualified"
+        },
+        {
+            "name": "Tiêu chí chấm điểm (Scoring Criteria)",
+            "description": "Các yếu tố để chấm điểm mức độ tiềm năng của Lead.",
+            "required": false,
+            "example": "Ngân sách > 100tr = +20 điểm, Đã xem demo = +30 điểm, Không trả lời 3 ngày = -10 điểm"
+        },
+        {
+            "name": "Kênh Marketing",
+            "description": "Các kênh quảng cáo đang chạy để tracking nguồn Lead.",
+            "required": false,
+            "example": "Google Ads, Facebook, SEO, Email Marketing"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình Lead Lifecycle (BPMN)",
+            "format": "Sơ đồ BPMN hoặc Mermaid Flowchart"
+        },
+        {
+            "name": "Cấu trúc dữ liệu Lead",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Ma trận Lead Scoring",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-CRM-LEAD-01: Mỗi Lead bắt buộc phải có ít nhất SĐT hoặc Email.",
+        "BR-CRM-LEAD-02: Lead mới tạo phải được gán cho Sales trong vòng 24 giờ.",
+        "BR-CRM-LEAD-03: Lead không có tương tác sau 90 ngày sẽ tự động chuyển sang trạng thái 'Dormant'.",
+        "BR-CRM-LEAD-04: Không cho phép tạo Lead trùng SĐT với Lead đang ở trạng thái Active.",
+        "BR-CRM-LEAD-05: Lead Score phải được tính lại mỗi khi có hành vi mới."
+    ],
+    "quality_criteria": [
+        "Quy trình Lead phải có ít nhất 4 trạng thái rõ ràng",
+        "Phải có quy tắc chống trùng lặp cụ thể",
+        "Phải có mô hình Scoring với ít nhất 5 tiêu chí",
+        "Phải có SLA phản hồi Lead rõ ràng",
+        "Phải có ít nhất 3 Business Rules đánh số ID"
+    ],
+    "estimated_effort": "3-5 ngày phân tích"
+}

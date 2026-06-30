@@ -1,0 +1,13 @@
+{
+    "name": "Write Use Case Specification",
+    "category": "02-Requirement/Use Case",
+    "level": "Level 1 - Basic Skill",
+    "description": "Viết đặc tả Use Case chi tiết (Use Case Spec).",
+    "inputs": [
+        "Tên Use Case",
+        "Sơ đồ luồng"
+    ],
+    "outputs": [
+        "Tài liệu đặc tả Use Case"
+    ]
+}

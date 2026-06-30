@@ -1,0 +1,13 @@
+{
+    "name": "Optimization & Refactoring",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Tối ưu hóa quy trình nghiệp vụ đang bị cồng kềnh.",
+    "inputs": [
+        "Quy trình hiện tại",
+        "Điểm nghẽn (Bottlenecks)"
+    ],
+    "outputs": [
+        "Quy trình tinh gọn"
+    ]
+}

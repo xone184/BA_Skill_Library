@@ -1,0 +1,58 @@
+{
+    "name": "Kế hoạch UAT",
+    "category": "06-Testing/UAT",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Lập User Acceptance Testing (UAT) Plan để hướng dẫn Khách hàng (End Users) tự kiểm thử hệ thống trước khi Go-live. Đảm bảo UAT diễn ra suôn sẻ, đúng nghiệp vụ thực tế và nhận được Sign-off.",
+    "tags": [
+        "Testing",
+        "UAT",
+        "User Acceptance",
+        "Plan",
+        "Sign-off"
+    ],
+    "domain": "Testing",
+    "sub_skills": [
+        "End-to-End Scenario Design",
+        "Test Data Preparation",
+        "Defect Triage (Phân loại lỗi)"
+    ],
+    "related_skills": [
+        "Write BRD",
+        "Viết Test Case"
+    ],
+    "inputs": [
+        {
+            "name": "BRD / Scope",
+            "description": "Phạm vi các chức năng cần UAT.",
+            "required": true,
+            "example": "UAT cho Phase 1: Inbound & Outbound WMS."
+        },
+        {
+            "name": "Danh sách End Users",
+            "description": "Những người sẽ tham gia test.",
+            "required": true,
+            "example": "Thủ kho, Quản lý kho, Kế toán kho."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "UAT Plan",
+            "format": "Markdown Document"
+        },
+        {
+            "name": "UAT Sign-off Form",
+            "format": "Markdown Document"
+        }
+    ],
+    "business_rules": [
+        "BR-UAT-01: UAT Scenarios PHẢI mô tả theo luồng nghiệp vụ đầu cuối (End-to-end), không test module rời rạc.",
+        "BR-UAT-02: Phải phân định rõ ràng giữa Bug và CR (Change Request) trong UAT.",
+        "BR-UAT-03: KHÔNG Go-live nếu UAT chưa được Sign-off bởi Key User/Sponsor."
+    ],
+    "quality_criteria": [
+        "Scenario phải End-to-end",
+        "Ngôn ngữ kinh doanh",
+        "Có Sign-off Criteria rõ ràng"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

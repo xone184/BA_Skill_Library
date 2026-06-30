@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Thiết kế Role-based UI]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Ma trận phân quyền (Permission Matrix)
+
+Rules & Constraints:
+- Rule UX tốt nhất: Ẩn đi những tính năng người dùng KHÔNG CÓ QUYỀN để giảm rác giao diện, trừ khi có mục đích upsell.
+
+Process to follow:
+Xác định các Roles, Ánh xạ Role với View/Edit/Delete, Mô tả trạng thái UI (Hidden vs Disabled)
+
+Expected Output:
+Luồng hiển thị/ẩn các nút thao tác, Điều hướng tùy chỉnh

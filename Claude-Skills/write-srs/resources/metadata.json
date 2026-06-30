@@ -1,0 +1,64 @@
+{
+    "name": "Write SRS",
+    "category": "02-Requirement/SRS",
+    "level": "Level 1 - Basic Skill",
+    "description": "Soạn thảo Software Requirements Specification (SRS) chi tiết mức độ team Dev có thể code được ngay, bao gồm đặc tả chức năng (Functional), phi chức năng (Non-Functional), giao diện, API, và ràng buộc hệ thống.",
+    "tags": [
+        "Requirement",
+        "SRS",
+        "Document",
+        "Functional",
+        "Non-Functional"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "Viết Functional Requirements chi tiết",
+        "Viết Non-Functional Requirements",
+        "Thiết kế Data Model",
+        "Viết Validation Rules"
+    ],
+    "related_skills": [
+        "Write BRD",
+        "Write User Story",
+        "Thiết kế ERD",
+        "Create Data Dictionary"
+    ],
+    "inputs": [
+        {
+            "name": "BRD đã duyệt",
+            "description": "Tài liệu yêu cầu nghiệp vụ cấp cao.",
+            "required": true,
+            "example": "BRD v1.0 Module WMS với 35 Business Requirements."
+        },
+        {
+            "name": "User Stories",
+            "description": "Danh sách User Stories đã viết.",
+            "required": true,
+            "example": "45 User Stories đã estimate Story Points."
+        },
+        {
+            "name": "Wireframes / Mockups",
+            "description": "Bản thiết kế giao diện sơ bộ.",
+            "required": false,
+            "example": "Figma mockups cho 15 màn hình chính."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Tài liệu SRS",
+            "format": "Markdown Document"
+        }
+    ],
+    "business_rules": [
+        "BR-SRS-01: Mỗi Functional Requirement phải có ID, Input, Processing, Output, Validation.",
+        "BR-SRS-02: Non-Functional Requirements phải có thể đo lường được (Measurable).",
+        "BR-SRS-03: SRS phải cover Error Handling cho mỗi chức năng.",
+        "BR-SRS-04: SRS phải có Traceability ngược về BRD (Mỗi FR link về BR tương ứng)."
+    ],
+    "quality_criteria": [
+        "Mỗi FR phải có đủ 7 phần",
+        "NFR phải measurable",
+        "Phải có Data Model"
+    ],
+    "estimated_effort": "7-14 ngày"
+}

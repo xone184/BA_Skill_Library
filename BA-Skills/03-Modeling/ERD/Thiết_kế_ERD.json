@@ -1,0 +1,63 @@
+{
+    "name": "Thiết kế ERD",
+    "category": "03-Modeling/ERD",
+    "level": "Level 2 - Business Skill",
+    "description": "Thiết kế Entity-Relationship Diagram (ERD) cho hệ thống, xác định rõ các Entity (Bảng), Attributes (Cột), Primary Key, Foreign Key, Relationships (1-1, 1-N, N-N), Indexes, và Constraints. ERD phải đủ chi tiết để DBA có thể tạo database trực tiếp.",
+    "tags": [
+        "Modeling",
+        "ERD",
+        "Database",
+        "Entity",
+        "Relationship"
+    ],
+    "domain": "Modeling",
+    "sub_skills": [
+        "Entity Identification",
+        "Relationship Design",
+        "Data Dictionary Creation",
+        "Index Design"
+    ],
+    "related_skills": [
+        "Create Data Dictionary",
+        "Thiết kế module",
+        "Write SRS"
+    ],
+    "inputs": [
+        {
+            "name": "Danh sách Entity (từ SRS/User Stories)",
+            "description": "Các đối tượng cần lưu trữ dữ liệu.",
+            "required": true,
+            "example": "Module WMS: product, warehouse, location, purchase_order, goods_receipt, inventory, picking_order."
+        },
+        {
+            "name": "Business Rules",
+            "description": "Các quy tắc ảnh hưởng đến cấu trúc dữ liệu.",
+            "required": true,
+            "example": "1 Product có thể nằm ở nhiều Location. 1 PO có nhiều PO Lines. 1 Warehouse có nhiều Zones, mỗi Zone có nhiều Locations."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "ERD Diagram",
+            "format": "Mermaid erDiagram"
+        },
+        {
+            "name": "Data Dictionary",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-ERD-01: Mọi bảng phải có Primary Key (id INT AUTO_INCREMENT).",
+        "BR-ERD-02: Mọi bảng phải có audit columns (created_at, updated_at, created_by, updated_by).",
+        "BR-ERD-03: Sử dụng Soft Delete (is_deleted) thay vì xóa thật.",
+        "BR-ERD-04: Naming Convention: snake_case, số ít, tiếng Anh.",
+        "BR-ERD-05: FK phải có Index."
+    ],
+    "quality_criteria": [
+        "Phải có ERD Diagram",
+        "Phải có Data Dictionary",
+        "Mọi bảng có PK + Audit",
+        "Phải dùng Soft Delete"
+    ],
+    "estimated_effort": "3-5 ngày"
+}

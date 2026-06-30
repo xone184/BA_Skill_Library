@@ -1,0 +1,13 @@
+{
+    "name": "Phân tích Mobile App",
+    "category": "04-UIUX/Mobile",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Phân tích nghiệp vụ và UI/UX đặc thù cho nền tảng Mobile.",
+    "inputs": [
+        "Nghiệp vụ cần mang lên Mobile"
+    ],
+    "outputs": [
+        "Sơ đồ luồng màn hình Mobile",
+        "Thiết kế Bottom Navigation"
+    ]
+}

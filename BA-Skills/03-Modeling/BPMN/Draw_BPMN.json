@@ -1,0 +1,12 @@
+{
+    "name": "Draw BPMN",
+    "category": "03-Modeling/BPMN",
+    "level": "Level 2 - Business Skill",
+    "description": "Vẽ luồng quy trình nghiệp vụ bằng chuẩn BPMN.",
+    "inputs": [
+        "Mô tả quy trình bằng lời"
+    ],
+    "outputs": [
+        "Sơ đồ BPMN (định dạng PlantUML/Mermaid)"
+    ]
+}

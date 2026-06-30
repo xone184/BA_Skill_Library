@@ -1,0 +1,14 @@
+{
+    "name": "Data Flow Analysis",
+    "category": "02-Requirement/Elicitation",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Phân tích luồng di chuyển của dữ liệu qua các hệ thống.",
+    "inputs": [
+        "Sơ đồ kiến trúc hiện tại",
+        "Quy trình nghiệp vụ"
+    ],
+    "outputs": [
+        "Data Flow Diagram (DFD)",
+        "Danh sách Data Store"
+    ]
+}

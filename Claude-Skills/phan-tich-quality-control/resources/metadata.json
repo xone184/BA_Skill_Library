@@ -1,0 +1,68 @@
+{
+    "name": "Phân tích Quality Control",
+    "category": "01-Business-Domain/MES",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình quản lý chất lượng trong sản xuất, từ IQC (Incoming), PQC (Process), OQC (Outgoing), bao gồm tiêu chuẩn lấy mẫu (AQL), xử lý hàng lỗi (Rework/Scrap) và truy xuất nguồn gốc (Traceability).",
+    "tags": [
+        "MES",
+        "QC",
+        "QA",
+        "Quality",
+        "Inspection"
+    ],
+    "domain": "MES",
+    "sub_skills": [
+        "Thiết kế AQL Sampling Plan",
+        "Thiết kế NCR Workflow",
+        "Thiết kế Vendor Scorecard",
+        "Thiết kế Traceability"
+    ],
+    "related_skills": [
+        "Phân tích Production Order",
+        "Phân tích OEE",
+        "Root Cause Analysis"
+    ],
+    "inputs": [
+        {
+            "name": "Tiêu chuẩn chất lượng (Quality Standards)",
+            "description": "Các chỉ tiêu kiểm tra cho từng sản phẩm.",
+            "required": true,
+            "example": "Chai nước: Dung tích 500ml ± 5ml, Nắp đóng chặt (lực xoay > 2Nm), Nhãn dán ngay ngắn"
+        },
+        {
+            "name": "AQL Level (Acceptable Quality Level)",
+            "description": "Tỷ lệ lỗi chấp nhận được.",
+            "required": true,
+            "example": "AQL = 1.0 (Major), AQL = 2.5 (Minor)"
+        },
+        {
+            "name": "Quy trình sản xuất",
+            "description": "Các công đoạn cần kiểm tra.",
+            "required": true,
+            "example": "IQC: Kiểm NVL đầu vào. PQC: Kiểm tại mỗi công đoạn. OQC: Kiểm thành phẩm trước khi nhập kho."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình QC (BPMN)",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Ma trận tiêu chí QC",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-MES-QC-01: Mọi lô hàng phải qua QC trước khi nhập kho thành phẩm.",
+        "BR-MES-QC-02: Lỗi Critical phải dừng dây chuyền ngay lập tức.",
+        "BR-MES-QC-03: Hàng Rework chỉ được phép Rework tối đa 1 lần.",
+        "BR-MES-QC-04: NCR phải được điều tra Root Cause trong 48 giờ.",
+        "BR-MES-QC-05: NCC có tỷ lệ lỗi IQC > 5% phải đánh giá lại hợp đồng."
+    ],
+    "quality_criteria": [
+        "Phải có IQC/PQC/OQC",
+        "Phải có AQL",
+        "Phải có NCR workflow"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

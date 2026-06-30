@@ -1,0 +1,13 @@
+{
+    "name": "Xây dựng kịch bản UAT",
+    "category": "06-Testing/UAT",
+    "level": "Level 2 - Business Skill",
+    "description": "Chuẩn bị kịch bản User Acceptance Testing cho người dùng cuối.",
+    "inputs": [
+        "Quy trình nghiệp vụ thực tế",
+        "BRD"
+    ],
+    "outputs": [
+        "UAT Script theo luồng (End-to-End)"
+    ]
+}

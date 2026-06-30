@@ -1,0 +1,53 @@
+{
+    "name": "Backlog Grooming",
+    "category": "07-Project/Scrum",
+    "level": "Level 2 - Business Skill",
+    "description": "Hỗ trợ Product Owner (PO) và Team 'làm sạch' Product Backlog (Backlog Refinement). Bao gồm việc sắp xếp ưu tiên, làm rõ yêu cầu, thêm Acceptance Criteria, và chia nhỏ các User Stories quá lớn (Epics) để chuẩn bị sẵn sàng cho Sprint Planning.",
+    "tags": [
+        "Scrum",
+        "Backlog",
+        "Grooming",
+        "Refinement",
+        "User Story",
+        "Estimation"
+    ],
+    "domain": "Project",
+    "sub_skills": [
+        "Story Splitting",
+        "MoSCoW Prioritization",
+        "DoR Assessment"
+    ],
+    "related_skills": [
+        "Write User Story",
+        "Sprint Planning"
+    ],
+    "inputs": [
+        {
+            "name": "Danh sách User Stories (Nháp)",
+            "description": "Các yêu cầu chưa rõ ràng.",
+            "required": true,
+            "example": "User Story: 'Làm tính năng giỏ hàng' (chưa có chi tiết)."
+        },
+        {
+            "name": "Mục tiêu Product (Product Goal)",
+            "description": "Định hướng phát triển sản phẩm.",
+            "required": false,
+            "example": "Tăng tỷ lệ chuyển đổi mua hàng lên 10%."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Groomed Product Backlog",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-GROOM-01: Chỉ những Story nằm ở trên cùng của Backlog mới cần phân tích chi tiết (DoR).",
+        "BR-GROOM-02: Epic không bao giờ được đưa vào Sprint, phải chia nhỏ thành Story."
+    ],
+    "quality_criteria": [
+        "Top items đạt chuẩn DoR",
+        "Không có Epic ở top"
+    ],
+    "estimated_effort": "2-4 giờ (Meeting)"
+}

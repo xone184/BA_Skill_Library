@@ -1,0 +1,12 @@
+{
+    "name": "Feasibility Study",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Nghiên cứu tính khả thi của một yêu cầu hoặc một dự án.",
+    "inputs": [
+        "Ý tưởng kinh doanh / Yêu cầu mới lớn"
+    ],
+    "outputs": [
+        "Báo cáo đánh giá khả thi (Go/No-Go Decision)"
+    ]
+}

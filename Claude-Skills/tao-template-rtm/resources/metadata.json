@@ -1,0 +1,13 @@
+{
+    "name": "Tạo Template RTM",
+    "category": "08-Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Tạo ma trận truy xuất yêu cầu (Requirement Traceability Matrix).",
+    "inputs": [
+        "Danh sách BRD",
+        "Danh sách Test Case"
+    ],
+    "outputs": [
+        "Bảng RTM chuẩn"
+    ]
+}

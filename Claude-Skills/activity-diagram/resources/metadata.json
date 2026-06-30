@@ -1,0 +1,46 @@
+{
+    "name": "Activity Diagram",
+    "category": "03-Modeling/UML",
+    "level": "Level 2 - Business Skill",
+    "description": "Mô hình hóa luồng hoạt động (Workflow) và thao tác nghiệp vụ, đặc biệt hiệu quả để mô tả thao tác vật lý của con người kết hợp với phản hồi của máy móc/hệ thống tại dưới xưởng (Shopfloor).",
+    "tags": [
+        "Modeling",
+        "UML",
+        "Activity",
+        "Flowchart",
+        "MES",
+        "Shopfloor"
+    ],
+    "domain": "Modeling",
+    "sub_skills": [
+        "Fork/Join Logic",
+        "Physical/System Interaction"
+    ],
+    "related_skills": [
+        "Phân tích Mobile App",
+        "Thiết kế Role-based UI"
+    ],
+    "inputs": [
+        {
+            "name": "Quy trình vật lý / hệ thống",
+            "description": "Chuỗi các bước thực hiện.",
+            "required": true,
+            "example": "Công nhân lại máy tiện -> Quét mã vạch -> Máy tính bảng báo xanh -> Nhấn nút chạy -> QC lấy mẫu đo."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Activity Diagram (Mermaid)",
+            "format": "Mermaid flowchart"
+        }
+    ],
+    "business_rules": [
+        "BR-ACT-01: Mọi nhánh rẽ từ khối Decision (Hình thoi) phải có nhãn rõ ràng (Đúng/Sai, Pass/Fail).",
+        "BR-ACT-02: Phải mô tả chân thực sự tương tác giữa vật lý (cầm, nắm, quét) và hệ thống."
+    ],
+    "quality_criteria": [
+        "Rõ ràng hành động vật lý vs hệ thống",
+        "Sử dụng đúng Fork/Join"
+    ],
+    "estimated_effort": "2-4 giờ"
+}

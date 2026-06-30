@@ -1,0 +1,70 @@
+{
+    "name": "Thiết kế Dashboard",
+    "category": "04-UIUX/Dashboard",
+    "level": "Level 2 - Business Skill",
+    "description": "Thiết kế Dashboard quản trị cho hệ thống doanh nghiệp bao gồm: xác định đúng KPI cho từng vai trò (Role), chọn đúng loại biểu đồ (Chart Type), bố trí layout theo nguyên tắc Information Hierarchy, thiết kế bộ lọc (Filter) và drill-down chi tiết.",
+    "tags": [
+        "UIUX",
+        "Dashboard",
+        "KPI",
+        "Chart",
+        "Report"
+    ],
+    "domain": "UIUX",
+    "sub_skills": [
+        "Chọn Chart Type phù hợp",
+        "Thiết kế KPI Cards",
+        "Thiết kế Dashboard Layout",
+        "Thiết kế Drill-down"
+    ],
+    "related_skills": [
+        "Thiết kế module",
+        "Phân tích Báo cáo động",
+        "Thiết kế Role-based UI"
+    ],
+    "inputs": [
+        {
+            "name": "Module & Vai trò người xem",
+            "description": "Dashboard cho module nào và ai xem.",
+            "required": true,
+            "example": "Module: WMS. Người xem: Quản lý kho muốn thấy tổng quan tồn kho, hiệu suất xuất nhập, cảnh báo hết hàng."
+        },
+        {
+            "name": "KPI / Metrics cần theo dõi",
+            "description": "Các chỉ số quan trọng cần hiển thị.",
+            "required": true,
+            "example": "Số lượng xuất kho hôm nay, Tỷ lệ chính xác Picking, Top 10 SKU bán chạy, Cảnh báo hàng sắp hết."
+        },
+        {
+            "name": "Nguồn dữ liệu",
+            "description": "Dữ liệu lấy từ bảng/API nào.",
+            "required": false,
+            "example": "Bảng orders, inventory, picking_logs."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Dashboard Specification",
+            "format": "Markdown Document"
+        },
+        {
+            "name": "Chart Type Guide",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-DASH-01: Dashboard PHẢI load trong 3 giây hoặc ít hơn.",
+        "BR-DASH-02: KHÔNG dùng Pie Chart cho > 5 categories.",
+        "BR-DASH-03: KHÔNG dùng 3D chart (Gây hiểu sai dữ liệu).",
+        "BR-DASH-04: KPI Card cảnh báo phải dùng màu đỏ/vàng rõ ràng.",
+        "BR-DASH-05: Mỗi Dashboard phải có ít nhất 1 bộ lọc Date Range.",
+        "BR-DASH-06: Dữ liệu Dashboard phải realtime hoặc near-realtime (< 5 phút)."
+    ],
+    "quality_criteria": [
+        "KPI phải phù hợp với Role",
+        "Chart Type phải đúng dữ liệu",
+        "Layout phải theo F-pattern",
+        "Phải có Drill-down"
+    ],
+    "estimated_effort": "2-3 ngày / Dashboard"
+}

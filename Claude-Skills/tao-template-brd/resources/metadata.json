@@ -1,0 +1,13 @@
+{
+    "name": "Tạo Template BRD",
+    "category": "08-Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Tạo cấu trúc chuẩn cho tài liệu Business Requirement Document.",
+    "inputs": [
+        "Tên dự án",
+        "Mục tiêu"
+    ],
+    "outputs": [
+        "Khung sườn BRD"
+    ]
+}

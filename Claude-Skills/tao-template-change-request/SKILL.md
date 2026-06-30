@@ -1,0 +1,21 @@
+---
+name: Tạo Template Change Request
+description: Tạo biểu mẫu yêu cầu thay đổi (CR) chuẩn dự án.
+---
+
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Tạo Template Change Request]
+Level: Level 1 - Basic Skill
+
+Context / Inputs required from user:
+Quy trình thay đổi dự án
+
+Rules & Constraints:
+- CR luôn cần phải đánh giá ảnh hưởng lên Tiến độ (Time) và Chi phí (Cost).
+
+Process to follow:
+Thông tin yêu cầu, Lý do thay đổi, Đánh giá tác động (Impact Analysis), Đánh giá Effort & Cost, Ký duyệt
+
+Expected Output:
+Biểu mẫu CR
+

@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Tạo Template BRD]
+Level: Level 1 - Basic Skill
+
+Context / Inputs required from user:
+Tên dự án, Mục tiêu
+
+Rules & Constraints:
+- Sinh ra cấu trúc mục lục rõ ràng dưới định dạng Markdown, dùng Heading 1, 2, 3.
+
+Process to follow:
+Thiết lập phần Giới thiệu, Tạo cấu trúc Scope, Tạo cấu trúc Yêu cầu nghiệp vụ, Tạo cấu trúc Phụ lục
+
+Expected Output:
+Khung sườn BRD

@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Phân tích Mobile App]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+Nghiệp vụ cần mang lên Mobile
+
+Rules & Constraints:
+- Mobile App không phải là bê nguyên Web xuống. Chỉ giữ lại những gì cực kỳ thiết yếu.
+
+Process to follow:
+Xác định chức năng cốt lõi cho Mobile, Thiết kế luồng thao tác 1 tay, Xử lý trạng thái Offline/Mất mạng, Quản lý Push Notification
+
+Expected Output:
+Sơ đồ luồng màn hình Mobile, Thiết kế Bottom Navigation

@@ -1,0 +1,72 @@
+{
+    "name": "Phân tích Production Order",
+    "category": "01-Business-Domain/MES",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình tạo và quản lý lệnh sản xuất (Production Order / Work Order), từ khi nhận kế hoạch sản xuất đến khi thành phẩm nhập kho, bao gồm kiểm tra vật tư (Material Availability), định mức sản xuất (Routing/BOM), theo dõi tiến độ theo thời gian thực và xử lý phế phẩm (Scrap).",
+    "tags": [
+        "MES",
+        "Production",
+        "Manufacturing",
+        "Work Order",
+        "BOM"
+    ],
+    "domain": "MES",
+    "sub_skills": [
+        "Thiết kế BOM Structure",
+        "Thiết kế Routing",
+        "Thiết kế Production Dashboard",
+        "Thiết kế Scrap Management"
+    ],
+    "related_skills": [
+        "Phân tích OEE",
+        "Phân tích Quality Control",
+        "Phân tích Inbound Flow"
+    ],
+    "inputs": [
+        {
+            "name": "Kế hoạch sản xuất (Production Plan)",
+            "description": "Số lượng thành phẩm cần sản xuất theo ngày/tuần/tháng.",
+            "required": true,
+            "example": "Sản xuất 5000 chai nước suối 500ml trong tuần 28, chia 3 ca/ngày."
+        },
+        {
+            "name": "BOM (Bill of Materials)",
+            "description": "Danh sách nguyên vật liệu cần cho 1 đơn vị thành phẩm.",
+            "required": true,
+            "example": "1 chai nước suối 500ml = 1 vỏ chai PET + 1 nắp + 500ml nước + 1 nhãn dán"
+        },
+        {
+            "name": "Routing (Định mức công đoạn)",
+            "description": "Các bước sản xuất và thời gian tiêu chuẩn.",
+            "required": true,
+            "example": "Công đoạn 1: Thổi chai (5s/chai) → Công đoạn 2: Rót nước (3s) → Công đoạn 3: Đóng nắp (2s) → Công đoạn 4: Dán nhãn (2s) → Công đoạn 5: Đóng thùng (10s/12 chai)"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Luồng Production Order",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Cấu trúc dữ liệu Work Order",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "BOM Explosion",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-MES-WO-01: Không được Release WO nếu NVL không đủ.",
+        "BR-MES-WO-02: Scrap Rate > 5% phải có điều tra nguyên nhân.",
+        "BR-MES-WO-03: WO phải ghi nhận chính xác ca làm việc và máy sản xuất.",
+        "BR-MES-WO-04: NVL dư sau khi hoàn thành WO phải được trả về kho.",
+        "BR-MES-WO-05: Chi phí thực tế chênh lệch > 10% so với Standard Cost phải báo cáo cho Kế toán."
+    ],
+    "quality_criteria": [
+        "Phải có BOM Explosion",
+        "Phải có Material Availability Check",
+        "Phải ghi nhận Scrap"
+    ],
+    "estimated_effort": "7-10 ngày"
+}

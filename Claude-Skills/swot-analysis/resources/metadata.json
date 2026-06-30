@@ -1,0 +1,14 @@
+{
+    "name": "SWOT Analysis",
+    "category": "09-BA-Agent/Thinking Skills",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích Điểm mạnh, Điểm yếu, Cơ hội và Thách thức của sản phẩm.",
+    "inputs": [
+        "Thông tin thị trường",
+        "Tính năng đối thủ"
+    ],
+    "outputs": [
+        "Ma trận SWOT",
+        "Chiến lược hành động"
+    ]
+}

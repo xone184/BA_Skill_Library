@@ -1,0 +1,14 @@
+{
+    "name": "Phân tích Bảo trì Thiết bị",
+    "category": "01-Business-Domain/EAM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích quy trình bảo trì phòng ngừa (Preventive Maintenance) và bảo trì khắc phục (Corrective Maintenance).",
+    "inputs": [
+        "Lịch bảo trì máy móc",
+        "Yêu cầu sửa chữa"
+    ],
+    "outputs": [
+        "Work Order bảo trì",
+        "Luồng phê duyệt vật tư thay thế"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Phân tích Báo cáo động",
+    "category": "04-UIUX/Dashboard",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế hệ thống báo cáo cho phép người dùng tự kéo thả (Dynamic Reporting).",
+    "inputs": [
+        "Nhu cầu phân tích dữ liệu đa chiều"
+    ],
+    "outputs": [
+        "Cấu trúc khối dữ liệu (Data Cube)",
+        "Danh sách Dimension và Measure"
+    ]
+}

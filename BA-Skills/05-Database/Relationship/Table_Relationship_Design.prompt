@@ -1,0 +1,15 @@
+Role: Expert Business Analyst / System Architect
+Task: Apply the skill [Table Relationship Design]
+Level: Level 3 - Architecture Skill
+
+Context / Inputs required from user:
+ERD nháp
+
+Rules & Constraints:
+- Phải mô tả rõ ràng chiến lược chống xóa nhầm dữ liệu (Soft Delete vs Hard Delete).
+
+Process to follow:
+Xác định loại quan hệ (1-1, 1-N, N-N), Thiết kế bảng Junction cho quan hệ N-N, Kiểm tra toàn vẹn dữ liệu (Referential Integrity), Xác định hành vi ON DELETE/ON UPDATE
+
+Expected Output:
+Cấu trúc quan hệ chuẩn

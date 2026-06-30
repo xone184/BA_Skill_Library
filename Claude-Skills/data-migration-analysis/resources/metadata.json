@@ -1,0 +1,14 @@
+{
+    "name": "Data Migration Analysis",
+    "category": "05-Database/Data Dictionary",
+    "level": "Level 4 - Thinking Skill",
+    "description": "Phân tích quá trình chuyển đổi dữ liệu từ hệ thống cũ sang mới.",
+    "inputs": [
+        "Cấu trúc DB cũ (As-Is)",
+        "Cấu trúc DB mới (To-Be)"
+    ],
+    "outputs": [
+        "Mapping Document (Data Mapping)",
+        "Kịch bản Migration"
+    ]
+}

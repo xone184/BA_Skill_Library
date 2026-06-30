@@ -1,0 +1,13 @@
+{
+    "name": "Thiết kế Form",
+    "category": "04-UIUX/Form",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích và tối ưu hóa các Form nhập liệu.",
+    "inputs": [
+        "Danh sách các trường cần nhập"
+    ],
+    "outputs": [
+        "Bố cục Form (Wireframe)",
+        "Luật Validation"
+    ]
+}

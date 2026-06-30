@@ -1,0 +1,47 @@
+{
+    "name": "Phân tích Business Rules",
+    "category": "02-Requirement/Elicitation",
+    "level": "Level 2 - Business Skill",
+    "description": "Bóc tách, định nghĩa và kiểm soát các Ràng buộc nghiệp vụ (Business Rules). Đặc biệt quan trọng để ánh xạ các quy tắc quản trị/sản xuất vật lý vào hệ thống, từ đó làm cơ sở sinh tài liệu luồng nghiệp vụ và kịch bản Test (cả test hệ thống lẫn test QC thực tế).",
+    "tags": [
+        "Requirement",
+        "Rules",
+        "Constraints",
+        "Decision Table",
+        "MES",
+        "QA"
+    ],
+    "domain": "Requirement",
+    "sub_skills": [
+        "Decision Table Creation",
+        "QA & Test Mapping",
+        "Rule Categorization"
+    ],
+    "related_skills": [
+        "Viết Test Case (Ultra)",
+        "State Machine Diagram"
+    ],
+    "inputs": [
+        {
+            "name": "Mô tả nghiệp vụ",
+            "description": "Đoạn văn mô tả lỏng lẻo cần được chuẩn hóa.",
+            "required": true,
+            "example": "Công nhân chỉ được chạy máy nếu đã học an toàn và QC đã ký duyệt vật tư."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Business Rules Catalog & Decision Table",
+            "format": "Markdown"
+        }
+    ],
+    "business_rules": [
+        "BR-RULE-01: Mọi Business Rule phải được viết bằng câu khẳng định, không dùng từ ngữ đa nghĩa (nên, có thể).",
+        "BR-RULE-02: Phải gán ID (Mã định danh) duy nhất cho mỗi rule để dễ tracking."
+    ],
+    "quality_criteria": [
+        "Quy tắc IF-THEN chặt chẽ",
+        "Phục vụ tốt cho QA Test"
+    ],
+    "estimated_effort": "0.5 - 1 ngày"
+}

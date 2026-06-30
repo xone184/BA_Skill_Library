@@ -1,0 +1,63 @@
+{
+    "name": "Phân tích Chấm công",
+    "category": "01-Business-Domain/HRM",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình quản lý thời gian làm việc (Time & Attendance), bao gồm thiết lập ca làm việc (Shift), tích hợp máy chấm công, xử lý đi trễ/về sớm/vắng mặt, quản lý nghỉ phép (Leave Management) và tính làm thêm giờ (OT).",
+    "tags": [
+        "HRM",
+        "Attendance",
+        "Time",
+        "Shift",
+        "Leave"
+    ],
+    "domain": "HRM",
+    "sub_skills": [
+        "Thiết kế Shift Management",
+        "Thiết kế Leave Management",
+        "Thiết kế OT Calculation",
+        "Thiết kế Attendance Dashboard"
+    ],
+    "related_skills": [
+        "Phân tích Payroll",
+        "Phân tích KPI và Đánh giá"
+    ],
+    "inputs": [
+        {
+            "name": "Cấu trúc ca làm việc",
+            "description": "Giờ vào/ra của các ca.",
+            "required": true,
+            "example": "Ca Hành chính: 08:00-17:00 (nghỉ trưa 12:00-13:00). Ca 1: 06:00-14:00. Ca 2: 14:00-22:00. Ca 3: 22:00-06:00."
+        },
+        {
+            "name": "Dữ liệu máy chấm công",
+            "description": "Log vào/ra từ máy vân tay, thẻ từ, Face ID.",
+            "required": true,
+            "example": "Employee ID: E001, Check-in: 07:58, Check-out: 17:05, Machine: Cổng chính"
+        },
+        {
+            "name": "Chính sách nghỉ phép",
+            "description": "Số ngày phép/năm, điều kiện nghỉ.",
+            "required": true,
+            "example": "12 ngày phép năm (sau 12 tháng). Nghỉ ốm: Theo sổ BHXH. Nghỉ không lương: Tối đa 5 ngày/năm."
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Bảng công mẫu",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-HRM-ATT-01: Trễ ≤ 5 phút không tính phạt. Trễ > 5 phút tính nửa công sáng.",
+        "BR-HRM-ATT-02: Vắng không phép (Absent without Leave) > 3 ngày/tháng → Cảnh cáo.",
+        "BR-HRM-ATT-03: OT phải được đăng ký/duyệt trước, không chấp nhận OT tự phát.",
+        "BR-HRM-ATT-04: Bảng công phải được Lock sau ngày 5 của tháng tiếp theo.",
+        "BR-HRM-ATT-05: Nhân viên Ca đêm (22:00-06:00) được phụ cấp đêm 30%."
+    ],
+    "quality_criteria": [
+        "Phải có Shift management",
+        "Phải tính OT theo Luật LĐ VN",
+        "Phải có Leave Management"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

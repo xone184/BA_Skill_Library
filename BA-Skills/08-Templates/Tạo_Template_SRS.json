@@ -1,0 +1,12 @@
+{
+    "name": "Tạo Template SRS",
+    "category": "08-Templates",
+    "level": "Level 1 - Basic Skill",
+    "description": "Tạo cấu trúc chuẩn cho Software Requirements Specification.",
+    "inputs": [
+        "Mô tả hệ thống"
+    ],
+    "outputs": [
+        "Khung sườn SRS"
+    ]
+}

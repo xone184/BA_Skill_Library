@@ -1,0 +1,71 @@
+{
+    "name": "Phân tích Inventory Management",
+    "category": "01-Business-Domain/WMS",
+    "level": "Level 2 - Business Skill",
+    "description": "Phân tích toàn diện quy trình quản lý tồn kho, bao gồm kiểm kê (Cycle Count / Full Count), điều chỉnh tồn kho (Stock Adjustment), luân chuyển nội bộ (Internal Transfer), quản lý tồn kho tối thiểu/tối đa (Min-Max) và các báo cáo phân tích tồn kho.",
+    "tags": [
+        "WMS",
+        "Inventory",
+        "Cycle Count",
+        "Stock"
+    ],
+    "domain": "WMS",
+    "sub_skills": [
+        "Thiết kế ABC Analysis",
+        "Thiết kế Cycle Count Plan",
+        "Thiết kế Stock Adjustment Approval",
+        "Thiết kế Min-Max Rules"
+    ],
+    "related_skills": [
+        "Phân tích Inbound Flow",
+        "Phân tích Outbound Flow",
+        "Phân tích Replenishment"
+    ],
+    "inputs": [
+        {
+            "name": "Dữ liệu tồn kho hiện tại",
+            "description": "Snapshot số lượng hàng hiện có trên hệ thống.",
+            "required": true,
+            "example": "SKU-A01: On-hand = 500, Allocated = 120, Available = 380"
+        },
+        {
+            "name": "Phương pháp kiểm kê",
+            "description": "Full Count (Kiểm kê toàn bộ) hay Cycle Count (Kiểm kê luân phiên).",
+            "required": true,
+            "example": "Cycle Count hàng ngày theo phân loại ABC: Loại A kiểm hàng tuần, Loại B hàng tháng, Loại C hàng quý"
+        },
+        {
+            "name": "Ngưỡng Min-Max",
+            "description": "Mức tồn kho tối thiểu và tối đa cho từng SKU.",
+            "required": false,
+            "example": "SKU-A01: Min = 100, Max = 500, Reorder Point = 200"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Quy trình Kiểm kê (BPMN)",
+            "format": "Mermaid Flowchart"
+        },
+        {
+            "name": "Bảng phân loại ABC",
+            "format": "Markdown Table"
+        },
+        {
+            "name": "Cấu trúc dữ liệu Inventory",
+            "format": "Markdown Table"
+        }
+    ],
+    "business_rules": [
+        "BR-WMS-INV-01: Cycle Count phải chặn giao dịch Inbound/Outbound tại Location đang đếm.",
+        "BR-WMS-INV-02: Stock Adjustment chênh lệch > 2% phải có phê duyệt Manager.",
+        "BR-WMS-INV-03: Available Qty = On-hand Qty - Allocated Qty.",
+        "BR-WMS-INV-04: Không cho phép Available Qty âm (Overselling).",
+        "BR-WMS-INV-05: Hàng tồn > 180 ngày phải đánh giá lại giá trị (Inventory Write-down)."
+    ],
+    "quality_criteria": [
+        "Phải có ABC Analysis",
+        "Phải có Variance handling",
+        "Phải phân biệt On-hand/Allocated/Available"
+    ],
+    "estimated_effort": "5-7 ngày"
+}

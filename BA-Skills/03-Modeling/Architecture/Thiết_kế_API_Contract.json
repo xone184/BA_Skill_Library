@@ -1,0 +1,13 @@
+{
+    "name": "Thiết kế API Contract",
+    "category": "03-Modeling/Architecture",
+    "level": "Level 3 - Architecture Skill",
+    "description": "Thiết kế đặc tả API cơ bản giữa FE và BE hoặc với bên thứ 3.",
+    "inputs": [
+        "Yêu cầu tích hợp",
+        "Dữ liệu cần truyền"
+    ],
+    "outputs": [
+        "Tài liệu API Contract (RESTful)"
+    ]
+}
