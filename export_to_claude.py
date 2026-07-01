@@ -116,9 +116,9 @@ description: {description}
                 examples_dir = os.path.join(skill_dir, "examples")
                 os.makedirs(examples_dir, exist_ok=True)
                 
-                # Zipping the skill directory
+                # Zipping the skill directory - MUST include folder_name as root dir inside zip
                 zip_path = os.path.join(zip_dir, folder_name)
-                shutil.make_archive(zip_path, 'zip', skill_dir)
+                shutil.make_archive(zip_path, 'zip', dest_dir, folder_name)
                 
                 skill_count += 1
                 print(f"Exported (Rich & Zipped): {folder_name}.zip")
