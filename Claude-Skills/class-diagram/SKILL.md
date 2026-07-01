@@ -1,6 +1,6 @@
 ---
-name: Class Diagram
-description: Vẽ biểu đồ lớp để thiết kế hướng đối tượng.
+name: class-diagram
+description: V biu  lp  thit k hng i tng.
 ---
 
 Role: Expert Business Analyst / System Architect

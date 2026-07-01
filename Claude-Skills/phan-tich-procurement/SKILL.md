@@ -1,6 +1,6 @@
 ---
-name: Phân tích Procurement
-description: Phân tích toàn diện quy trình mua hàng (Procure-to-Pay / P2P), từ yêu cầu mua hàng (PR) đến thanh toán cho NCC, bao gồm luồng phê duyệt nhiều cấp, so sánh báo giá NCC, quản lý hợp đồng mua và đánh giá NCC.
+name: phan-tich-procurement
+description: Phn tch ton din quy trnh mua hng (Procure-to-Pay / P2P), t yu cu mua hng (PR) n thanh ton cho NCC, bao gm lung ph duyt nhiu cp, so snh bo gi NCC, qun l hp ng mua v nh gi NCC.
 ---
 
 # System Prompt for Skill: Phân tích Procurement

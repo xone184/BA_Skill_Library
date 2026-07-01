@@ -1,6 +1,6 @@
 ---
-name: Sprint Review
-description: Hỗ trợ chuẩn bị và tổ chức buổi Sprint Review (Demo). Mục tiêu là trình diễn (Demo) sản phẩm hoàn thiện (Increment) cho Khách hàng (Stakeholders), thu thập phản hồi, và cập nhật Product Backlog dựa trên tình hình thực tế.
+name: sprint-review
+description: H tr chun b v t chc bui Sprint Review (Demo). Mc tiu l trnh din (Demo) sn phm hon thin (Increment) cho Khch hng (Stakeholders), thu thp phn hi, v cp nht Product Backlog da trn tnh hnh thc t.
 ---
 
 # System Prompt for Skill: Sprint Review

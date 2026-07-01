@@ -48,6 +48,8 @@ def export_skills(src_dir, dest_dir, zip_dir):
                 name = metadata.get('name', 'Unknown Skill')
                 description = metadata.get('description', metadata.get('purpose', 'BA Skill for Claude'))
                 description = description.replace('\n', ' ').strip()
+                # Frontmatter description must be ASCII-safe (Claude validation)
+                ascii_description = description.encode('ascii', 'ignore').decode('ascii').strip()
 
                 # Read Prompt Content
                 with open(prompt_path, 'r', encoding='utf-8') as f:
@@ -90,8 +92,8 @@ Bạn PHẢI tuân thủ Bộ quy tắc chuẩn hóa Tài liệu & Diagram Nghi�
 """
 
                 skill_md_content = f"""---
-name: {name}
-description: {description}
+name: {folder_name}
+description: {ascii_description}
 ---
 
 {prompt_content}

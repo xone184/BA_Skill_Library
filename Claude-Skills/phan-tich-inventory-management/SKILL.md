@@ -1,6 +1,6 @@
 ---
-name: Phân tích Inventory Management
-description: Phân tích toàn diện quy trình quản lý tồn kho, bao gồm kiểm kê (Cycle Count / Full Count), điều chỉnh tồn kho (Stock Adjustment), luân chuyển nội bộ (Internal Transfer), quản lý tồn kho tối thiểu/tối đa (Min-Max) và các báo cáo phân tích tồn kho.
+name: phan-tich-inventory-management
+description: Phn tch ton din quy trnh qun l tn kho, bao gm kim k (Cycle Count / Full Count), iu chnh tn kho (Stock Adjustment), lun chuyn ni b (Internal Transfer), qun l tn kho ti thiu/ti a (Min-Max) v cc bo co phn tch tn kho.
 ---
 
 # System Prompt for Skill: Phân tích Inventory Management

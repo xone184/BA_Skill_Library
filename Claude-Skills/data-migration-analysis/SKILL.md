@@ -1,6 +1,6 @@
 ---
-name: Data Migration Analysis
-description: Phân tích quá trình chuyển đổi dữ liệu từ hệ thống cũ sang mới.
+name: data-migration-analysis
+description: Phn tch qu trnh chuyn i d liu t h thng c sang mi.
 ---
 
 Role: Expert Business Analyst / System Architect

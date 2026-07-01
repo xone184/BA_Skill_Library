@@ -1,6 +1,6 @@
 ---
-name: Impact Analysis
-description: Phân tích tác động khi có thay đổi yêu cầu (Change Request).
+name: impact-analysis
+description: Phn tch tc ng khi c thay i yu cu (Change Request).
 ---
 
 Role: Expert Business Analyst / System Architect

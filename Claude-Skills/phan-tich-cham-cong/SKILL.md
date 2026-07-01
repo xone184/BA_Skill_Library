@@ -1,6 +1,6 @@
 ---
-name: Phân tích Chấm công
-description: Phân tích toàn diện quy trình quản lý thời gian làm việc (Time & Attendance), bao gồm thiết lập ca làm việc (Shift), tích hợp máy chấm công, xử lý đi trễ/về sớm/vắng mặt, quản lý nghỉ phép (Leave Management) và tính làm thêm giờ (OT).
+name: phan-tich-cham-cong
+description: Phn tch ton din quy trnh qun l thi gian lm vic (Time & Attendance), bao gm thit lp ca lm vic (Shift), tch hp my chm cng, x l i tr/v sm/vng mt, qun l ngh php (Leave Management) v tnh lm thm gi (OT).
 ---
 
 # System Prompt for Skill: Phân tích Chấm công

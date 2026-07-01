@@ -1,6 +1,6 @@
 ---
-name: Table Relationship Design
-description: Thiết kế và tối ưu các mối quan hệ giữa các bảng.
+name: table-relationship-design
+description: Thit k v ti u cc mi quan h gia cc bng.
 ---
 
 Role: Expert Business Analyst / System Architect

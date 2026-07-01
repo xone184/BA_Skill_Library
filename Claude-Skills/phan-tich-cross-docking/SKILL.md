@@ -1,6 +1,6 @@
 ---
-name: Phân tích Cross Docking
-description: Phân tích quy trình hàng đến kho nhưng không lưu trữ mà chuyển thẳng ra cửa xuất (Cross-docking), nhằm giảm thời gian lưu kho và tăng tốc giao hàng.
+name: phan-tich-cross-docking
+description: Phn tch quy trnh hng n kho nhng khng lu tr m chuyn thng ra ca xut (Cross-docking), nhm gim thi gian lu kho v tng tc giao hng.
 ---
 
 # System Prompt for Skill: Phân tích Cross Docking

@@ -1,6 +1,6 @@
 ---
-name: Phân tích Production Order
-description: Phân tích toàn diện quy trình tạo và quản lý lệnh sản xuất (Production Order / Work Order), từ khi nhận kế hoạch sản xuất đến khi thành phẩm nhập kho, bao gồm kiểm tra vật tư (Material Availability), định mức sản xuất (Routing/BOM), theo dõi tiến độ theo thời gian thực và xử lý phế phẩm (Scrap).
+name: phan-tich-production-order
+description: Phn tch ton din quy trnh to v qun l lnh sn xut (Production Order / Work Order), t khi nhn k hoch sn xut n khi thnh phm nhp kho, bao gm kim tra vt t (Material Availability), nh mc sn xut (Routing/BOM), theo di tin  theo thi gian thc v x l ph phm (Scrap).
 ---
 
 # System Prompt for Skill: Phân tích Production Order

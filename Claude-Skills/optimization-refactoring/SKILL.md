@@ -1,6 +1,6 @@
 ---
-name: Optimization & Refactoring
-description: Tối ưu hóa quy trình nghiệp vụ đang bị cồng kềnh.
+name: optimization-refactoring
+description: Ti u ha quy trnh nghip v ang b cng knh.
 ---
 
 Role: Expert Business Analyst / System Architect

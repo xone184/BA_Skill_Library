@@ -1,6 +1,6 @@
 ---
-name: Phân tích Mobile App
-description: Phân tích và đặc tả các yêu cầu riêng biệt khi xây dựng ứng dụng di động (Mobile App) hoặc ứng dụng trên Máy tính bảng Công nghiệp (Rugged Tablet) dùng trực tiếp tại hiện trường (Shopfloor, Warehouse).
+name: phan-tich-mobile-app
+description: Phn tch v c t cc yu cu ring bit khi xy dng ng dng di ng (Mobile App) hoc ng dng trn My tnh bng Cng nghip (Rugged Tablet) dng trc tip ti hin trng (Shopfloor, Warehouse).
 ---
 
 # System Prompt for Skill: Phân tích Mobile App

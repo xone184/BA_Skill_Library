@@ -1,6 +1,6 @@
 ---
-name: State Machine Diagram
-description: Đặc tả vòng đời (Lifecycle) của một thực thể nghiệp vụ cốt lõi (Ví dụ: Lệnh sản xuất, Lô hàng, Máy móc) từ lúc sinh ra đến lúc kết thúc. Cung cấp chi tiết các Trạng thái (States), Sự kiện kích hoạt (Triggers), và Điều kiện chặn (Guard Conditions).
+name: state-machine-diagram
+description: c t vng i (Lifecycle) ca mt thc th nghip v ct li (V d: Lnh sn xut, L hng, My mc) t lc sinh ra n lc kt thc. Cung cp chi tit cc Trng thi (States), S kin kch hot (Triggers), v iu kin chn (Guard Conditions).
 ---
 
 # System Prompt for Skill: State Machine Diagram

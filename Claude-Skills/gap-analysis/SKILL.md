@@ -1,6 +1,6 @@
 ---
-name: Gap Analysis
-description: Phân tích khoảng cách giữa trạng thái hiện tại (As-Is) và trạng thái mong muốn (To-Be), sau đó đề xuất kế hoạch hành động (Action Plan) để thu hẹp khoảng cách, phân theo 3 nhóm: Business Process, Technology/System, và People/Organization.
+name: gap-analysis
+description: Phn tch khong cch gia trng thi hin ti (As-Is) v trng thi mong mun (To-Be), sau   xut k hoch hnh ng (Action Plan)  thu hp khong cch, phn theo 3 nhm: Business Process, Technology/System, v People/Organization.
 ---
 
 # System Prompt for Skill: Gap Analysis

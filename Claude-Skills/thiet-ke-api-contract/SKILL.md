@@ -1,6 +1,6 @@
 ---
-name: Thiết kế API Contract
-description: Thiết kế đặc tả giao tiếp giữa Front-end và Back-end (hoặc giữa 2 hệ thống) qua RESTful API. Cung cấp rõ ràng Endpoints, Method, Request Payload (Body/Params), Response Payload và Error Codes để 2 bên có thể làm việc độc lập.
+name: thiet-ke-api-contract
+description: Thit k c t giao tip gia Front-end v Back-end (hoc gia 2 h thng) qua RESTful API. Cung cp r rng Endpoints, Method, Request Payload (Body/Params), Response Payload v Error Codes  2 bn c th lm vic c lp.
 ---
 
 # System Prompt for Skill: Thiết kế API Contract

@@ -1,6 +1,6 @@
 ---
-name: Tạo Template Meeting Minutes
-description: Sinh ra biểu mẫu Biên bản họp (MOM) chuyên nghiệp.
+name: tao-template-meeting-minutes
+description: Sinh ra biu mu Bin bn hp (MOM) chuyn nghip.
 ---
 
 Role: Expert Business Analyst / System Architect

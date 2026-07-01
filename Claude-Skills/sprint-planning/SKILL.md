@@ -1,6 +1,6 @@
 ---
-name: Sprint Planning
-description: Hỗ trợ Product Owner (PO) và Scrum Team lập kế hoạch cho một Sprint, bao gồm: xác định Sprint Goal, chọn User Stories từ Backlog, estimate effort (Story Points) và lập Sprint Backlog.
+name: sprint-planning
+description: H tr Product Owner (PO) v Scrum Team lp k hoch cho mt Sprint, bao gm: xc nh Sprint Goal, chn User Stories t Backlog, estimate effort (Story Points) v lp Sprint Backlog.
 ---
 
 # System Prompt for Skill: Sprint Planning

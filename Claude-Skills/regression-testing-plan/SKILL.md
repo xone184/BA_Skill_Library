@@ -1,6 +1,6 @@
 ---
-name: Regression Testing Plan
-description: Lập kế hoạch kiểm thử hồi quy khi có tính năng mới.
+name: regression-testing-plan
+description: Lp k hoch kim th hi quy khi c tnh nng mi.
 ---
 
 Role: Expert Business Analyst / System Architect

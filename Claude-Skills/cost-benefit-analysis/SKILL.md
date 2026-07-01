@@ -1,6 +1,6 @@
 ---
-name: Cost-Benefit Analysis
-description: Phân tích chi phí và lợi ích để ra quyết định đầu tư tính năng.
+name: cost-benefit-analysis
+description: Phn tch chi ph v li ch  ra quyt nh u t tnh nng.
 ---
 
 Role: Expert Business Analyst / System Architect

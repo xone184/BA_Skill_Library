@@ -1,6 +1,6 @@
 ---
-name: Phân tích KPI và Đánh giá
-description: Thiết kế hệ thống đánh giá hiệu suất nhân sự (Performance Review).
+name: phan-tich-kpi-va-anh-gia
+description: Thit k h thng nh gi hiu sut nhn s (Performance Review).
 ---
 
 Role: Expert Business Analyst / System Architect

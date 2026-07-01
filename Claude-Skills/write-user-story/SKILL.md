@@ -1,6 +1,6 @@
 ---
-name: Write User Story
-description: Viết User Story chuẩn Agile đúng format, kèm Acceptance Criteria chi tiết, tuân thủ nguyên tắc INVEST để đảm bảo Story có thể estimate và deliver trong 1 Sprint.
+name: write-user-story
+description: Vit User Story chun Agile ng format, km Acceptance Criteria chi tit, tun th nguyn tc INVEST  m bo Story c th estimate v deliver trong 1 Sprint.
 ---
 
 # System Prompt for Skill: Write User Story

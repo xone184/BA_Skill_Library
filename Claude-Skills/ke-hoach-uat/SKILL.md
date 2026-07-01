@@ -1,6 +1,6 @@
 ---
-name: Kế hoạch UAT
-description: Lập User Acceptance Testing (UAT) Plan để hướng dẫn Khách hàng (End Users) tự kiểm thử hệ thống trước khi Go-live. Đảm bảo UAT diễn ra suôn sẻ, đúng nghiệp vụ thực tế và nhận được Sign-off.
+name: ke-hoach-uat
+description: Lp User Acceptance Testing (UAT) Plan  hng dn Khch hng (End Users) t kim th h thng trc khi Go-live. m bo UAT din ra sun s, ng nghip v thc t v nhn c Sign-off.
 ---
 
 # System Prompt for Skill: Kế hoạch UAT

@@ -1,6 +1,6 @@
 ---
-name: Thiết kế module
-description: Thiết kế kiến trúc module cho hệ thống doanh nghiệp, bao gồm phân rã module, thiết kế menu, phân quyền (RBAC), workflow, database schema, API endpoints, danh sách màn hình và đảm bảo không thiếu bất kỳ thành phần nào nhờ checklist toàn diện.
+name: thiet-ke-module
+description: Thit k kin trc module cho h thng doanh nghip, bao gm phn r module, thit k menu, phn quyn (RBAC), workflow, database schema, API endpoints, danh sch mn hnh v m bo khng thiu bt k thnh phn no nh checklist ton din.
 ---
 
 # System Prompt for Skill: Thiết kế module

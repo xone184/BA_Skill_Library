@@ -1,6 +1,6 @@
 ---
-name: Phân tích Quality Control
-description: Phân tích toàn diện quy trình quản lý chất lượng trong sản xuất, từ IQC (Incoming), PQC (Process), OQC (Outgoing), bao gồm tiêu chuẩn lấy mẫu (AQL), xử lý hàng lỗi (Rework/Scrap) và truy xuất nguồn gốc (Traceability).
+name: phan-tich-quality-control
+description: Phn tch ton din quy trnh qun l cht lng trong sn xut, t IQC (Incoming), PQC (Process), OQC (Outgoing), bao gm tiu chun ly mu (AQL), x l hng li (Rework/Scrap) v truy xut ngun gc (Traceability).
 ---
 
 # System Prompt for Skill: Phân tích Quality Control

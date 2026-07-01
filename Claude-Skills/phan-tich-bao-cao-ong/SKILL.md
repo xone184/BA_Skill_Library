@@ -1,6 +1,6 @@
 ---
-name: Phân tích Báo cáo động
-description: Thiết kế hệ thống báo cáo cho phép người dùng tự kéo thả (Dynamic Reporting).
+name: phan-tich-bao-cao-ong
+description: Thit k h thng bo co cho php ngi dng t ko th (Dynamic Reporting).
 ---
 
 Role: Expert Business Analyst / System Architect

@@ -1,6 +1,6 @@
 ---
-name: SWOT Analysis
-description: Phân tích Điểm mạnh, Điểm yếu, Cơ hội và Thách thức của sản phẩm.
+name: swot-analysis
+description: Phn tch im mnh, im yu, C hi v Thch thc ca sn phm.
 ---
 
 Role: Expert Business Analyst / System Architect

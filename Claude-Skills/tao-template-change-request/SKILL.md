@@ -1,6 +1,6 @@
 ---
-name: Tạo Template Change Request
-description: Tạo biểu mẫu yêu cầu thay đổi (CR) chuẩn dự án.
+name: tao-template-change-request
+description: To biu mu yu cu thay i (CR) chun d n.
 ---
 
 Role: Expert Business Analyst / System Architect

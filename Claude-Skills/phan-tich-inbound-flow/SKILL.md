@@ -1,6 +1,6 @@
 ---
-name: Phân tích Inbound Flow
-description: Phân tích toàn diện quy trình nhập kho hàng hóa, từ lúc nhận thông báo giao hàng (ASN) đến khi hàng được cất lên kệ (Putaway), bao gồm kiểm tra chất lượng đầu vào, xử lý chênh lệch so với PO, in mã vạch/QR code và chiến lược Putaway tự động.
+name: phan-tich-inbound-flow
+description: Phn tch ton din quy trnh nhp kho hng ha, t lc nhn thng bo giao hng (ASN) n khi hng c ct ln k (Putaway), bao gm kim tra cht lng u vo, x l chnh lch so vi PO, in m vch/QR code v chin lc Putaway t ng.
 ---
 
 # System Prompt for Skill: Phân tích Inbound Flow

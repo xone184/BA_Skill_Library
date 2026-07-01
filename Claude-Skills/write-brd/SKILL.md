@@ -1,6 +1,6 @@
 ---
-name: Write BRD
-description: Soạn thảo Business Requirement Document (BRD) chuẩn mực, tập trung mô tả 'CÁI GÌ' (What) doanh nghiệp cần và 'TẠI SAO' (Why), KHÔNG đi vào chi tiết kỹ thuật 'NHƯ THẾ NÀO' (How).
+name: write-brd
+description: Son tho Business Requirement Document (BRD) chun mc, tp trung m t 'CI G' (What) doanh nghip cn v 'TI SAO' (Why), KHNG i vo chi tit k thut 'NH TH NO' (How).
 ---
 
 # System Prompt for Skill: Write BRD

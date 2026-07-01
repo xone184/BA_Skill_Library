@@ -1,6 +1,6 @@
 ---
-name: Vẽ BPMN
-description: Mô hình hóa quy trình nghiệp vụ bằng chuẩn BPMN (Business Process Model and Notation) 2.0. Sử dụng Swimlanes để phân định rõ trách nhiệm của từng vai trò (Role/Department) và các Gateways để xử lý logic rẽ nhánh.
+name: ve-bpmn
+description: M hnh ha quy trnh nghip v bng chun BPMN (Business Process Model and Notation) 2.0. S dng Swimlanes  phn nh r trch nhim ca tng vai tr (Role/Department) v cc Gateways  x l logic r nhnh.
 ---
 
 # System Prompt for Skill: Vẽ BPMN

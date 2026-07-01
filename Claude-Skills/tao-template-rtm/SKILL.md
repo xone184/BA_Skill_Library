@@ -1,6 +1,6 @@
 ---
-name: Tạo Template RTM
-description: Tạo ma trận truy xuất yêu cầu (Requirement Traceability Matrix).
+name: tao-template-rtm
+description: To ma trn truy xut yu cu (Requirement Traceability Matrix).
 ---
 
 Role: Expert Business Analyst / System Architect

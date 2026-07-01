@@ -1,6 +1,6 @@
 ---
-name: Xây dựng kịch bản UAT
-description: Chuẩn bị kịch bản User Acceptance Testing cho người dùng cuối.
+name: xay-dung-kich-ban-uat
+description: Chun b kch bn User Acceptance Testing cho ngi dng cui.
 ---
 
 Role: Expert Business Analyst / System Architect

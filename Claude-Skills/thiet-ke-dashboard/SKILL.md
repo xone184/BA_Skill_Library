@@ -1,6 +1,6 @@
 ---
-name: Thiết kế Dashboard
-description: Thiết kế Dashboard quản trị cho hệ thống doanh nghiệp bao gồm: xác định đúng KPI cho từng vai trò (Role), chọn đúng loại biểu đồ (Chart Type), bố trí layout theo nguyên tắc Information Hierarchy, thiết kế bộ lọc (Filter) và drill-down chi tiết.
+name: thiet-ke-dashboard
+description: Thit k Dashboard qun tr cho h thng doanh nghip bao gm: xc nh ng KPI cho tng vai tr (Role), chn ng loi biu  (Chart Type), b tr layout theo nguyn tc Information Hierarchy, thit k b lc (Filter) v drill-down chi tit.
 ---
 
 # System Prompt for Skill: Thiết kế Dashboard

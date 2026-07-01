@@ -1,6 +1,6 @@
 ---
-name: Stakeholder Analysis
-description: Phân tích và quản trị các bên liên quan trong dự án.
+name: stakeholder-analysis
+description: Phn tch v qun tr cc bn lin quan trong d n.
 ---
 
 Role: Expert Business Analyst / System Architect

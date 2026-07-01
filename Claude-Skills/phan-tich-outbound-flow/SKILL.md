@@ -1,6 +1,6 @@
 ---
-name: Phân tích Outbound Flow
-description: Phân tích toàn diện quy trình xuất kho, từ lúc nhận lệnh xuất (Sales Order/Transfer Order) đến khi hàng rời kho, bao gồm các chiến lược Picking (Wave, Zone, Batch), đóng gói (Packing), kiểm tra xuất (Shipping Verification) và tích hợp đơn vị vận chuyển.
+name: phan-tich-outbound-flow
+description: Phn tch ton din quy trnh xut kho, t lc nhn lnh xut (Sales Order/Transfer Order) n khi hng ri kho, bao gm cc chin lc Picking (Wave, Zone, Batch), ng gi (Packing), kim tra xut (Shipping Verification) v tch hp n v vn chuyn.
 ---
 
 # System Prompt for Skill: Phân tích Outbound Flow

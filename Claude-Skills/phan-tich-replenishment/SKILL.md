@@ -1,6 +1,6 @@
 ---
-name: Phân tích Replenishment
-description: Phân tích quy trình bổ sung hàng tự động từ khu vực dự trữ (Reserve) sang khu vực nhặt hàng (Picking), và từ NCC vào kho khi tồn kho chạm mức tối thiểu.
+name: phan-tich-replenishment
+description: Phn tch quy trnh b sung hng t ng t khu vc d tr (Reserve) sang khu vc nht hng (Picking), v t NCC vo kho khi tn kho chm mc ti thiu.
 ---
 
 # System Prompt for Skill: Phân tích Replenishment

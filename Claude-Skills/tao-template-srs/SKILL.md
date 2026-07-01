@@ -1,6 +1,6 @@
 ---
-name: Tạo Template SRS
-description: Tạo cấu trúc chuẩn cho Software Requirements Specification.
+name: tao-template-srs
+description: To cu trc chun cho Software Requirements Specification.
 ---
 
 Role: Expert Business Analyst / System Architect

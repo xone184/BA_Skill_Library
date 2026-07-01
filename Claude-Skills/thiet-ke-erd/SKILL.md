@@ -1,6 +1,6 @@
 ---
-name: Thiết kế ERD
-description: Thiết kế Entity-Relationship Diagram (ERD) cho hệ thống, xác định rõ các Entity (Bảng), Attributes (Cột), Primary Key, Foreign Key, Relationships (1-1, 1-N, N-N), Indexes, và Constraints. ERD phải đủ chi tiết để DBA có thể tạo database trực tiếp.
+name: thiet-ke-erd
+description: Thit k Entity-Relationship Diagram (ERD) cho h thng, xc nh r cc Entity (Bng), Attributes (Ct), Primary Key, Foreign Key, Relationships (1-1, 1-N, N-N), Indexes, v Constraints. ERD phi  chi tit  DBA c th to database trc tip.
 ---
 
 # System Prompt for Skill: Thiết kế ERD

@@ -1,6 +1,6 @@
 ---
-name: Thiết kế Role-based UI
-description: Thiết kế đặc tả giao diện tùy biến theo vai trò người dùng (Role-based). Đảm bảo mỗi Role chỉ nhìn thấy dữ liệu, nút bấm và chức năng mà họ được cấp quyền, giảm thiểu sai sót và tối ưu hóa trải nghiệm làm việc thực tế.
+name: thiet-ke-role-based-ui
+description: Thit k c t giao din ty bin theo vai tr ngi dng (Role-based). m bo mi Role ch nhn thy d liu, nt bm v chc nng m h c cp quyn, gim thiu sai st v ti u ha tri nghim lm vic thc t.
 ---
 
 # System Prompt for Skill: Thiết kế Role-based UI

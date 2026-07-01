@@ -1,6 +1,6 @@
 ---
-name: Phân tích Kế toán công nợ
-description: Phân tích toàn diện luồng quản lý công nợ phải thu (Accounts Receivable - AR) và công nợ phải trả (Accounts Payable - AP), bao gồm hạn mức tín dụng (Credit Limit), tuổi nợ (Aging), đối chiếu công nợ và xử lý xóa nợ (Write-off).
+name: phan-tich-ke-toan-cong-no
+description: Phn tch ton din lung qun l cng n phi thu (Accounts Receivable - AR) v cng n phi tr (Accounts Payable - AP), bao gm hn mc tn dng (Credit Limit), tui n (Aging), i chiu cng n v x l xa n (Write-off).
 ---
 
 # System Prompt for Skill: Phân tích Kế toán công nợ

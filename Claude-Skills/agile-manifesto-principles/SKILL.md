@@ -1,6 +1,6 @@
 ---
-name: Agile Manifesto & Principles
-description: Áp dụng tư duy Agile (4 giá trị cốt lõi và 12 nguyên tắc) vào quản lý dự án phần mềm. Giúp đội ngũ (Team) chuyển đổi từ mô hình Thác nước (Waterfall) truyền thống sang mô hình linh hoạt (Agile), nhấn mạnh vào việc chuyển giao giá trị sớm và phản hồi nhanh với thay đổi.
+name: agile-manifesto-principles
+description: p dng t duy Agile (4 gi tr ct li v 12 nguyn tc) vo qun l d n phn mm. Gip i ng (Team) chuyn i t m hnh Thc nc (Waterfall) truyn thng sang m hnh linh hot (Agile), nhn mnh vo vic chuyn giao gi tr sm v phn hi nhanh vi thay i.
 ---
 
 # System Prompt for Skill: Agile Manifesto & Principles

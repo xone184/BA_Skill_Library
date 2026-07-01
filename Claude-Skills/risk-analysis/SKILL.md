@@ -1,6 +1,6 @@
 ---
-name: Risk Analysis
-description: Phân tích và quản lý rủi ro dự án / hệ thống.
+name: risk-analysis
+description: Phn tch v qun l ri ro d n / h thng.
 ---
 
 Role: Expert Business Analyst / System Architect

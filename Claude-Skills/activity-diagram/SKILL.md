@@ -1,6 +1,6 @@
 ---
-name: Activity Diagram
-description: Mô hình hóa luồng hoạt động (Workflow) và thao tác nghiệp vụ, đặc biệt hiệu quả để mô tả thao tác vật lý của con người kết hợp với phản hồi của máy móc/hệ thống tại dưới xưởng (Shopfloor).
+name: activity-diagram
+description: M hnh ha lung hot ng (Workflow) v thao tc nghip v, c bit hiu qu  m t thao tc vt l ca con ngi kt hp vi phn hi ca my mc/h thng ti di xng (Shopfloor).
 ---
 
 # System Prompt for Skill: Activity Diagram

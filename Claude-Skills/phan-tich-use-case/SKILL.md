@@ -1,6 +1,6 @@
 ---
-name: Phân tích Use Case
-description: Đặc tả siêu chi tiết sự tương tác giữa Người dùng (Actor) và Hệ thống (System) thông qua Use Case Specification. Kỹ năng này cung cấp sức mạnh để phân rã luồng chính (Basic Flow), luồng rẽ nhánh hợp lệ (Alternate Flow), luồng lỗi (Exception Flow). Đặc biệt hỗ trợ Micro-tasking (bóc tách 1 luồng nhỏ).
+name: phan-tich-use-case
+description: c t siu chi tit s tng tc gia Ngi dng (Actor) v H thng (System) thng qua Use Case Specification. K nng ny cung cp sc mnh  phn r lung chnh (Basic Flow), lung r nhnh hp l (Alternate Flow), lung li (Exception Flow). c bit h tr Micro-tasking (bc tch 1 lung nh).
 ---
 
 # System Prompt for Skill: Phân tích Use Case

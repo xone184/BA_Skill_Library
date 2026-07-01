@@ -1,6 +1,6 @@
 ---
-name: Vẽ Sequence Diagram
-description: Mô hình hóa luồng giao tiếp (Tương tác) giữa các đối tượng (Người dùng, Frontend, Backend, Database, 3rd Party API) theo trình tự thời gian. Giúp team Dev hiểu rõ thứ tự gọi API và luồng dữ liệu.
+name: ve-sequence-diagram
+description: M hnh ha lung giao tip (Tng tc) gia cc i tng (Ngi dng, Frontend, Backend, Database, 3rd Party API) theo trnh t thi gian. Gip team Dev hiu r th t gi API v lung d liu.
 ---
 
 # System Prompt for Skill: Vẽ Sequence Diagram

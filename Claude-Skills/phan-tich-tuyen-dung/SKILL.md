@@ -1,6 +1,6 @@
 ---
-name: Phân tích Tuyển dụng
-description: Phân tích toàn diện quy trình Applicant Tracking System (ATS), từ tạo yêu cầu tuyển dụng (Job Requisition) đến Onboarding nhân viên mới, bao gồm quản lý Pipeline ứng viên, đánh giá phỏng vấn, và Talent Pool.
+name: phan-tich-tuyen-dung
+description: Phn tch ton din quy trnh Applicant Tracking System (ATS), t to yu cu tuyn dng (Job Requisition) n Onboarding nhn vin mi, bao gm qun l Pipeline ng vin, nh gi phng vn, v Talent Pool.
 ---
 
 # System Prompt for Skill: Phân tích Tuyển dụng

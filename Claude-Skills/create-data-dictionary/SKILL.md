@@ -1,6 +1,6 @@
 ---
-name: Create Data Dictionary
-description: Tạo Data Dictionary toàn diện cho hệ thống, mô tả chi tiết mỗi bảng, mỗi cột, kiểu dữ liệu, ràng buộc, mối quan hệ và mô tả nghiệp vụ. Đây là tài liệu tham chiếu chính cho Dev, DBA, BA và QC.
+name: create-data-dictionary
+description: To Data Dictionary ton din cho h thng, m t chi tit mi bng, mi ct, kiu d liu, rng buc, mi quan h v m t nghip v. y l ti liu tham chiu chnh cho Dev, DBA, BA v QC.
 ---
 
 # System Prompt for Skill: Create Data Dictionary

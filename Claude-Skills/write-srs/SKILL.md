@@ -1,6 +1,6 @@
 ---
-name: Write SRS
-description: Soạn thảo Software Requirements Specification (SRS) chi tiết mức độ team Dev có thể code được ngay, bao gồm đặc tả chức năng (Functional), phi chức năng (Non-Functional), giao diện, API, và ràng buộc hệ thống.
+name: write-srs
+description: Son tho Software Requirements Specification (SRS) chi tit mc  team Dev c th code c ngay, bao gm c t chc nng (Functional), phi chc nng (Non-Functional), giao din, API, v rng buc h thng.
 ---
 
 # System Prompt for Skill: Write SRS

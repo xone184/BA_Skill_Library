@@ -1,6 +1,6 @@
 ---
-name: Phân tích Lead Management
-description: Phân tích toàn diện quy trình quản lý khách hàng tiềm năng (Lead), từ lúc tiếp nhận thông tin đến khi chuyển đổi thành cơ hội bán hàng (Opportunity), bao gồm quy tắc chấm điểm (Scoring), phân bổ (Routing) và chống trùng lặp (Deduplication).
+name: phan-tich-lead-management
+description: Phn tch ton din quy trnh qun l khch hng tim nng (Lead), t lc tip nhn thng tin n khi chuyn i thnh c hi bn hng (Opportunity), bao gm quy tc chm im (Scoring), phn b (Routing) v chng trng lp (Deduplication).
 ---
 
 # System Prompt for Skill: Phân tích Lead Management

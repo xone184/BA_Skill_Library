@@ -1,6 +1,6 @@
 ---
-name: Feasibility Study
-description: Nghiên cứu tính khả thi của một yêu cầu hoặc một dự án.
+name: feasibility-study
+description: Nghin cu tnh kh thi ca mt yu cu hoc mt d n.
 ---
 
 Role: Expert Business Analyst / System Architect

@@ -1,6 +1,6 @@
 ---
-name: Write Use Case Specification
-description: Viết đặc tả Use Case chi tiết (Use Case Spec).
+name: write-use-case-specification
+description: Vit c t Use Case chi tit (Use Case Spec).
 ---
 
 Role: Expert Business Analyst / System Architect

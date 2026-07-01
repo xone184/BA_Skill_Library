@@ -1,6 +1,6 @@
 ---
-name: Phân tích Loyalty Program
-description: Phân tích hệ thống điểm thưởng và khách hàng thân thiết (Loyalty Program), bao gồm cơ chế tích điểm, cấu trúc hạng thành viên (Tier), quy đổi điểm, xử lý gian lận và tích hợp với POS/E-commerce.
+name: phan-tich-loyalty-program
+description: Phn tch h thng im thng v khch hng thn thit (Loyalty Program), bao gm c ch tch im, cu trc hng thnh vin (Tier), quy i im, x l gian ln v tch hp vi POS/E-commerce.
 ---
 
 # System Prompt for Skill: Phân tích Loyalty Program

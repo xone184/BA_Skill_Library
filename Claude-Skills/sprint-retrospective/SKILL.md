@@ -1,6 +1,6 @@
 ---
-name: Sprint Retrospective
-description: Hỗ trợ Scrum Master / Đội ngũ đánh giá lại quá trình làm việc trong Sprint vừa qua, nhận diện những điểm tốt, điểm chưa tốt và đề xuất Action Items cụ thể để cải tiến cho Sprint tiếp theo (Continuous Improvement).
+name: sprint-retrospective
+description: H tr Scrum Master / i ng nh gi li qu trnh lm vic trong Sprint va qua, nhn din nhng im tt, im cha tt v  xut Action Items c th  ci tin cho Sprint tip theo (Continuous Improvement).
 ---
 
 # System Prompt for Skill: Sprint Retrospective

@@ -1,6 +1,6 @@
 ---
-name: Phân tích Security Testing
-description: Xác định các lỗ hổng bảo mật và viết kịch bản test an toàn thông tin.
+name: phan-tich-security-testing
+description: Xc nh cc l hng bo mt v vit kch bn test an ton thng tin.
 ---
 
 Role: Expert Business Analyst / System Architect

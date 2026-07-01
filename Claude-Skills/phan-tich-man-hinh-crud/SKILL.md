@@ -1,6 +1,6 @@
 ---
-name: Phân tích màn hình CRUD
-description: Đặc tả chi tiết bộ màn hình CRUD (Create-Read-Update-Delete) cho một entity, bao gồm: màn hình List (Search/Filter/Pagination/Bulk Actions), màn hình Create/Edit (Form Validation), màn hình Detail View, và tất cả Confirmation/Error Dialogs.
+name: phan-tich-man-hinh-crud
+description: c t chi tit b mn hnh CRUD (Create-Read-Update-Delete) cho mt entity, bao gm: mn hnh List (Search/Filter/Pagination/Bulk Actions), mn hnh Create/Edit (Form Validation), mn hnh Detail View, v tt c Confirmation/Error Dialogs.
 ---
 
 # System Prompt for Skill: Phân tích màn hình CRUD

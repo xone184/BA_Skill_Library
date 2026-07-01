@@ -1,6 +1,6 @@
 ---
-name: Phân tích NFR
-description: Khám phá và đặc tả các yêu cầu phi chức năng (Non-Functional Requirements).
+name: phan-tich-nfr
+description: Khm ph v c t cc yu cu phi chc nng (Non-Functional Requirements).
 ---
 
 Role: Expert Business Analyst / System Architect

@@ -1,6 +1,6 @@
 ---
-name: Phân tích Opportunity
-description: Phân tích toàn diện luồng cơ hội bán hàng (Opportunity/Deal) từ khi Lead chuyển đổi đến khi ký hợp đồng hoặc mất cơ hội, bao gồm các giai đoạn (Stages), tỷ lệ thắng (Win Probability), dự báo doanh thu (Revenue Forecasting) và quy trình phê duyệt báo giá.
+name: phan-tich-opportunity
+description: Phn tch ton din lung c hi bn hng (Opportunity/Deal) t khi Lead chuyn i n khi k hp ng hoc mt c hi, bao gm cc giai on (Stages), t l thng (Win Probability), d bo doanh thu (Revenue Forecasting) v quy trnh ph duyt bo gi.
 ---
 
 # System Prompt for Skill: Phân tích Opportunity

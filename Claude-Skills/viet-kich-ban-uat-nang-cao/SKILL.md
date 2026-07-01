@@ -1,6 +1,6 @@
 ---
-name: Viết kịch bản UAT nâng cao
-description: Xây dựng tài liệu hướng dẫn khách hàng ký nghiệm thu (Sign-off).
+name: viet-kich-ban-uat-nang-cao
+description: Xy dng ti liu hng dn khch hng k nghim thu (Sign-off).
 ---
 
 Role: Expert Business Analyst / System Architect

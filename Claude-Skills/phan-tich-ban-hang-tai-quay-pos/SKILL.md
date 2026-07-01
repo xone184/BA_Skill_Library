@@ -1,6 +1,6 @@
 ---
-name: Phân tích Bán hàng tại quầy (POS)
-description: Phân tích luồng thao tác của thu ngân tại cửa hàng.
+name: phan-tich-ban-hang-tai-quay-pos
+description: Phn tch lung thao tc ca thu ngn ti ca hng.
 ---
 
 Role: Expert Business Analyst / System Architect

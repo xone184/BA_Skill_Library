@@ -1,6 +1,6 @@
 ---
-name: Phân tích OEE
-description: Đo lường và phân tích hiệu quả thiết bị tổng thể (Overall Equipment Effectiveness), xác định 6 tổn thất lớn (Six Big Losses) và đề xuất giải pháp cải thiện.
+name: phan-tich-oee
+description: o lng v phn tch hiu qu thit b tng th (Overall Equipment Effectiveness), xc nh 6 tn tht ln (Six Big Losses) v  xut gii php ci thin.
 ---
 
 # System Prompt for Skill: Phân tích OEE

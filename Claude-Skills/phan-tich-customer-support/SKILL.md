@@ -1,6 +1,6 @@
 ---
-name: Phân tích Customer Support
-description: Phân tích toàn diện quy trình tiếp nhận và xử lý yêu cầu hỗ trợ khách hàng (Ticket Management), bao gồm phân loại ticket, escalation tự động, theo dõi SLA, đo lường CSAT/NPS và thiết kế Knowledge Base.
+name: phan-tich-customer-support
+description: Phn tch ton din quy trnh tip nhn v x l yu cu h tr khch hng (Ticket Management), bao gm phn loi ticket, escalation t ng, theo di SLA, o lng CSAT/NPS v thit k Knowledge Base.
 ---
 
 # System Prompt for Skill: Phân tích Customer Support

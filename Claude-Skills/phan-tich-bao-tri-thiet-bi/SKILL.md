@@ -1,6 +1,6 @@
 ---
-name: Phân tích Bảo trì Thiết bị
-description: Phân tích quy trình bảo trì phòng ngừa (Preventive Maintenance) và bảo trì khắc phục (Corrective Maintenance).
+name: phan-tich-bao-tri-thiet-bi
+description: Phn tch quy trnh bo tr phng nga (Preventive Maintenance) v bo tr khc phc (Corrective Maintenance).
 ---
 
 Role: Expert Business Analyst / System Architect

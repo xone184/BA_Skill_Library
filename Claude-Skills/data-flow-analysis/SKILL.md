@@ -1,6 +1,6 @@
 ---
-name: Data Flow Analysis
-description: Phân tích luồng di chuyển của dữ liệu qua các hệ thống.
+name: data-flow-analysis
+description: Phn tch lung di chuyn ca d liu qua cc h thng.
 ---
 
 Role: Expert Business Analyst / System Architect

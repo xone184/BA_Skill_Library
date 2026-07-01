@@ -1,6 +1,6 @@
 ---
-name: Viết Test Case
-description: Viết kịch bản kiểm thử (Test Case) chi tiết dựa trên Requirement/User Story để đảm bảo tính năng hoạt động đúng nghiệp vụ. Test Case phải rõ ràng đến mức bất kỳ ai (BA, QC, Khách hàng) đều có thể đọc và thực hiện được.
+name: viet-test-case
+description: Vit kch bn kim th (Test Case) chi tit da trn Requirement/User Story  m bo tnh nng hot ng ng nghip v. Test Case phi r rng n mc bt k ai (BA, QC, Khch hng) u c th c v thc hin c.
 ---
 
 # System Prompt for Skill: Viết Test Case

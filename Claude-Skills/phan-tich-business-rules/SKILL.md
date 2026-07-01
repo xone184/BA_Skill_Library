@@ -1,6 +1,6 @@
 ---
-name: Phân tích Business Rules
-description: Trích xuất và chuẩn hóa các quy tắc nghiệp vụ rải rác.
+name: phan-tich-business-rules
+description: Trch xut v chun ha cc quy tc nghip v ri rc.
 ---
 
 Role: Expert Business Analyst / System Architect

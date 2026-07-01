@@ -1,6 +1,6 @@
 ---
-name: Interview Stakeholder
-description: Thực hiện phỏng vấn lấy yêu cầu từ các bên liên quan.
+name: interview-stakeholder
+description: Thc hin phng vn ly yu cu t cc bn lin quan.
 ---
 
 Role: Expert Business Analyst / System Architect

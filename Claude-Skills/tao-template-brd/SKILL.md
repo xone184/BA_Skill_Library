@@ -1,6 +1,6 @@
 ---
-name: Tạo Template BRD
-description: Tạo cấu trúc chuẩn cho tài liệu Business Requirement Document.
+name: tao-template-brd
+description: To cu trc chun cho ti liu Business Requirement Document.
 ---
 
 Role: Expert Business Analyst / System Architect

@@ -1,6 +1,6 @@
 ---
-name: Thiết kế Notification
-description: Thiết kế nội dung, điều kiện kích hoạt (Trigger), đối tượng nhận và cấu trúc cho các mẫu thông báo đa kênh (Email, SMS, Push Notification, In-app).
+name: thiet-ke-notification
+description: Thit k ni dung, iu kin kch hot (Trigger), i tng nhn v cu trc cho cc mu thng bo a knh (Email, SMS, Push Notification, In-app).
 ---
 
 # System Prompt for Skill: Thiết kế Notification

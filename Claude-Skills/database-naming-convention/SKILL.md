@@ -1,6 +1,6 @@
 ---
-name: Database Naming Convention
-description: Định nghĩa quy chuẩn đặt tên cho Database.
+name: database-naming-convention
+description: nh ngha quy chun t tn cho Database.
 ---
 
 Role: Expert Business Analyst / System Architect

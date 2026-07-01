@@ -1,6 +1,6 @@
 ---
-name: Thiết kế Form
-description: Phân tích và tối ưu hóa các Form nhập liệu.
+name: thiet-ke-form
+description: Phn tch v ti u ha cc Form nhp liu.
 ---
 
 Role: Expert Business Analyst / System Architect

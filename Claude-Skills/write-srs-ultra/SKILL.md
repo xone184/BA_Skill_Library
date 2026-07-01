@@ -1,6 +1,6 @@
 ---
-name: Write SRS (Ultra)
-description: Soạn thảo SRS phiên bản siêu chi tiết. Cung cấp bộ công cụ mạnh mẽ để AI có thể làm Micro-tasking (Ví dụ: Chỉ sinh ra bộ Non-Functional Requirements theo chuẩn FURPS+, hoặc chỉ thiết kế Traceability Matrix) thay vì sinh ra 1 tài liệu quá dài.
+name: write-srs-ultra
+description: Son tho SRS phin bn siu chi tit. Cung cp b cng c mnh m  AI c th lm Micro-tasking (V d: Ch sinh ra b Non-Functional Requirements theo chun FURPS+, hoc ch thit k Traceability Matrix) thay v sinh ra 1 ti liu qu di.
 ---
 
 # System Prompt for Skill: Write SRS (Ultra)

@@ -1,6 +1,6 @@
 ---
-name: Phân tích Return Management
-description: Quản lý toàn diện luồng hàng hoàn trả (RMA) từ khách hàng, bao gồm tiếp nhận yêu cầu, nhận hàng trả về, kiểm tra chất lượng (QC), phân loại xử lý (Tái nhập kho, Sửa chữa, Tiêu hủy) và hoàn tiền/đổi hàng.
+name: phan-tich-return-management
+description: Qun l ton din lung hng hon tr (RMA) t khch hng, bao gm tip nhn yu cu, nhn hng tr v, kim tra cht lng (QC), phn loi x l (Ti nhp kho, Sa cha, Tiu hy) v hon tin/i hng.
 ---
 
 # System Prompt for Skill: Phân tích Return Management

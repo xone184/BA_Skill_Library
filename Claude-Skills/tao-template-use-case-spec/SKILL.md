@@ -1,6 +1,6 @@
 ---
-name: Tạo Template Use Case Spec
-description: Tự động sinh ra biểu mẫu chuẩn cho Use Case Specification.
+name: tao-template-use-case-spec
+description: T ng sinh ra biu mu chun cho Use Case Specification.
 ---
 
 Role: Expert Business Analyst / System Architect

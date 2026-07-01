@@ -1,6 +1,6 @@
 ---
-name: Tạo Template API Doc
-description: Tự động sinh ra cấu trúc tài liệu Swagger/OpenAPI.
+name: tao-template-api-doc
+description: T ng sinh ra cu trc ti liu Swagger/OpenAPI.
 ---
 
 Role: Expert Business Analyst / System Architect

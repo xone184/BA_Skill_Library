@@ -1,6 +1,6 @@
 ---
-name: Sequence Diagram
-description: Vẽ biểu đồ tuần tự để thiết kế logic tương tác giữa các hệ thống.
+name: sequence-diagram
+description: V biu  tun t  thit k logic tng tc gia cc h thng.
 ---
 
 Role: Expert Business Analyst / System Architect

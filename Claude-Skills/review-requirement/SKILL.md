@@ -1,6 +1,6 @@
 ---
-name: Review Requirement
-description: Rà soát và kiểm tra tính đầy đủ, chính xác, nhất quán của yêu cầu nghiệp vụ. Đây là kỹ năng kiểm duyệt cuối cùng trước khi chốt scope, đảm bảo không bỏ sót bất kỳ Business Rule, Exception, Validation, Permission, UI, API, Database, Workflow, Report hay Notification nào.
+name: review-requirement
+description: R sot v kim tra tnh y , chnh xc, nht qun ca yu cu nghip v. y l k nng kim duyt cui cng trc khi cht scope, m bo khng b st bt k Business Rule, Exception, Validation, Permission, UI, API, Database, Workflow, Report hay Notification no.
 ---
 
 # System Prompt for Skill: Review Requirement

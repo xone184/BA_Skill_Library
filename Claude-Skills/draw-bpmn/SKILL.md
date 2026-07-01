@@ -1,6 +1,6 @@
 ---
-name: Draw BPMN
-description: Vẽ luồng quy trình nghiệp vụ bằng chuẩn BPMN.
+name: draw-bpmn
+description: V lung quy trnh nghip v bng chun BPMN.
 ---
 
 Role: Expert Business Analyst / System Architect

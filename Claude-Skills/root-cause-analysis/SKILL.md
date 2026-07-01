@@ -1,6 +1,6 @@
 ---
-name: Root Cause Analysis
-description: Phân tích nguyên nhân gốc rễ của một vấn đề kinh doanh hoặc lỗi hệ thống bằng các kỹ thuật chuyên nghiệp (5 Whys, Fishbone Diagram) để đề xuất giải pháp triệt để thay vì chỉ xử lý triệu chứng.
+name: root-cause-analysis
+description: Phn tch nguyn nhn gc r ca mt vn  kinh doanh hoc li h thng bng cc k thut chuyn nghip (5 Whys, Fishbone Diagram)   xut gii php trit  thay v ch x l triu chng.
 ---
 
 # System Prompt for Skill: Root Cause Analysis

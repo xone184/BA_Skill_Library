@@ -1,6 +1,6 @@
 ---
-name: Backlog Grooming
-description: Hỗ trợ Product Owner (PO) và Team 'làm sạch' Product Backlog (Backlog Refinement). Bao gồm việc sắp xếp ưu tiên, làm rõ yêu cầu, thêm Acceptance Criteria, và chia nhỏ các User Stories quá lớn (Epics) để chuẩn bị sẵn sàng cho Sprint Planning.
+name: backlog-grooming
+description: H tr Product Owner (PO) v Team 'lm sch' Product Backlog (Backlog Refinement). Bao gm vic sp xp u tin, lm r yu cu, thm Acceptance Criteria, v chia nh cc User Stories qu ln (Epics)  chun b sn sng cho Sprint Planning.
 ---
 
 # System Prompt for Skill: Backlog Grooming

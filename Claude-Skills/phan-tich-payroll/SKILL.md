@@ -1,6 +1,6 @@
 ---
-name: Phân tích Payroll
-description: Phân tích toàn diện luồng tính lương nhân viên, từ thu thập dữ liệu công đến ra bảng lương cuối cùng, bao gồm tính lương cơ bản, phụ cấp, thưởng, khấu trừ thuế TNCN, BHXH/BHYT/BHTN, và quy trình duyệt + phát lương.
+name: phan-tich-payroll
+description: Phn tch ton din lung tnh lng nhn vin, t thu thp d liu cng n ra bng lng cui cng, bao gm tnh lng c bn, ph cp, thng, khu tr thu TNCN, BHXH/BHYT/BHTN, v quy trnh duyt + pht lng.
 ---
 
 # System Prompt for Skill: Phân tích Payroll

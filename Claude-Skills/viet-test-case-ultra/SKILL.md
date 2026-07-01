@@ -1,6 +1,6 @@
 ---
-name: Viết Test Case (Ultra)
-description: Viết Test Case ứng dụng các kỹ thuật kiểm thử phần mềm nâng cao: Phân tích giá trị biên (BVA), Phân vùng tương đương (EP), và Bảng quyết định (Decision Table). Hỗ trợ Micro-tasking cực mạnh để AI đóng vai trò như một Senior QA Engineer chuyên 'bắt bug'.
+name: viet-test-case-ultra
+description: Vit Test Case ng dng cc k thut kim th phn mm nng cao: Phn tch gi tr bin (BVA), Phn vng tng ng (EP), v Bng quyt nh (Decision Table). H tr Micro-tasking cc mnh  AI ng vai tr nh mt Senior QA Engineer chuyn 'bt bug'.
 ---
 
 # System Prompt for Skill: Viết Test Case (Ultra)

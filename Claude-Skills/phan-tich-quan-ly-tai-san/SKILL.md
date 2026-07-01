@@ -1,6 +1,6 @@
 ---
-name: Phân tích Quản lý Tài sản
-description: Phân tích vòng đời của tài sản doanh nghiệp (Enterprise Asset Management).
+name: phan-tich-quan-ly-tai-san
+description: Phn tch vng i ca ti sn doanh nghip (Enterprise Asset Management).
 ---
 
 Role: Expert Business Analyst / System Architect
